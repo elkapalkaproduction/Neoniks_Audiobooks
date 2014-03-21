@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="cakeCoverButton" destination="fKI-KJ-yWR" id="y9J-ys-S0p"/>
+                <outlet property="carnivalCoverButton" destination="YEh-EN-3CF" id="GjB-7M-6RG"/>
+                <outlet property="fountainCoverButton" destination="cjQ-2a-U53" id="4UR-3K-Vdb"/>
+                <outlet property="guestCoverButton" destination="TB8-cX-k9t" id="U0i-Rq-9mz"/>
+                <outlet property="languageButton" destination="RWL-5f-PBv" id="laK-T3-TjI"/>
+                <outlet property="mainTitleImage" destination="BTN-zI-RZd" id="PiF-Ns-1eA"/>
+                <outlet property="parcelCoverButton" destination="9ao-zW-3LY" id="S3I-wx-LzF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="aqr-XO-NZs"/>
+                <outlet property="waterCoverButton" destination="ZJd-3W-wy4" id="olr-4K-sac"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_main 640_1136.png" id="rZA-op-vMl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic_fairy_tales_eng.png" id="BTN-zI-RZd">
+                    <rect key="frame" x="56" y="48" width="207" height="74"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RWL-5f-PBv">
+                    <rect key="frame" x="208" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="language_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeLanguage:" destination="-1" eventType="touchUpInside" id="rC3-hn-JIf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nzj-Z7-nQC">
+                    <rect key="frame" x="165" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="contributors.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToContributors:" destination="-1" eventType="touchUpInside" id="zDm-OI-y3g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TBC-hq-YQe">
+                    <rect key="frame" x="122" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="heart.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToRateOnStore:" destination="-1" eventType="touchUpInside" id="kLW-Ez-Ctx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cjQ-2a-U53">
+                    <rect key="frame" x="219" y="356" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="performance_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="dtU-Z2-ECs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fKI-KJ-yWR">
+                    <rect key="frame" x="118" y="194" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="giant_cake_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="Q8o-Xd-hkM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TB8-cX-k9t">
+                    <rect key="frame" x="17" y="194" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="unwelcome_guest_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="rcd-MJ-wEa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZJd-3W-wy4">
+                    <rect key="frame" x="219" y="194" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="enchanted_water_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="eqv-el-aeC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YEh-EN-3CF">
+                    <rect key="frame" x="17" y="356" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="sea_carnival_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="Guy-Aa-6x7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9ao-zW-3LY">
+                    <rect key="frame" x="118" y="356" width="84" height="114"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="strange_parcel_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToListenBook:" destination="-1" eventType="touchUpInside" id="2dc-Fq-PUa"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enchanted_water_eng.png" id="JCf-9M-sfU">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_main 640_1136.png" width="640" height="1136"/>
+        <image name="contributors.png" width="87" height="88"/>
+        <image name="enchanted_water_eng.png" width="450" height="600"/>
+        <image name="giant_cake_eng.png" width="450" height="600"/>
+        <image name="heart.png" width="87" height="88"/>
+        <image name="language_eng.png" width="87" height="88"/>
+        <image name="magic_fairy_tales_eng.png" width="927" height="295"/>
+        <image name="performance_eng.png" width="450" height="600"/>
+        <image name="sea_carnival_eng.png" width="450" height="600"/>
+        <image name="strange_parcel_eng.png" width="450" height="600"/>
+        <image name="unwelcome_guest_eng.png" width="450" height="600"/>
+    </resources>
+</document>

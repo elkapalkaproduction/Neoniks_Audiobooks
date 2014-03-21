@@ -13,8 +13,6 @@
 		75A371B018DCC4BD0081B494 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A371AE18DCC4BD0081B494 /* InfoPlist.strings */; };
 		75A371B218DCC4BD0081B494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A371B118DCC4BD0081B494 /* main.m */; };
 		75A371B618DCC4BD0081B494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A371B518DCC4BD0081B494 /* AppDelegate.m */; };
-		75A371B918DCC4BD0081B494 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A371B718DCC4BD0081B494 /* Main_iPhone.storyboard */; };
-		75A371BC18DCC4BD0081B494 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A371BA18DCC4BD0081B494 /* Main_iPad.storyboard */; };
 		75A371BF18DCC4BD0081B494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A371BE18DCC4BD0081B494 /* ViewController.m */; };
 		75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A371C018DCC4BD0081B494 /* Images.xcassets */; };
 		75A371C818DCC4BD0081B494 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371C718DCC4BD0081B494 /* XCTest.framework */; };
@@ -22,6 +20,60 @@
 		75A371CA18DCC4BD0081B494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A918DCC4BD0081B494 /* UIKit.framework */; };
 		75A371D218DCC4BD0081B494 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A371D018DCC4BD0081B494 /* InfoPlist.strings */; };
 		75A371D418DCC4BD0081B494 /* audiobooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A371D318DCC4BD0081B494 /* audiobooksTests.m */; };
+		75A371DE18DCC4DC0081B494 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A371DD18DCC4DC0081B494 /* ViewController.xib */; };
+		75A371E118DCC5C10081B494 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A371E018DCC5C10081B494 /* Utils.m */; };
+		75A371E318DCC6DA0081B494 /* ViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A371E218DCC6DA0081B494 /* ViewController~ipad.xib */; };
+		75A3721818DCC74F0081B494 /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371E818DCC74F0081B494 /* arrow_left.png */; };
+		75A3721918DCC74F0081B494 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371E918DCC74F0081B494 /* arrow_right.png */; };
+		75A3721A18DCC74F0081B494 /* background_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371EA18DCC74F0081B494 /* background_main.png */; };
+		75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371EC18DCC74F0081B494 /* magic_fairy_tales_eng.png */; };
+		75A3721C18DCC74F0081B494 /* magic_fairy_tales_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371ED18DCC74F0081B494 /* magic_fairy_tales_rus.png */; };
+		75A3721D18DCC74F0081B494 /* enchanted_water_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F018DCC74F0081B494 /* enchanted_water_eng.png */; };
+		75A3721E18DCC74F0081B494 /* giant_cake_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F118DCC74F0081B494 /* giant_cake_eng.png */; };
+		75A3721F18DCC74F0081B494 /* performance_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F218DCC74F0081B494 /* performance_eng.png */; };
+		75A3722018DCC74F0081B494 /* sea_carnival_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F318DCC74F0081B494 /* sea_carnival_eng.png */; };
+		75A3722118DCC74F0081B494 /* strange_parcel_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F418DCC74F0081B494 /* strange_parcel_eng.png */; };
+		75A3722218DCC74F0081B494 /* unwelcome_guest_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F518DCC74F0081B494 /* unwelcome_guest_eng.png */; };
+		75A3722318DCC74F0081B494 /* enchanted_water_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F718DCC74F0081B494 /* enchanted_water_rus.png */; };
+		75A3722418DCC74F0081B494 /* giant_cake_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F818DCC74F0081B494 /* giant_cake_rus.png */; };
+		75A3722518DCC74F0081B494 /* performance_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371F918DCC74F0081B494 /* performance_rus.png */; };
+		75A3722618DCC74F0081B494 /* sea_carnival_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371FA18DCC74F0081B494 /* sea_carnival_rus.png */; };
+		75A3722718DCC74F0081B494 /* strange_parcel_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371FB18DCC74F0081B494 /* strange_parcel_rus.png */; };
+		75A3722818DCC74F0081B494 /* unwelcome_guest_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371FC18DCC74F0081B494 /* unwelcome_guest_rus.png */; };
+		75A3722918DCC74F0081B494 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371FE18DCC74F0081B494 /* book.png */; };
+		75A3722A18DCC74F0081B494 /* contributors.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A371FF18DCC74F0081B494 /* contributors.png */; };
+		75A3722B18DCC74F0081B494 /* language_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720018DCC74F0081B494 /* language_rus.png */; };
+		75A3722C18DCC74F0081B494 /* gift_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720118DCC74F0081B494 /* gift_eng.png */; };
+		75A3722D18DCC74F0081B494 /* gift_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720218DCC74F0081B494 /* gift_rus.png */; };
+		75A3722E18DCC74F0081B494 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720318DCC74F0081B494 /* heart.png */; };
+		75A3722F18DCC74F0081B494 /* language_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720418DCC74F0081B494 /* language_eng.png */; };
+		75A3723018DCC74F0081B494 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720618DCC74F0081B494 /* icon.png */; };
+		75A3723118DCC74F0081B494 /* page1_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720818DCC74F0081B494 /* page1_demo.jpg */; };
+		75A3723218DCC74F0081B494 /* page2_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720918DCC74F0081B494 /* page2_demo.jpg */; };
+		75A3723318DCC74F0081B494 /* page3_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720A18DCC74F0081B494 /* page3_demo.jpg */; };
+		75A3723418DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720B18DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx */; };
+		75A3723518DCC74F0081B494 /* enchanted_water_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720C18DCC74F0081B494 /* enchanted_water_eng.mp3 */; };
+		75A3723618DCC74F0081B494 /* enchanted_water_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720D18DCC74F0081B494 /* enchanted_water_rus.mp3 */; };
+		75A3723718DCC74F0081B494 /* giant_cake_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720E18DCC74F0081B494 /* giant_cake_eng.mp3 */; };
+		75A3723818DCC74F0081B494 /* giant_cake_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3720F18DCC74F0081B494 /* giant_cake_rus.mp3 */; };
+		75A3723918DCC74F0081B494 /* performance_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721018DCC74F0081B494 /* performance_eng.mp3 */; };
+		75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721118DCC74F0081B494 /* performance_rus.mp3 */; };
+		75A3723B18DCC74F0081B494 /* sea_carnival_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721218DCC74F0081B494 /* sea_carnival_eng.mp3 */; };
+		75A3723C18DCC74F0081B494 /* sea_carnival_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721318DCC74F0081B494 /* sea_carnival_rus.mp3 */; };
+		75A3723D18DCC74F0081B494 /* strange_parcel_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721418DCC74F0081B494 /* strange_parcel_eng.mp3 */; };
+		75A3723E18DCC74F0081B494 /* strange_parcel_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721518DCC74F0081B494 /* strange_parcel_rus.mp3 */; };
+		75A3723F18DCC74F0081B494 /* unwelcome_guest_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721618DCC74F0081B494 /* unwelcome_guest_eng.mp3 */; };
+		75A3724018DCC74F0081B494 /* unwelcome_guest_rus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75A3721718DCC74F0081B494 /* unwelcome_guest_rus.mp3 */; };
+		75A3724418DCD43C0081B494 /* AudioBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3724218DCD43C0081B494 /* AudioBookViewController.m */; };
+		75A3724518DCD43C0081B494 /* AudioBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724318DCD43C0081B494 /* AudioBookViewController.xib */; };
+		75A3724718DCD4520081B494 /* AudioBookViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724618DCD4520081B494 /* AudioBookViewController~ipad.xib */; };
+		75A3724A18DCDE060081B494 /* texts_eng.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724818DCDE060081B494 /* texts_eng.plist */; };
+		75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724918DCDE060081B494 /* texts_rus.plist */; };
+		75A3724F18DCE2CC0081B494 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3724D18DCE2CC0081B494 /* ContributorsViewController.m */; };
+		75A3725018DCE2CC0081B494 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724E18DCE2CC0081B494 /* ContributorsViewController.xib */; };
+		75A3725218DCE2F40081B494 /* ContributorsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A3725118DCE2F40081B494 /* ContributorsViewController~ipad.xib */; };
+		75A3725518DCF1E80081B494 /* background_main 640_1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3725318DCF1E80081B494 /* background_main 640_1136.png */; };
+		75A3725618DCF1E80081B494 /* background_main_640_960.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3725418DCF1E80081B494 /* background_main_640_960.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +97,6 @@
 		75A371B318DCC4BD0081B494 /* audiobooks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "audiobooks-Prefix.pch"; sourceTree = "<group>"; };
 		75A371B418DCC4BD0081B494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A371B518DCC4BD0081B494 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75A371B818DCC4BD0081B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		75A371BB18DCC4BD0081B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		75A371BD18DCC4BD0081B494 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		75A371BE18DCC4BD0081B494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		75A371C018DCC4BD0081B494 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +105,63 @@
 		75A371CF18DCC4BD0081B494 /* audiobooksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "audiobooksTests-Info.plist"; sourceTree = "<group>"; };
 		75A371D118DCC4BD0081B494 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75A371D318DCC4BD0081B494 /* audiobooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audiobooksTests.m; sourceTree = "<group>"; };
+		75A371DD18DCC4DC0081B494 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		75A371DF18DCC5C10081B494 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		75A371E018DCC5C10081B494 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		75A371E218DCC6DA0081B494 /* ViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~ipad.xib"; sourceTree = "<group>"; };
+		75A371E818DCC74F0081B494 /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
+		75A371E918DCC74F0081B494 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		75A371EA18DCC74F0081B494 /* background_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_main.png; sourceTree = "<group>"; };
+		75A371EC18DCC74F0081B494 /* magic_fairy_tales_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magic_fairy_tales_eng.png; sourceTree = "<group>"; };
+		75A371ED18DCC74F0081B494 /* magic_fairy_tales_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magic_fairy_tales_rus.png; sourceTree = "<group>"; };
+		75A371F018DCC74F0081B494 /* enchanted_water_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enchanted_water_eng.png; sourceTree = "<group>"; };
+		75A371F118DCC74F0081B494 /* giant_cake_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giant_cake_eng.png; sourceTree = "<group>"; };
+		75A371F218DCC74F0081B494 /* performance_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = performance_eng.png; sourceTree = "<group>"; };
+		75A371F318DCC74F0081B494 /* sea_carnival_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea_carnival_eng.png; sourceTree = "<group>"; };
+		75A371F418DCC74F0081B494 /* strange_parcel_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strange_parcel_eng.png; sourceTree = "<group>"; };
+		75A371F518DCC74F0081B494 /* unwelcome_guest_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unwelcome_guest_eng.png; sourceTree = "<group>"; };
+		75A371F718DCC74F0081B494 /* enchanted_water_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enchanted_water_rus.png; sourceTree = "<group>"; };
+		75A371F818DCC74F0081B494 /* giant_cake_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giant_cake_rus.png; sourceTree = "<group>"; };
+		75A371F918DCC74F0081B494 /* performance_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = performance_rus.png; sourceTree = "<group>"; };
+		75A371FA18DCC74F0081B494 /* sea_carnival_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea_carnival_rus.png; sourceTree = "<group>"; };
+		75A371FB18DCC74F0081B494 /* strange_parcel_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strange_parcel_rus.png; sourceTree = "<group>"; };
+		75A371FC18DCC74F0081B494 /* unwelcome_guest_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unwelcome_guest_rus.png; sourceTree = "<group>"; };
+		75A371FE18DCC74F0081B494 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		75A371FF18DCC74F0081B494 /* contributors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contributors.png; sourceTree = "<group>"; };
+		75A3720018DCC74F0081B494 /* language_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = language_rus.png; sourceTree = "<group>"; };
+		75A3720118DCC74F0081B494 /* gift_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift_eng.png; sourceTree = "<group>"; };
+		75A3720218DCC74F0081B494 /* gift_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift_rus.png; sourceTree = "<group>"; };
+		75A3720318DCC74F0081B494 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		75A3720418DCC74F0081B494 /* language_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = language_eng.png; sourceTree = "<group>"; };
+		75A3720618DCC74F0081B494 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		75A3720818DCC74F0081B494 /* page1_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page1_demo.jpg; sourceTree = "<group>"; };
+		75A3720918DCC74F0081B494 /* page2_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2_demo.jpg; sourceTree = "<group>"; };
+		75A3720A18DCC74F0081B494 /* page3_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3_demo.jpg; sourceTree = "<group>"; };
+		75A3720B18DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ТЗ для программиста AudioBooks.docx"; sourceTree = "<group>"; };
+		75A3720C18DCC74F0081B494 /* enchanted_water_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enchanted_water_eng.mp3; sourceTree = "<group>"; };
+		75A3720D18DCC74F0081B494 /* enchanted_water_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enchanted_water_rus.mp3; sourceTree = "<group>"; };
+		75A3720E18DCC74F0081B494 /* giant_cake_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = giant_cake_eng.mp3; sourceTree = "<group>"; };
+		75A3720F18DCC74F0081B494 /* giant_cake_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = giant_cake_rus.mp3; sourceTree = "<group>"; };
+		75A3721018DCC74F0081B494 /* performance_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = performance_eng.mp3; sourceTree = "<group>"; };
+		75A3721118DCC74F0081B494 /* performance_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = performance_rus.mp3; sourceTree = "<group>"; };
+		75A3721218DCC74F0081B494 /* sea_carnival_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sea_carnival_eng.mp3; sourceTree = "<group>"; };
+		75A3721318DCC74F0081B494 /* sea_carnival_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sea_carnival_rus.mp3; sourceTree = "<group>"; };
+		75A3721418DCC74F0081B494 /* strange_parcel_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = strange_parcel_eng.mp3; sourceTree = "<group>"; };
+		75A3721518DCC74F0081B494 /* strange_parcel_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = strange_parcel_rus.mp3; sourceTree = "<group>"; };
+		75A3721618DCC74F0081B494 /* unwelcome_guest_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unwelcome_guest_eng.mp3; sourceTree = "<group>"; };
+		75A3721718DCC74F0081B494 /* unwelcome_guest_rus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unwelcome_guest_rus.mp3; sourceTree = "<group>"; };
+		75A3724118DCD43C0081B494 /* AudioBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioBookViewController.h; sourceTree = "<group>"; };
+		75A3724218DCD43C0081B494 /* AudioBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioBookViewController.m; sourceTree = "<group>"; };
+		75A3724318DCD43C0081B494 /* AudioBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioBookViewController.xib; sourceTree = "<group>"; };
+		75A3724618DCD4520081B494 /* AudioBookViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AudioBookViewController~ipad.xib"; sourceTree = "<group>"; };
+		75A3724818DCDE060081B494 /* texts_eng.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = texts_eng.plist; sourceTree = "<group>"; };
+		75A3724918DCDE060081B494 /* texts_rus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = texts_rus.plist; sourceTree = "<group>"; };
+		75A3724C18DCE2CC0081B494 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
+		75A3724D18DCE2CC0081B494 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
+		75A3724E18DCE2CC0081B494 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
+		75A3725118DCE2F40081B494 /* ContributorsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ContributorsViewController~ipad.xib"; sourceTree = "<group>"; };
+		75A3725318DCF1E80081B494 /* background_main 640_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_main 640_1136.png"; sourceTree = "<group>"; };
+		75A3725418DCF1E80081B494 /* background_main_640_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_main_640_960.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +223,21 @@
 			children = (
 				75A371B418DCC4BD0081B494 /* AppDelegate.h */,
 				75A371B518DCC4BD0081B494 /* AppDelegate.m */,
-				75A371B718DCC4BD0081B494 /* Main_iPhone.storyboard */,
-				75A371BA18DCC4BD0081B494 /* Main_iPad.storyboard */,
 				75A371BD18DCC4BD0081B494 /* ViewController.h */,
 				75A371BE18DCC4BD0081B494 /* ViewController.m */,
+				75A371DD18DCC4DC0081B494 /* ViewController.xib */,
+				75A371E218DCC6DA0081B494 /* ViewController~ipad.xib */,
+				75A3724118DCD43C0081B494 /* AudioBookViewController.h */,
+				75A3724218DCD43C0081B494 /* AudioBookViewController.m */,
+				75A3724318DCD43C0081B494 /* AudioBookViewController.xib */,
+				75A3724618DCD4520081B494 /* AudioBookViewController~ipad.xib */,
+				75A3724C18DCE2CC0081B494 /* ContributorsViewController.h */,
+				75A3724D18DCE2CC0081B494 /* ContributorsViewController.m */,
+				75A3724E18DCE2CC0081B494 /* ContributorsViewController.xib */,
+				75A3725118DCE2F40081B494 /* ContributorsViewController~ipad.xib */,
+				75A371DF18DCC5C10081B494 /* Utils.h */,
+				75A371E018DCC5C10081B494 /* Utils.m */,
+				75A371E618DCC74F0081B494 /* Resources */,
 				75A371C018DCC4BD0081B494 /* Images.xcassets */,
 				75A371AC18DCC4BD0081B494 /* Supporting Files */,
 			);
@@ -153,6 +271,122 @@
 				75A371D018DCC4BD0081B494 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75A371E618DCC74F0081B494 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75A3724818DCDE060081B494 /* texts_eng.plist */,
+				75A3724918DCDE060081B494 /* texts_rus.plist */,
+				75A371E718DCC74F0081B494 /* elfishki_audiobook */,
+				75A3720C18DCC74F0081B494 /* enchanted_water_eng.mp3 */,
+				75A3720D18DCC74F0081B494 /* enchanted_water_rus.mp3 */,
+				75A3720E18DCC74F0081B494 /* giant_cake_eng.mp3 */,
+				75A3720F18DCC74F0081B494 /* giant_cake_rus.mp3 */,
+				75A3721018DCC74F0081B494 /* performance_eng.mp3 */,
+				75A3721118DCC74F0081B494 /* performance_rus.mp3 */,
+				75A3721218DCC74F0081B494 /* sea_carnival_eng.mp3 */,
+				75A3721318DCC74F0081B494 /* sea_carnival_rus.mp3 */,
+				75A3721418DCC74F0081B494 /* strange_parcel_eng.mp3 */,
+				75A3721518DCC74F0081B494 /* strange_parcel_rus.mp3 */,
+				75A3721618DCC74F0081B494 /* unwelcome_guest_eng.mp3 */,
+				75A3721718DCC74F0081B494 /* unwelcome_guest_rus.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		75A371E718DCC74F0081B494 /* elfishki_audiobook */ = {
+			isa = PBXGroup;
+			children = (
+				75A371E818DCC74F0081B494 /* arrow_left.png */,
+				75A371E918DCC74F0081B494 /* arrow_right.png */,
+				75A371EA18DCC74F0081B494 /* background_main.png */,
+				75A3725318DCF1E80081B494 /* background_main 640_1136.png */,
+				75A3725418DCF1E80081B494 /* background_main_640_960.png */,
+				75A371EB18DCC74F0081B494 /* banner_caption */,
+				75A371EE18DCC74F0081B494 /* book covers */,
+				75A371FD18DCC74F0081B494 /* buttons */,
+				75A3720518DCC74F0081B494 /* icon */,
+				75A3720718DCC74F0081B494 /* previews */,
+				75A3720B18DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx */,
+			);
+			path = elfishki_audiobook;
+			sourceTree = "<group>";
+		};
+		75A371EB18DCC74F0081B494 /* banner_caption */ = {
+			isa = PBXGroup;
+			children = (
+				75A371EC18DCC74F0081B494 /* magic_fairy_tales_eng.png */,
+				75A371ED18DCC74F0081B494 /* magic_fairy_tales_rus.png */,
+			);
+			path = banner_caption;
+			sourceTree = "<group>";
+		};
+		75A371EE18DCC74F0081B494 /* book covers */ = {
+			isa = PBXGroup;
+			children = (
+				75A371EF18DCC74F0081B494 /* eng */,
+				75A371F618DCC74F0081B494 /* rus */,
+			);
+			path = "book covers";
+			sourceTree = "<group>";
+		};
+		75A371EF18DCC74F0081B494 /* eng */ = {
+			isa = PBXGroup;
+			children = (
+				75A371F018DCC74F0081B494 /* enchanted_water_eng.png */,
+				75A371F118DCC74F0081B494 /* giant_cake_eng.png */,
+				75A371F218DCC74F0081B494 /* performance_eng.png */,
+				75A371F318DCC74F0081B494 /* sea_carnival_eng.png */,
+				75A371F418DCC74F0081B494 /* strange_parcel_eng.png */,
+				75A371F518DCC74F0081B494 /* unwelcome_guest_eng.png */,
+			);
+			path = eng;
+			sourceTree = "<group>";
+		};
+		75A371F618DCC74F0081B494 /* rus */ = {
+			isa = PBXGroup;
+			children = (
+				75A371F718DCC74F0081B494 /* enchanted_water_rus.png */,
+				75A371F818DCC74F0081B494 /* giant_cake_rus.png */,
+				75A371F918DCC74F0081B494 /* performance_rus.png */,
+				75A371FA18DCC74F0081B494 /* sea_carnival_rus.png */,
+				75A371FB18DCC74F0081B494 /* strange_parcel_rus.png */,
+				75A371FC18DCC74F0081B494 /* unwelcome_guest_rus.png */,
+			);
+			path = rus;
+			sourceTree = "<group>";
+		};
+		75A371FD18DCC74F0081B494 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				75A371FE18DCC74F0081B494 /* book.png */,
+				75A371FF18DCC74F0081B494 /* contributors.png */,
+				75A3720018DCC74F0081B494 /* language_rus.png */,
+				75A3720118DCC74F0081B494 /* gift_eng.png */,
+				75A3720218DCC74F0081B494 /* gift_rus.png */,
+				75A3720318DCC74F0081B494 /* heart.png */,
+				75A3720418DCC74F0081B494 /* language_eng.png */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		75A3720518DCC74F0081B494 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				75A3720618DCC74F0081B494 /* icon.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		75A3720718DCC74F0081B494 /* previews */ = {
+			isa = PBXGroup;
+			children = (
+				75A3720818DCC74F0081B494 /* page1_demo.jpg */,
+				75A3720918DCC74F0081B494 /* page2_demo.jpg */,
+				75A3720A18DCC74F0081B494 /* page3_demo.jpg */,
+			);
+			path = previews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +465,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A371BC18DCC4BD0081B494 /* Main_iPad.storyboard in Resources */,
+				75A3722B18DCC74F0081B494 /* language_rus.png in Resources */,
+				75A3722E18DCC74F0081B494 /* heart.png in Resources */,
+				75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */,
+				75A3723118DCC74F0081B494 /* page1_demo.jpg in Resources */,
+				75A3721818DCC74F0081B494 /* arrow_left.png in Resources */,
+				75A3723618DCC74F0081B494 /* enchanted_water_rus.mp3 in Resources */,
+				75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */,
 				75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */,
-				75A371B918DCC4BD0081B494 /* Main_iPhone.storyboard in Resources */,
+				75A3721918DCC74F0081B494 /* arrow_right.png in Resources */,
+				75A3724518DCD43C0081B494 /* AudioBookViewController.xib in Resources */,
+				75A371DE18DCC4DC0081B494 /* ViewController.xib in Resources */,
+				75A3724A18DCDE060081B494 /* texts_eng.plist in Resources */,
+				75A3722518DCC74F0081B494 /* performance_rus.png in Resources */,
+				75A3722018DCC74F0081B494 /* sea_carnival_eng.png in Resources */,
+				75A3723718DCC74F0081B494 /* giant_cake_eng.mp3 in Resources */,
+				75A3723F18DCC74F0081B494 /* unwelcome_guest_eng.mp3 in Resources */,
+				75A3723E18DCC74F0081B494 /* strange_parcel_rus.mp3 in Resources */,
+				75A3723418DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx in Resources */,
+				75A3722A18DCC74F0081B494 /* contributors.png in Resources */,
+				75A3725218DCE2F40081B494 /* ContributorsViewController~ipad.xib in Resources */,
+				75A3722818DCC74F0081B494 /* unwelcome_guest_rus.png in Resources */,
+				75A3722918DCC74F0081B494 /* book.png in Resources */,
+				75A3721D18DCC74F0081B494 /* enchanted_water_eng.png in Resources */,
+				75A3725518DCF1E80081B494 /* background_main 640_1136.png in Resources */,
+				75A3722C18DCC74F0081B494 /* gift_eng.png in Resources */,
+				75A3721C18DCC74F0081B494 /* magic_fairy_tales_rus.png in Resources */,
+				75A3723C18DCC74F0081B494 /* sea_carnival_rus.mp3 in Resources */,
 				75A371B018DCC4BD0081B494 /* InfoPlist.strings in Resources */,
+				75A3723318DCC74F0081B494 /* page3_demo.jpg in Resources */,
+				75A371E318DCC6DA0081B494 /* ViewController~ipad.xib in Resources */,
+				75A3725018DCE2CC0081B494 /* ContributorsViewController.xib in Resources */,
+				75A3724018DCC74F0081B494 /* unwelcome_guest_rus.mp3 in Resources */,
+				75A3723D18DCC74F0081B494 /* strange_parcel_eng.mp3 in Resources */,
+				75A3722218DCC74F0081B494 /* unwelcome_guest_eng.png in Resources */,
+				75A3722718DCC74F0081B494 /* strange_parcel_rus.png in Resources */,
+				75A3722418DCC74F0081B494 /* giant_cake_rus.png in Resources */,
+				75A3722118DCC74F0081B494 /* strange_parcel_eng.png in Resources */,
+				75A3723818DCC74F0081B494 /* giant_cake_rus.mp3 in Resources */,
+				75A3721F18DCC74F0081B494 /* performance_eng.png in Resources */,
+				75A3721A18DCC74F0081B494 /* background_main.png in Resources */,
+				75A3723518DCC74F0081B494 /* enchanted_water_eng.mp3 in Resources */,
+				75A3722D18DCC74F0081B494 /* gift_rus.png in Resources */,
+				75A3721E18DCC74F0081B494 /* giant_cake_eng.png in Resources */,
+				75A3725618DCF1E80081B494 /* background_main_640_960.png in Resources */,
+				75A3723918DCC74F0081B494 /* performance_eng.mp3 in Resources */,
+				75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */,
+				75A3723218DCC74F0081B494 /* page2_demo.jpg in Resources */,
+				75A3723B18DCC74F0081B494 /* sea_carnival_eng.mp3 in Resources */,
+				75A3724718DCD4520081B494 /* AudioBookViewController~ipad.xib in Resources */,
+				75A3722618DCC74F0081B494 /* sea_carnival_rus.png in Resources */,
+				75A3722318DCC74F0081B494 /* enchanted_water_rus.png in Resources */,
+				75A3722F18DCC74F0081B494 /* language_eng.png in Resources */,
+				75A3723018DCC74F0081B494 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +538,10 @@
 			files = (
 				75A371BF18DCC4BD0081B494 /* ViewController.m in Sources */,
 				75A371B618DCC4BD0081B494 /* AppDelegate.m in Sources */,
+				75A3724418DCD43C0081B494 /* AudioBookViewController.m in Sources */,
 				75A371B218DCC4BD0081B494 /* main.m in Sources */,
+				75A3724F18DCE2CC0081B494 /* ContributorsViewController.m in Sources */,
+				75A371E118DCC5C10081B494 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,22 +570,6 @@
 				75A371AF18DCC4BD0081B494 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		75A371B718DCC4BD0081B494 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75A371B818DCC4BD0081B494 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		75A371BA18DCC4BD0081B494 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75A371BB18DCC4BD0081B494 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		75A371D018DCC4BD0081B494 /* InfoPlist.strings */ = {
