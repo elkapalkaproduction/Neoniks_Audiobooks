@@ -19,4 +19,29 @@
     [button setTag:tag];
     return button;
 }
++(NSString *)getTitle:(int)tag{
+    switch (tag) {
+        case 1:
+            return guestTitle;
+            break;
+        case 2:
+            return cakeTitle;
+            break;
+        case 3:
+            return waterTitle;
+            break;
+        case 4:
+            return carnivalTitle;
+            break;
+        case 5:
+            return parcelTitle;
+            break;
+        case 6:
+            return fountainTitle;
+            break;
+        default:
+            return @"";
+            break;
+    }
+}
 @end

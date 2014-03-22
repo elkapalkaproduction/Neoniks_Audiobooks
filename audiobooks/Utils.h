@@ -44,4 +44,5 @@
 @interface Utils : NSObject
 +(UIImage *)imageWithName:(NSString *)name;
 +(UIButton *)buttonWithFrame:(CGRect)rect tag:(int)tag image:(UIImage *)image target:(id)target selector:(SEL)selector;
++(NSString *)getTitle:(int)tag;
 @end

@@ -10,7 +10,10 @@
                 <outlet property="descriptionTextView" destination="9M9-WH-Rmt" id="YNA-Vc-20C"/>
                 <outlet property="languageButton" destination="tGQ-X3-XX9" id="7M3-7v-eih"/>
                 <outlet property="mainTitleImage" destination="eX0-zk-y4A" id="Bdq-RM-ZWs"/>
+                <outlet property="playButton" destination="8gR-YX-m4X" id="9wf-Gq-QM5"/>
+                <outlet property="timeSlider" destination="VYz-JC-5EC" id="0nw-LJ-FU8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2Yf-gP-zp6"/>
+                <outlet property="volumeSlider" destination="e6a-HZ-uqN" id="Q1p-Cj-QcF"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -105,6 +108,30 @@
                     <rect key="frame" x="0.0" y="934" width="768" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8gR-YX-m4X">
+                    <rect key="frame" x="334" y="827" width="100" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="ej8-m2-fQZ"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="VYz-JC-5EC">
+                    <rect key="frame" x="202" y="865" width="364" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="timeSlider:" destination="-1" eventType="valueChanged" id="vnF-GG-9xv"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="e6a-HZ-uqN">
+                    <rect key="frame" x="49" y="845" width="118" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="volumeSlider:" destination="-1" eventType="valueChanged" id="2hN-VD-dFd"/>
+                    </connections>
+                </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

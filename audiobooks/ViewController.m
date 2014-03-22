@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AudioBookViewController.h"
 #import "ContributorsViewController.h"
+#import "AudioPlayer.h"
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
 @property (strong, nonatomic) IBOutlet UIButton *languageButton;
@@ -61,6 +62,7 @@
     [_fountainCoverButton setBackgroundImage:[Utils imageWithName:fountainTitle] forState:UIControlStateNormal];
 }
 - (IBAction)changeLanguage:(id)sender {
+    [[AudioPlayer sharedManager] stop];
         if (kRussian) {
             kSetEnglish;
         } else {
@@ -77,7 +79,8 @@
     
 }
 - (IBAction)goToListenBook:(id)sender {
-    AudioBookViewController *audioBook = [[AudioBookViewController alloc] initWithNibName:@"AudioBookViewController" bundle:nil tag:[sender tag]];
+    int tag = (int)[sender tag];
+    AudioBookViewController *audioBook = [[AudioBookViewController alloc] initWithNibName:@"AudioBookViewController" bundle:nil tag:tag];
     [self.navigationController pushViewController:audioBook animated:YES];
     
 }

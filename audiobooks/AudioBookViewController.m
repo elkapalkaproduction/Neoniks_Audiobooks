@@ -9,13 +9,17 @@
 #import "AudioBookViewController.h"
 #import "Utils.h"
 #import "ContributorsViewController.h"
+#import "AudioPlayer.h"
 @interface AudioBookViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *coverImage;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
 @property (strong, nonatomic) IBOutlet UIButton *languageButton;
 @property (assign, nonatomic) int numberOfTale;
-
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
+@property (strong, nonatomic) IBOutlet UISlider *timeSlider;
+@property (strong, nonatomic) IBOutlet UISlider *volumeSlider;
+@property (strong, nonatomic) NSTimer *timer;
 @end
 
 @implementation AudioBookViewController
@@ -37,41 +41,38 @@
 
     [self updateLanguage];
 }
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"alertClicked" object:nil];
+}
 - (void)viewDidLoad
 {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLanguage) name:@"alertClicked" object:nil];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
--(NSString *)getTitle{
-    switch (_numberOfTale) {
-        case 1:
-            return guestTitle;
-            break;
-        case 2:
-            return cakeTitle;
-            break;
-        case 3:
-            return waterTitle;
-            break;
-        case 4:
-            return carnivalTitle;
-            break;
-        case 5:
-            return parcelTitle;
-            break;
-        case 6:
-            return fountainTitle;
-            break;
-        default:
-            return @"";
-            break;
-    }
-}
+
 -(void)updateLanguage{
     _descriptionTextView.text = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:[NSString stringWithFormat:@"%d",_numberOfTale]];
     [_mainTitleImage setImage:[Utils imageWithName:@"magic_fairy_tales"]];
-    [_coverImage setImage:[Utils imageWithName:[self getTitle]]];
+    [_coverImage setImage:[Utils imageWithName:[Utils getTitle:_numberOfTale]]];
     [_languageButton setBackgroundImage:[Utils imageWithName:@"language"] forState:UIControlStateNormal];
+    _volumeSlider.value = [[AudioPlayer sharedManager] audioPlayer].volume;
+    if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
+        [_playButton setTitle:@"Pause" forState:UIControlStateNormal];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
+    } else {
+        if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack]){
+            [self updateSlider];
+        } else {
+            _timeSlider.value = 0.f;
+        }
+        [_timer invalidate];
+        [_playButton setTitle:@"Play" forState:UIControlStateNormal];
+
+    }
+}
+-(void)updateSlider{
+    _timeSlider.value = [[[AudioPlayer sharedManager] audioPlayer]currentTime]/[[[AudioPlayer sharedManager] audioPlayer] duration];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -85,6 +86,7 @@
 }
 
 - (IBAction)changeLanguage:(id)sender {
+    [[AudioPlayer sharedManager] stop];
     if (kRussian) {
         kSetEnglish;
     } else {
@@ -100,6 +102,25 @@
         _numberOfTale = 1;
     }
     [self updateLanguage];
+}
+- (IBAction)play:(id)sender {
+    [[AudioPlayer sharedManager] playBook:_numberOfTale];
+    if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
+        [_playButton setTitle:@"Pause" forState:UIControlStateNormal];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
+
+    } else {
+        [_timer invalidate];
+        [_playButton setTitle:@"Play" forState:UIControlStateNormal];
+        
+    }
+}
+- (IBAction)timeSlider:(id)sender {
+    [[[AudioPlayer sharedManager] audioPlayer]setCurrentTime:_timeSlider.value*[[[AudioPlayer sharedManager] audioPlayer] duration]];
+    
+}
+- (IBAction)volumeSlider:(id)sender {
+    [[[AudioPlayer sharedManager] audioPlayer] setVolume:_volumeSlider.value];
 }
 
 @end

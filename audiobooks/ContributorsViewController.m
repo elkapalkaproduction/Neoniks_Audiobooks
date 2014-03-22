@@ -7,7 +7,7 @@
 //
 
 #import "ContributorsViewController.h"
-
+#import "AudioPlayer.h"
 @interface ContributorsViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
@@ -64,6 +64,7 @@
 - (IBAction)goToNeoniki:(id)sender {
 }
 - (IBAction)changeLanguage:(id)sender {
+    [[AudioPlayer sharedManager] stop];
     if (kRussian) {
         kSetEnglish;
     } else {

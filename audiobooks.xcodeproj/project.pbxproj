@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A184A918DD8759007A4A22 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184A818DD8759007A4A22 /* AudioPlayer.m */; };
 		75A371A618DCC4BD0081B494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A518DCC4BD0081B494 /* Foundation.framework */; };
 		75A371A818DCC4BD0081B494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A718DCC4BD0081B494 /* CoreGraphics.framework */; };
 		75A371AA18DCC4BD0081B494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A918DCC4BD0081B494 /* UIKit.framework */; };
@@ -87,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75A184A718DD8759007A4A22 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		75A184A818DD8759007A4A22 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		75A371A218DCC4BD0081B494 /* audiobooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audiobooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A371A518DCC4BD0081B494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75A371A718DCC4BD0081B494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +240,8 @@
 				75A3725118DCE2F40081B494 /* ContributorsViewController~ipad.xib */,
 				75A371DF18DCC5C10081B494 /* Utils.h */,
 				75A371E018DCC5C10081B494 /* Utils.m */,
+				75A184A718DD8759007A4A22 /* AudioPlayer.h */,
+				75A184A818DD8759007A4A22 /* AudioPlayer.m */,
 				75A371E618DCC74F0081B494 /* Resources */,
 				75A371C018DCC4BD0081B494 /* Images.xcassets */,
 				75A371AC18DCC4BD0081B494 /* Supporting Files */,
@@ -538,6 +543,7 @@
 			files = (
 				75A371BF18DCC4BD0081B494 /* ViewController.m in Sources */,
 				75A371B618DCC4BD0081B494 /* AppDelegate.m in Sources */,
+				75A184A918DD8759007A4A22 /* AudioPlayer.m in Sources */,
 				75A3724418DCD43C0081B494 /* AudioBookViewController.m in Sources */,
 				75A371B218DCC4BD0081B494 /* main.m in Sources */,
 				75A3724F18DCE2CC0081B494 /* ContributorsViewController.m in Sources */,
@@ -740,6 +746,7 @@
 				75A371D918DCC4BD0081B494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75A371DA18DCC4BD0081B494 /* Build configuration list for PBXNativeTarget "audiobooksTests" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +755,7 @@
 				75A371DC18DCC4BD0081B494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
