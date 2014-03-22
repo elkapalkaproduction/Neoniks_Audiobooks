@@ -34,5 +34,13 @@ programming be Andrei Vidrasco
 art by Dmitri Gavrilov and Tamara Gerasun
 produced by Pavel Mamaev
 </string>
+	<key>Error</key>
+	<string>Error</string>
+	<key>Purchase Stopped</key>
+	<string>Purchase Stopped</string>
+	<key>message1</key>
+	<string>Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app&apos;s customer support for assistance.</string>
+	<key>message2</key>
+	<string>Please try again later, or contact the app&apos;s customer support for assistance.</string>
 </dict>
 </plist>

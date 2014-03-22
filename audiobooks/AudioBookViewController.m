@@ -162,7 +162,7 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
 
-         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Purchase Stopped"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
          
@@ -177,7 +177,7 @@
     } onError:^(NSError *error) {
         [SVProgressHUD dismiss];
         [self updateLanguage];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Error"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message2"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         
         [alert show];
         
@@ -197,7 +197,7 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
          
-         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Purchase Stopped"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
          
