@@ -76,8 +76,8 @@
                     <rect key="frame" x="10" y="166" width="300" height="115"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <mutableString key="text">Посреди Сверкающего моря есть удивительный Радужный остров, который действительно похож на радугу. Там живет волшебный народец, который называют «эльфишками». Некоторые из них умеют летать как бабочки, а некоторые плавают как русалки. А еще на Радужном острове водятся говорящие звери и молчаливые, но очень умные деревья. Одним словом, там всегда происходят чудеса.
-</mutableString>
+                    <string key="text">Посреди Сверкающего моря есть удивительный Радужный остров, который действительно похож на радугу. Там живет волшебный народец, который называют «эльфишками». Некоторые из них умеют летать как бабочки, а некоторые плавают как русалки. А еще на Радужном острове водятся говорящие звери и молчаливые, но очень умные деревья. Одним словом, там всегда происходят чудеса.
+</string>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="10.5"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

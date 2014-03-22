@@ -18,7 +18,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *coverImage;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
-@property (strong, nonatomic) IBOutlet UIImageView *salesImage;
 
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
 
@@ -71,14 +70,13 @@
     _buyThisBook.hidden = [Utils isPurcahed:_numberOfTale];
     _restoreThisBook.hidden = [Utils isPurcahed:_numberOfTale];
     _buyAllBook.hidden = [Utils isPurcahed:_numberOfTale];
-    _salesImage.hidden = [Utils isPurcahed:_numberOfTale];
     
     
     
     _descriptionTextView.text = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:[NSString stringWithFormat:@"%d",_numberOfTale]];
     [_mainTitleImage setImage:[Utils imageWithName:@"magic_fairy_tales"]];
     [_coverImage setImage:[Utils imageWithName:[Utils getTitle:_numberOfTale]]];
-    [_salesImage setImage:[Utils imageWithName:@"sale"]];
+    [_buyAllBook setBackgroundImage:[Utils imageWithName:@"sale"] forState:UIControlStateNormal];
     [_languageButton setBackgroundImage:[Utils imageWithName:@"language"] forState:UIControlStateNormal];
     _volumeSlider.value = [[AudioPlayer sharedManager] audioPlayer].volume;
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
@@ -164,7 +162,6 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
 
-         NSLog(@"User Cancelled Transaction");
          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
@@ -180,7 +177,6 @@
     } onError:^(NSError *error) {
         [SVProgressHUD dismiss];
         [self updateLanguage];
-        NSLog(@"User Cancelled Transaction");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         
         [alert show];
@@ -201,7 +197,6 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
          
-         NSLog(@"User Cancelled Transaction");
          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
