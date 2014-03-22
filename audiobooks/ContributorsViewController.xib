@@ -47,10 +47,6 @@
                         <action selector="goToNeoniki:" destination="-1" eventType="touchUpInside" id="pJy-pg-YHK"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enchanted_water_eng.png" id="ri7-wx-GsS">
-                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8wX-H5-D7r">
                     <rect key="frame" x="208" y="4" width="33" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,7 +105,6 @@
         <image name="background_main 640_1136.png" width="640" height="1136"/>
         <image name="book.png" width="87" height="91"/>
         <image name="contributors.png" width="87" height="88"/>
-        <image name="enchanted_water_eng.png" width="450" height="600"/>
         <image name="gift_eng.png" width="362" height="337"/>
         <image name="heart.png" width="87" height="88"/>
         <image name="language_eng.png" width="87" height="88"/>

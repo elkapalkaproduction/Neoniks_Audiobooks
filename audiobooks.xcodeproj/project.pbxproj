@@ -20,6 +20,10 @@
 		75A184C918DE02BC007A4A22 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184C718DE02BC007A4A22 /* SVProgressHUD.m */; };
 		75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CA18DE05A7007A4A22 /* sale_eng.png */; };
 		75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CB18DE05A7007A4A22 /* sale_rus.png */; };
+		75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */; };
+		75A184D318DE299F007A4A22 /* 1_speaker_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CF18DE299F007A4A22 /* 1_speaker_plus.png */; };
+		75A184D418DE299F007A4A22 /* player_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184D018DE299F007A4A22 /* player_pause.png */; };
+		75A184D518DE299F007A4A22 /* player_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184D118DE299F007A4A22 /* player_play.png */; };
 		75A371A618DCC4BD0081B494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A518DCC4BD0081B494 /* Foundation.framework */; };
 		75A371A818DCC4BD0081B494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A718DCC4BD0081B494 /* CoreGraphics.framework */; };
 		75A371AA18DCC4BD0081B494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A918DCC4BD0081B494 /* UIKit.framework */; };
@@ -123,6 +127,10 @@
 		75A184C718DE02BC007A4A22 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		75A184CA18DE05A7007A4A22 /* sale_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_eng.png; sourceTree = "<group>"; };
 		75A184CB18DE05A7007A4A22 /* sale_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_rus.png; sourceTree = "<group>"; };
+		75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_speaker_minus.png; sourceTree = "<group>"; };
+		75A184CF18DE299F007A4A22 /* 1_speaker_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_speaker_plus.png; sourceTree = "<group>"; };
+		75A184D018DE299F007A4A22 /* player_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_pause.png; sourceTree = "<group>"; };
+		75A184D118DE299F007A4A22 /* player_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_play.png; sourceTree = "<group>"; };
 		75A371A218DCC4BD0081B494 /* audiobooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audiobooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A371A518DCC4BD0081B494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75A371A718DCC4BD0081B494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -386,6 +394,10 @@
 				75A371EA18DCC74F0081B494 /* background_main.png */,
 				75A3725318DCF1E80081B494 /* background_main 640_1136.png */,
 				75A3725418DCF1E80081B494 /* background_main_640_960.png */,
+				75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */,
+				75A184CF18DE299F007A4A22 /* 1_speaker_plus.png */,
+				75A184D018DE299F007A4A22 /* player_pause.png */,
+				75A184D118DE299F007A4A22 /* player_play.png */,
 				75A371EB18DCC74F0081B494 /* banner_caption */,
 				75A371EE18DCC74F0081B494 /* book covers */,
 				75A371FD18DCC74F0081B494 /* buttons */,
@@ -553,6 +565,7 @@
 				75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */,
 				75A3723118DCC74F0081B494 /* page1_demo.jpg in Resources */,
 				75A3721818DCC74F0081B494 /* arrow_left.png in Resources */,
+				75A184D418DE299F007A4A22 /* player_pause.png in Resources */,
 				75A3723618DCC74F0081B494 /* enchanted_water_rus.mp3 in Resources */,
 				75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */,
 				75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */,
@@ -578,6 +591,7 @@
 				75A3721C18DCC74F0081B494 /* magic_fairy_tales_rus.png in Resources */,
 				75A3723C18DCC74F0081B494 /* sea_carnival_rus.mp3 in Resources */,
 				75A371B018DCC4BD0081B494 /* InfoPlist.strings in Resources */,
+				75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */,
 				75A3723318DCC74F0081B494 /* page3_demo.jpg in Resources */,
 				75A371E318DCC6DA0081B494 /* ViewController~ipad.xib in Resources */,
 				75A3725018DCE2CC0081B494 /* ContributorsViewController.xib in Resources */,
@@ -588,6 +602,7 @@
 				75A3722418DCC74F0081B494 /* giant_cake_rus.png in Resources */,
 				75A3722118DCC74F0081B494 /* strange_parcel_eng.png in Resources */,
 				75A3723818DCC74F0081B494 /* giant_cake_rus.mp3 in Resources */,
+				75A184D318DE299F007A4A22 /* 1_speaker_plus.png in Resources */,
 				75A3721F18DCC74F0081B494 /* performance_eng.png in Resources */,
 				75A3721A18DCC74F0081B494 /* background_main.png in Resources */,
 				75A3723518DCC74F0081B494 /* enchanted_water_eng.mp3 in Resources */,
@@ -597,6 +612,7 @@
 				75A3723918DCC74F0081B494 /* performance_eng.mp3 in Resources */,
 				75A184C018DDF424007A4A22 /* MKStoreKitConfigs.plist in Resources */,
 				75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */,
+				75A184D518DE299F007A4A22 /* player_play.png in Resources */,
 				75A3723218DCC74F0081B494 /* page2_demo.jpg in Resources */,
 				75A3723B18DCC74F0081B494 /* sea_carnival_eng.mp3 in Resources */,
 				75A3724718DCD4520081B494 /* AudioBookViewController~ipad.xib in Resources */,

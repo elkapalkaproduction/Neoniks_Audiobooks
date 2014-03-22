@@ -19,6 +19,11 @@
     [button setTag:tag];
     return button;
 }
++(NSString *)getTimeForSeconds:(double)time{
+    int minutes = floor(time/60);
+    int seconds = round(time - minutes * 60);
+    return [NSString stringWithFormat:@"%02d:%02d",minutes,seconds];
+}
 +(NSString *)getTitle:(int)tag{
     switch (tag) {
         case 1:
@@ -43,6 +48,9 @@
             return @"";
             break;
     }
+}
++(void)changeYPos:(int)y forItem:(id)item{
+    [item setFrame:CGRectMake([item frame].origin.x, y, [item frame].size.width, [item frame].size.height)];
 }
 +(NSString *)getPurchased:(int)tag{
     switch (tag) {

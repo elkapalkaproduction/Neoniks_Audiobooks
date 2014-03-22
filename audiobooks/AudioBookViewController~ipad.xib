@@ -9,11 +9,15 @@
                 <outlet property="buyAllBook" destination="8Zr-Il-VIP" id="a8v-a5-f5a"/>
                 <outlet property="buyThisBook" destination="aej-UL-WvJ" id="3nP-Kp-LW5"/>
                 <outlet property="coverImage" destination="mFn-V3-kEu" id="lcF-Yr-DBS"/>
+                <outlet property="currentTimeLabel" destination="qAP-LB-zIR" id="taF-HU-YYX"/>
                 <outlet property="descriptionTextView" destination="9M9-WH-Rmt" id="YNA-Vc-20C"/>
+                <outlet property="endTimeLabel" destination="QZr-y2-MA4" id="l5Z-Hh-3ts"/>
                 <outlet property="languageButton" destination="tGQ-X3-XX9" id="7M3-7v-eih"/>
                 <outlet property="mainTitleImage" destination="eX0-zk-y4A" id="Bdq-RM-ZWs"/>
                 <outlet property="playButton" destination="8gR-YX-m4X" id="9wf-Gq-QM5"/>
                 <outlet property="restoreThisBook" destination="Vrt-2c-RHu" id="I2t-fu-9Ls"/>
+                <outlet property="soundMinus" destination="nq6-CH-Jq5" id="0v4-yg-erC"/>
+                <outlet property="soundPlus" destination="CWJ-Kp-21w" id="z75-B2-FOB"/>
                 <outlet property="timeSlider" destination="VYz-JC-5EC" id="0nw-LJ-FU8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2Yf-gP-zp6"/>
                 <outlet property="volumeSlider" destination="e6a-HZ-uqN" id="Q1p-Cj-QcF"/>
@@ -80,12 +84,10 @@
                     <rect key="frame" x="85" y="618" width="598" height="201"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">Ginger had extremely strong wings and often helped her parents, the mail carriers, to deliver packages.
+                    <mutableString key="text">Волшебные человечки очень любили море и часто приходили на пляж, чтобы искупаться и позагорать. А раз в году они надевали специальные костюмы и отправлялись на Подводный Карнавал.
         
-        One day Mom asked her and her younger brother Pickly to deliver a very important package from the Underwater Town.
-        
-        Ginger did not trust Pickly to carry the parcel, and while they were flying over the city, they started fighting and dropped the package into the river. Who would know that there was a living creature inside the parcel?
-</string>
+        Маленький Пикли и его подружка Ринка отлично провели время в Лабиринте Загадок и даже выиграли главный приз — золотую ракушку. Но пока они веселились, старшей сестре Пикли было совсем не до смеха — ведь она подумала, что ее брат потерялся…
+</mutableString>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -112,9 +114,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8gR-YX-m4X">
-                    <rect key="frame" x="334" y="827" width="100" height="30"/>
+                    <rect key="frame" x="360" y="829" width="48" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Play">
+                    <state key="normal" backgroundImage="player_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -122,23 +124,26 @@
                     </connections>
                 </button>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="VYz-JC-5EC">
-                    <rect key="frame" x="202" y="865" width="364" height="31"/>
+                    <rect key="frame" x="202" y="788" width="364" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="timeSlider:" destination="-1" eventType="valueChanged" id="vnF-GG-9xv"/>
                     </connections>
                 </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="e6a-HZ-uqN">
-                    <rect key="frame" x="49" y="845" width="118" height="31"/>
+                    <rect key="frame" x="202" y="888" width="364" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="volumeSlider:" destination="-1" eventType="valueChanged" id="2hN-VD-dFd"/>
                     </connections>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aej-UL-WvJ">
-                    <rect key="frame" x="488" y="896" width="95" height="30"/>
+                    <rect key="frame" x="413" y="836" width="195" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Buy this book">
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Купить эту книжку">
+                        <color key="titleColor" red="0.16983199794905834" green="1" blue="0.11522514116264282" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -146,9 +151,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vrt-2c-RHu">
-                    <rect key="frame" x="376" y="896" width="53" height="30"/>
+                    <rect key="frame" x="160" y="836" width="195" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Restore">
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Восстановить покупку">
+                        <color key="titleColor" red="0.16983199794905834" green="1" blue="0.11522514116264282" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -165,12 +172,36 @@
                         <action selector="buyAllBook:" destination="-1" eventType="touchUpInside" id="b7H-qf-ATe"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_speaker_minus.png" id="nq6-CH-Jq5">
+                    <rect key="frame" x="148" y="879" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_speaker_plus.png" id="CWJ-Kp-21w">
+                    <rect key="frame" x="572" y="879" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qAP-LB-zIR">
+                    <rect key="frame" x="148" y="793" width="43" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QZr-y2-MA4">
+                    <rect key="frame" x="577" y="793" width="43" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>
+        <image name="1_speaker_minus.png" width="96" height="96"/>
+        <image name="1_speaker_plus.png" width="96" height="96"/>
         <image name="arrow_left.png" width="131" height="116"/>
         <image name="arrow_right.png" width="131" height="116"/>
         <image name="background_main.png" width="1536" height="2048"/>
@@ -180,6 +211,7 @@
         <image name="heart.png" width="87" height="88"/>
         <image name="language_eng.png" width="87" height="88"/>
         <image name="magic_fairy_tales_eng.png" width="927" height="295"/>
+        <image name="player_play.png" width="128" height="128"/>
         <image name="sale_eng.png" width="175" height="171"/>
     </resources>
 </document>

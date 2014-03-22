@@ -29,18 +29,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
--(void)changeYPos:(int)y forItem:(id)item{
-    [item setFrame:CGRectMake([item frame].origin.x, y, [item frame].size.width, [item frame].size.height)];
-}
+
 -(void)viewWillAppear:(BOOL)animated{
     if (IS_PHONE4) {
-        [self changeYPos:158 forItem:_guestCoverButton];
-        [self changeYPos:158 forItem:_cakeCoverButton];
-        [self changeYPos:158 forItem:_waterCoverButton];
+        [Utils changeYPos:158 forItem:_guestCoverButton];
+        [Utils changeYPos:158 forItem:_cakeCoverButton];
+        [Utils changeYPos:158 forItem:_waterCoverButton];
         
-        [self changeYPos:296 forItem:_carnivalCoverButton];
-        [self changeYPos:296 forItem:_parcelCoverButton];
-        [self changeYPos:296 forItem:_fountainCoverButton];
+        [Utils changeYPos:296 forItem:_carnivalCoverButton];
+        [Utils changeYPos:296 forItem:_parcelCoverButton];
+        [Utils changeYPos:296 forItem:_fountainCoverButton];
     }
 
     [super viewWillAppear:animated];

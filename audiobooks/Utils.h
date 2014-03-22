@@ -52,6 +52,8 @@
 @interface Utils : NSObject
 +(UIImage *)imageWithName:(NSString *)name;
 +(UIButton *)buttonWithFrame:(CGRect)rect tag:(int)tag image:(UIImage *)image target:(id)target selector:(SEL)selector;
++(NSString *)getTimeForSeconds:(double)time;
++(void)changeYPos:(int)y forItem:(id)item;
 +(NSString *)getTitle:(int)tag;
 +(NSString *)getPurchased:(int)tag;
 +(BOOL)isPurcahed:(int)tag;

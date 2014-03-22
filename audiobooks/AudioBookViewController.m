@@ -18,6 +18,8 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *coverImage;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
+@property (strong, nonatomic) IBOutlet UIImageView *soundMinus;
+@property (strong, nonatomic) IBOutlet UIImageView *soundPlus;
 
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
 
@@ -30,6 +32,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *buyThisBook;
 @property (strong, nonatomic) IBOutlet UIButton *restoreThisBook;
 @property (strong, nonatomic) IBOutlet UIButton *buyAllBook;
+@property (strong, nonatomic) IBOutlet UILabel *endTimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *currentTimeLabel;
 
 @end
 
@@ -47,7 +51,18 @@
 - (IBAction)goToContentList:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 -(void)viewWillAppear:(BOOL)animated{
+    if (IS_PHONE4) {
+        [Utils changeYPos:388 forItem:_restoreThisBook];
+        [Utils changeYPos:388 forItem:_buyThisBook];
+        [Utils changeYPos:325 forItem:_endTimeLabel];
+        [Utils changeYPos:325 forItem:_currentTimeLabel];
+        [Utils changeYPos:355 forItem:_playButton];
+        [Utils changeYPos:320 forItem:_timeSlider];
+        _descriptionTextView.frame = CGRectMake(_descriptionTextView.frame.origin.x, _descriptionTextView.frame.origin.y, _descriptionTextView.frame.size.width, 60);
+        
+    }
     [super viewWillAppear:animated];
 
     [self updateLanguage];
@@ -64,9 +79,8 @@
 
 -(void)updateLanguage{
     
-    _playButton.hidden = ![Utils isPurcahed:_numberOfTale];
-    _timeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
-    _volumeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
+     _playButton.hidden = _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
+    
     _buyThisBook.hidden = [Utils isPurcahed:_numberOfTale];
     _restoreThisBook.hidden = [Utils isPurcahed:_numberOfTale];
     _buyAllBook.hidden = [Utils isPurcahed:_numberOfTale];
@@ -80,7 +94,7 @@
     [_languageButton setBackgroundImage:[Utils imageWithName:@"language"] forState:UIControlStateNormal];
     _volumeSlider.value = [[AudioPlayer sharedManager] audioPlayer].volume;
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
-        [_playButton setTitle:@"Pause" forState:UIControlStateNormal];
+        [_playButton setBackgroundImage:[UIImage imageNamed:@"player_pause"] forState:UIControlStateNormal];
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
     } else {
         if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack]){
@@ -89,11 +103,14 @@
             _timeSlider.value = 0.f;
         }
         [_timer invalidate];
-        [_playButton setTitle:@"Play" forState:UIControlStateNormal];
+        [_playButton setBackgroundImage:[UIImage imageNamed:@"player_play"] forState:UIControlStateNormal];
 
     }
 }
 -(void)updateSlider{
+    _currentTimeLabel.text = [Utils getTimeForSeconds:[[[AudioPlayer sharedManager] audioPlayer] currentTime]];
+    _endTimeLabel.text = [Utils getTimeForSeconds:[[[AudioPlayer sharedManager] audioPlayer] duration]];
+    
     _timeSlider.value = [[[AudioPlayer sharedManager] audioPlayer]currentTime]/[[[AudioPlayer sharedManager] audioPlayer] duration];
 }
 - (void)didReceiveMemoryWarning
@@ -128,12 +145,12 @@
 - (IBAction)play:(id)sender {
     [[AudioPlayer sharedManager] playBook:_numberOfTale];
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
-        [_playButton setTitle:@"Pause" forState:UIControlStateNormal];
+        [_playButton setBackgroundImage:[UIImage imageNamed:@"player_pause"] forState:UIControlStateNormal];
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
 
     } else {
         [_timer invalidate];
-        [_playButton setTitle:@"Play" forState:UIControlStateNormal];
+        [_playButton setBackgroundImage:[UIImage imageNamed:@"player_play"] forState:UIControlStateNormal];
         
     }
 }

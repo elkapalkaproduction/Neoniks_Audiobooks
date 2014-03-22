@@ -74,10 +74,6 @@
                         <action selector="goToContentList:" destination="-1" eventType="touchUpInside" id="wOp-lA-H4F"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enchanted_water_eng.png" id="YOl-4e-ezk">
-                    <rect key="frame" x="0.0" y="934" width="768" height="90"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="edD-OG-rQJ">
                     <rect key="frame" x="294" y="476" width="181" height="168"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,7 +92,6 @@
     <resources>
         <image name="background_main.png" width="1536" height="2048"/>
         <image name="book.png" width="87" height="91"/>
-        <image name="enchanted_water_eng.png" width="450" height="600"/>
         <image name="gift_eng.png" width="362" height="337"/>
         <image name="heart.png" width="87" height="88"/>
         <image name="language_eng.png" width="87" height="88"/>

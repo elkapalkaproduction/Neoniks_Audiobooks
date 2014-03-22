@@ -6,11 +6,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioBookViewController">
             <connections>
+                <outlet property="buyAllBook" destination="WOb-er-kAm" id="yG4-E3-g58"/>
+                <outlet property="buyThisBook" destination="qeA-kO-tUk" id="URq-CR-Vfe"/>
                 <outlet property="coverImage" destination="Ekf-Wr-XxU" id="cem-mO-5v5"/>
+                <outlet property="currentTimeLabel" destination="mGm-Pu-Byw" id="E57-Hh-APY"/>
                 <outlet property="descriptionTextView" destination="1AO-iD-uL5" id="mJK-Qj-b1Y"/>
+                <outlet property="endTimeLabel" destination="uCE-fl-n8a" id="NSt-uZ-eH1"/>
                 <outlet property="languageButton" destination="Fpl-16-B68" id="b64-I2-ulA"/>
                 <outlet property="mainTitleImage" destination="lKX-AQ-VOX" id="oi9-HR-sxb"/>
+                <outlet property="playButton" destination="X9c-s5-HqH" id="Qq2-YI-eVG"/>
+                <outlet property="restoreThisBook" destination="Swk-hf-8hT" id="jqU-9M-dkE"/>
+                <outlet property="soundMinus" destination="idZ-kw-HEW" id="hFg-Si-XTK"/>
+                <outlet property="soundPlus" destination="ckB-8j-ied" id="KlQ-0D-66s"/>
+                <outlet property="timeSlider" destination="iNb-rj-BhK" id="Mhj-KX-2xo"/>
                 <outlet property="view" destination="Obt-Cc-abD" id="6rL-hF-NAW"/>
+                <outlet property="volumeSlider" destination="M6N-EI-LmU" id="NBp-oE-HcT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -74,16 +84,14 @@
                         <action selector="changeBook:" destination="-1" eventType="touchUpInside" id="eR1-Am-hwz"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" id="1AO-iD-uL5">
-                    <rect key="frame" x="10" y="262" width="300" height="166"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" id="1AO-iD-uL5">
+                    <rect key="frame" x="10" y="262" width="300" height="135"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">Ginger had extremely strong wings and often helped her parents, the mail carriers, to deliver packages.
+                    <mutableString key="text">Волшебные человечки очень любили море и часто приходили на пляж, чтобы искупаться и позагорать. А раз в году они надевали специальные костюмы и отправлялись на Подводный Карнавал.
         
-        One day Mom asked her and her younger brother Pickly to deliver a very important package from the Underwater Town.
-        
-        Ginger did not trust Pickly to carry the parcel, and while they were flying over the city, they started fighting and dropped the package into the river. Who would know that there was a living creature inside the parcel?
-</string>
+        Маленький Пикли и его подружка Ринка отлично провели время в Лабиринте Загадок и даже выиграли главный приз — золотую ракушку. Но пока они веселились, старшей сестре Пикли было совсем не до смеха — ведь она подумала, что ее брат потерялся…
+</mutableString>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="10.5"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -105,6 +113,87 @@
                         <action selector="goToContentList:" destination="-1" eventType="touchUpInside" id="z2c-7n-3HB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WOb-er-kAm">
+                    <rect key="frame" x="181" y="209" width="60" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="sale_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyAllBook:" destination="-1" eventType="touchUpInside" id="wQH-7b-Far"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qeA-kO-tUk">
+                    <rect key="frame" x="165" y="433" width="145" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Купить эту книжку">
+                        <color key="titleColor" red="0.1698319979" green="1" blue="0.11522514120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyThisBook:" destination="-1" eventType="touchUpInside" id="esb-5o-OJc"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Swk-hf-8hT">
+                    <rect key="frame" x="10" y="433" width="145" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Восстановить покупку">
+                        <color key="titleColor" red="0.1698319979" green="1" blue="0.11522514120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="restoreThisBook:" destination="-1" eventType="touchUpInside" id="3N4-mQ-DCI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X9c-s5-HqH">
+                    <rect key="frame" x="145" y="438" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" backgroundImage="player_play.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="OCe-rd-Rgf"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="iNb-rj-BhK">
+                    <rect key="frame" x="48" y="398" width="224" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="timeSlider:" destination="-1" eventType="valueChanged" id="kFU-jJ-WRX"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="M6N-EI-LmU">
+                    <rect key="frame" x="48" y="478" width="224" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <action selector="volumeSlider:" destination="-1" eventType="valueChanged" id="sLa-Lw-DYR"/>
+                    </connections>
+                </slider>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_speaker_minus.png" id="idZ-kw-HEW">
+                    <rect key="frame" x="10" y="478" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_speaker_plus.png" id="ckB-8j-ied">
+                    <rect key="frame" x="280" y="478" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mGm-Pu-Byw">
+                    <rect key="frame" x="6" y="403" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uCE-fl-n8a">
+                    <rect key="frame" x="280" y="403" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -112,6 +201,8 @@
         </view>
     </objects>
     <resources>
+        <image name="1_speaker_minus.png" width="96" height="96"/>
+        <image name="1_speaker_plus.png" width="96" height="96"/>
         <image name="arrow_left.png" width="131" height="116"/>
         <image name="arrow_right.png" width="131" height="116"/>
         <image name="background_main 640_1136.png" width="640" height="1136"/>
@@ -121,5 +212,7 @@
         <image name="heart.png" width="87" height="88"/>
         <image name="language_eng.png" width="87" height="88"/>
         <image name="magic_fairy_tales_eng.png" width="927" height="295"/>
+        <image name="player_play.png" width="128" height="128"/>
+        <image name="sale_eng.png" width="175" height="171"/>
     </resources>
 </document>
