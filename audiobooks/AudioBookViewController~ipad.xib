@@ -6,11 +6,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioBookViewController">
             <connections>
+                <outlet property="buyAllBook" destination="8Zr-Il-VIP" id="a8v-a5-f5a"/>
+                <outlet property="buyThisBook" destination="aej-UL-WvJ" id="3nP-Kp-LW5"/>
                 <outlet property="coverImage" destination="mFn-V3-kEu" id="lcF-Yr-DBS"/>
                 <outlet property="descriptionTextView" destination="9M9-WH-Rmt" id="YNA-Vc-20C"/>
                 <outlet property="languageButton" destination="tGQ-X3-XX9" id="7M3-7v-eih"/>
                 <outlet property="mainTitleImage" destination="eX0-zk-y4A" id="Bdq-RM-ZWs"/>
                 <outlet property="playButton" destination="8gR-YX-m4X" id="9wf-Gq-QM5"/>
+                <outlet property="restoreThisBook" destination="Vrt-2c-RHu" id="I2t-fu-9Ls"/>
+                <outlet property="salesImage" destination="ZOD-XI-47j" id="Pwr-8i-ZzO"/>
                 <outlet property="timeSlider" destination="VYz-JC-5EC" id="0nw-LJ-FU8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2Yf-gP-zp6"/>
                 <outlet property="volumeSlider" destination="e6a-HZ-uqN" id="Q1p-Cj-QcF"/>
@@ -132,6 +136,40 @@
                         <action selector="volumeSlider:" destination="-1" eventType="valueChanged" id="2hN-VD-dFd"/>
                     </connections>
                 </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aej-UL-WvJ">
+                    <rect key="frame" x="488" y="896" width="95" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Buy this book">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyThisBook:" destination="-1" eventType="touchUpInside" id="OMx-Zg-c1o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vrt-2c-RHu">
+                    <rect key="frame" x="376" y="896" width="53" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Restore">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="restoreThisBook:" destination="-1" eventType="touchUpInside" id="DK3-k7-5F3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Zr-Il-VIP">
+                    <rect key="frame" x="248" y="896" width="85" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Buy all book">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyAllBook:" destination="-1" eventType="touchUpInside" id="b7H-qf-ATe"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sale_eng.png" id="ZOD-XI-47j">
+                    <rect key="frame" x="459" y="532" width="87" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -147,5 +185,6 @@
         <image name="heart.png" width="87" height="88"/>
         <image name="language_eng.png" width="87" height="88"/>
         <image name="magic_fairy_tales_eng.png" width="927" height="295"/>
+        <image name="sale_eng.png" width="175" height="171"/>
     </resources>
 </document>

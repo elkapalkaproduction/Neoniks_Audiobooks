@@ -10,16 +10,28 @@
 #import "Utils.h"
 #import "ContributorsViewController.h"
 #import "AudioPlayer.h"
+#import "MKStoreManager.h"
+#import "SVProgressHUD.h"
 @interface AudioBookViewController ()
+@property (strong, nonatomic) NSTimer *timer;
+@property (assign, nonatomic) int numberOfTale;
+
 @property (strong, nonatomic) IBOutlet UIImageView *coverImage;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
+@property (strong, nonatomic) IBOutlet UIImageView *salesImage;
+
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
+
 @property (strong, nonatomic) IBOutlet UIButton *languageButton;
-@property (assign, nonatomic) int numberOfTale;
+
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) IBOutlet UISlider *timeSlider;
 @property (strong, nonatomic) IBOutlet UISlider *volumeSlider;
-@property (strong, nonatomic) NSTimer *timer;
+
+@property (strong, nonatomic) IBOutlet UIButton *buyThisBook;
+@property (strong, nonatomic) IBOutlet UIButton *restoreThisBook;
+@property (strong, nonatomic) IBOutlet UIButton *buyAllBook;
+
 @end
 
 @implementation AudioBookViewController
@@ -52,9 +64,21 @@
 }
 
 -(void)updateLanguage{
+    
+    _playButton.hidden = ![Utils isPurcahed:_numberOfTale];
+    _timeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
+    _volumeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
+    _buyThisBook.hidden = [Utils isPurcahed:_numberOfTale];
+    _restoreThisBook.hidden = [Utils isPurcahed:_numberOfTale];
+    _buyAllBook.hidden = [Utils isPurcahed:_numberOfTale];
+    _salesImage.hidden = [Utils isPurcahed:_numberOfTale];
+    
+    
+    
     _descriptionTextView.text = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:[NSString stringWithFormat:@"%d",_numberOfTale]];
     [_mainTitleImage setImage:[Utils imageWithName:@"magic_fairy_tales"]];
     [_coverImage setImage:[Utils imageWithName:[Utils getTitle:_numberOfTale]]];
+    [_salesImage setImage:[Utils imageWithName:@"sale"]];
     [_languageButton setBackgroundImage:[Utils imageWithName:@"language"] forState:UIControlStateNormal];
     _volumeSlider.value = [[AudioPlayer sharedManager] audioPlayer].volume;
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
@@ -122,5 +146,69 @@
 - (IBAction)volumeSlider:(id)sender {
     [[[AudioPlayer sharedManager] audioPlayer] setVolume:_volumeSlider.value];
 }
+
+#pragma mark - 
+#pragma mark - Buying Books
+
+- (IBAction)buyThisBook:(id)sender {
+    NSString *productID = [Utils getPurchased:_numberOfTale];
+    [SVProgressHUD show];
+    [[MKStoreManager sharedManager] buyFeature:productID onComplete:^(NSString* purchasedFeature, NSData *purchasedReceipt)
+     {
+         [SVProgressHUD dismiss];
+         [self updateLanguage];
+         NSLog(@"Purchased: %@", purchasedFeature);
+     }
+                                   onCancelled:^
+     {
+         [SVProgressHUD dismiss];
+         [self updateLanguage];
+
+         NSLog(@"User Cancelled Transaction");
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         
+         [alert show];
+         
+     }];
+
+}
+- (IBAction)restoreThisBook:(id)sender {
+    [SVProgressHUD show];
+    [[MKStoreManager sharedManager] restorePreviousTransactionsOnComplete:^{
+        [SVProgressHUD dismiss];
+        [self updateLanguage];
+    } onError:^(NSError *error) {
+        [SVProgressHUD dismiss];
+        [self updateLanguage];
+        NSLog(@"User Cancelled Transaction");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        
+    }];
+}
+- (IBAction)buyAllBook:(id)sender {
+    NSString *productID = [Utils getPurchased:0];
+    [SVProgressHUD show];
+    [[MKStoreManager sharedManager] buyFeature:productID onComplete:^(NSString* purchasedFeature, NSData *purchasedReceipt)
+     {
+         [SVProgressHUD dismiss];
+         [self updateLanguage];
+         NSLog(@"Purchased: %@", purchasedFeature);
+     }
+                                   onCancelled:^
+     {
+         [SVProgressHUD dismiss];
+         [self updateLanguage];
+         
+         NSLog(@"User Cancelled Transaction");
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase Stopped" message:@"Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app's customer support for assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         
+         [alert show];
+         
+     }];
+
+}
+
 
 @end

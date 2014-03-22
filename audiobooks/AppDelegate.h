@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
+#import "MKStoreManager.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) ViewController *viewController;
 @property (strong, nonatomic) UINavigationController *navController;

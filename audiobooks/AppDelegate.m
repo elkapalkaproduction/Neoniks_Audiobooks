@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +19,7 @@
 	}
     if (IS_PHONE)
         [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];

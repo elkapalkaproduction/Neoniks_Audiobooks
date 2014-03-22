@@ -7,7 +7,7 @@
 //
 
 #import "Utils.h"
-
+#import "MKStoreManager.h"
 @implementation Utils
 +(UIImage *)imageWithName:(NSString *)name{
    return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(name) ofType:@"png"]];
@@ -43,5 +43,38 @@
             return @"";
             break;
     }
+}
++(NSString *)getPurchased:(int)tag{
+    switch (tag) {
+        case 1:
+            return guestInApp;
+            break;
+        case 2:
+            return cakeInApp;
+            break;
+        case 3:
+            return waterInApp;
+            break;
+        case 4:
+            return carnivalInApp;
+            break;
+        case 5:
+            return parcelInApp;
+            break;
+        case 6:
+            return fountainInApp;
+            break;
+        default:
+            return allInApp;
+            break;
+    }
+}
++(BOOL)isPurcahed:(int)tag{
+    NSString *featuredID = [Utils getPurchased:tag];
+    
+    BOOL isUnlockByDefault = [featuredID isEqualToString:cakeInApp];
+    BOOL isUnlockedFeatured = [MKStoreManager isFeaturePurchased:featuredID];
+    BOOL isUnlockedAll = [MKStoreManager isFeaturePurchased:allInApp];
+    return isUnlockByDefault || isUnlockedFeatured || isUnlockedAll;
 }
 @end

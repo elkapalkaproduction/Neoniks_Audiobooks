@@ -16,8 +16,16 @@
 
 ////------////
 
+///In-apps
 
-
+#define guestInApp @"isPurchasedInApp"
+#define cakeInApp @"isPurchasedInApp"
+#define waterInApp @"com.neoniks.audiobooks.water.unlock"
+#define carnivalInApp @"com.neoniks.audiobooks.carnival.unlock"
+#define parcelInApp @"com.neoniks.audiobooks.parcel.unlock"
+#define fountainInApp @"com.neoniks.audiobooks.fountain.unlock"
+#define allInApp @"com.neoniks.audiobooks.all.unlock"
+////------////
 
 
 #define kLanguage @"PreferedLanguage"
@@ -45,4 +53,6 @@
 +(UIImage *)imageWithName:(NSString *)name;
 +(UIButton *)buttonWithFrame:(CGRect)rect tag:(int)tag image:(UIImage *)image target:(id)target selector:(SEL)selector;
 +(NSString *)getTitle:(int)tag;
++(NSString *)getPurchased:(int)tag;
++(BOOL)isPurcahed:(int)tag;
 @end

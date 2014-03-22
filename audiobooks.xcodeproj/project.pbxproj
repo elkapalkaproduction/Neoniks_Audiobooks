@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		75A184A918DD8759007A4A22 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184A818DD8759007A4A22 /* AudioPlayer.m */; };
+		75A184BC18DDF424007A4A22 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184AD18DDF424007A4A22 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		75A184BD18DDF424007A4A22 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184AF18DDF424007A4A22 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		75A184BE18DDF424007A4A22 /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184B118DDF424007A4A22 /* MKSKProduct.m */; };
+		75A184BF18DDF424007A4A22 /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184B318DDF424007A4A22 /* MKSKSubscriptionProduct.m */; };
+		75A184C018DDF424007A4A22 /* MKStoreKitConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A184B518DDF424007A4A22 /* MKStoreKitConfigs.plist */; };
+		75A184C118DDF424007A4A22 /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184B718DDF424007A4A22 /* MKStoreManager.m */; };
+		75A184C218DDF424007A4A22 /* MKStoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184B918DDF424007A4A22 /* MKStoreObserver.m */; };
+		75A184C318DDF424007A4A22 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184BB18DDF424007A4A22 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		75A184C818DE02BC007A4A22 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75A184C518DE02BC007A4A22 /* SVProgressHUD.bundle */; };
+		75A184C918DE02BC007A4A22 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A184C718DE02BC007A4A22 /* SVProgressHUD.m */; };
+		75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CA18DE05A7007A4A22 /* sale_eng.png */; };
+		75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CB18DE05A7007A4A22 /* sale_rus.png */; };
 		75A371A618DCC4BD0081B494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A518DCC4BD0081B494 /* Foundation.framework */; };
 		75A371A818DCC4BD0081B494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A718DCC4BD0081B494 /* CoreGraphics.framework */; };
 		75A371AA18DCC4BD0081B494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A371A918DCC4BD0081B494 /* UIKit.framework */; };
@@ -90,6 +102,27 @@
 /* Begin PBXFileReference section */
 		75A184A718DD8759007A4A22 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		75A184A818DD8759007A4A22 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		75A184AC18DDF424007A4A22 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		75A184AD18DDF424007A4A22 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		75A184AE18DDF424007A4A22 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		75A184AF18DDF424007A4A22 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		75A184B018DDF424007A4A22 /* MKSKProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKProduct.h; sourceTree = "<group>"; };
+		75A184B118DDF424007A4A22 /* MKSKProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKProduct.m; sourceTree = "<group>"; };
+		75A184B218DDF424007A4A22 /* MKSKSubscriptionProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKSubscriptionProduct.h; sourceTree = "<group>"; };
+		75A184B318DDF424007A4A22 /* MKSKSubscriptionProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKSubscriptionProduct.m; sourceTree = "<group>"; };
+		75A184B418DDF424007A4A22 /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
+		75A184B518DDF424007A4A22 /* MKStoreKitConfigs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MKStoreKitConfigs.plist; sourceTree = "<group>"; };
+		75A184B618DDF424007A4A22 /* MKStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
+		75A184B718DDF424007A4A22 /* MKStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
+		75A184B818DDF424007A4A22 /* MKStoreObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreObserver.h; sourceTree = "<group>"; };
+		75A184B918DDF424007A4A22 /* MKStoreObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreObserver.m; sourceTree = "<group>"; };
+		75A184BA18DDF424007A4A22 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		75A184BB18DDF424007A4A22 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		75A184C518DE02BC007A4A22 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		75A184C618DE02BC007A4A22 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		75A184C718DE02BC007A4A22 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		75A184CA18DE05A7007A4A22 /* sale_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_eng.png; sourceTree = "<group>"; };
+		75A184CB18DE05A7007A4A22 /* sale_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_rus.png; sourceTree = "<group>"; };
 		75A371A218DCC4BD0081B494 /* audiobooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audiobooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A371A518DCC4BD0081B494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75A371A718DCC4BD0081B494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,6 +224,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A184AA18DDF424007A4A22 /* MKStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				75A184AB18DDF424007A4A22 /* Externals */,
+				75A184B018DDF424007A4A22 /* MKSKProduct.h */,
+				75A184B118DDF424007A4A22 /* MKSKProduct.m */,
+				75A184B218DDF424007A4A22 /* MKSKSubscriptionProduct.h */,
+				75A184B318DDF424007A4A22 /* MKSKSubscriptionProduct.m */,
+				75A184B418DDF424007A4A22 /* MKStoreKitConfigs.h */,
+				75A184B518DDF424007A4A22 /* MKStoreKitConfigs.plist */,
+				75A184B618DDF424007A4A22 /* MKStoreManager.h */,
+				75A184B718DDF424007A4A22 /* MKStoreManager.m */,
+				75A184B818DDF424007A4A22 /* MKStoreObserver.h */,
+				75A184B918DDF424007A4A22 /* MKStoreObserver.m */,
+				75A184BA18DDF424007A4A22 /* SFHFKeychainUtils.h */,
+				75A184BB18DDF424007A4A22 /* SFHFKeychainUtils.m */,
+			);
+			path = MKStoreKit;
+			sourceTree = "<group>";
+		};
+		75A184AB18DDF424007A4A22 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				75A184AC18DDF424007A4A22 /* JSONKit.h */,
+				75A184AD18DDF424007A4A22 /* JSONKit.m */,
+				75A184AE18DDF424007A4A22 /* NSData+Base64.h */,
+				75A184AF18DDF424007A4A22 /* NSData+Base64.m */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		75A184C418DE02BC007A4A22 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				75A184C518DE02BC007A4A22 /* SVProgressHUD.bundle */,
+				75A184C618DE02BC007A4A22 /* SVProgressHUD.h */,
+				75A184C718DE02BC007A4A22 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		75A3719918DCC4BD0081B494 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +298,8 @@
 		75A371AB18DCC4BD0081B494 /* audiobooks */ = {
 			isa = PBXGroup;
 			children = (
+				75A184C418DE02BC007A4A22 /* SVProgressHUD */,
+				75A184AA18DDF424007A4A22 /* MKStoreKit */,
 				75A371B418DCC4BD0081B494 /* AppDelegate.h */,
 				75A371B518DCC4BD0081B494 /* AppDelegate.m */,
 				75A371BD18DCC4BD0081B494 /* ViewController.h */,
@@ -303,6 +379,8 @@
 		75A371E718DCC74F0081B494 /* elfishki_audiobook */ = {
 			isa = PBXGroup;
 			children = (
+				75A184CA18DE05A7007A4A22 /* sale_eng.png */,
+				75A184CB18DE05A7007A4A22 /* sale_rus.png */,
 				75A371E818DCC74F0081B494 /* arrow_left.png */,
 				75A371E918DCC74F0081B494 /* arrow_right.png */,
 				75A371EA18DCC74F0081B494 /* background_main.png */,
@@ -480,6 +558,7 @@
 				75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */,
 				75A3721918DCC74F0081B494 /* arrow_right.png in Resources */,
 				75A3724518DCD43C0081B494 /* AudioBookViewController.xib in Resources */,
+				75A184C818DE02BC007A4A22 /* SVProgressHUD.bundle in Resources */,
 				75A371DE18DCC4DC0081B494 /* ViewController.xib in Resources */,
 				75A3724A18DCDE060081B494 /* texts_eng.plist in Resources */,
 				75A3722518DCC74F0081B494 /* performance_rus.png in Resources */,
@@ -490,6 +569,7 @@
 				75A3723418DCC74F0081B494 /* ТЗ для программиста AudioBooks.docx in Resources */,
 				75A3722A18DCC74F0081B494 /* contributors.png in Resources */,
 				75A3725218DCE2F40081B494 /* ContributorsViewController~ipad.xib in Resources */,
+				75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */,
 				75A3722818DCC74F0081B494 /* unwelcome_guest_rus.png in Resources */,
 				75A3722918DCC74F0081B494 /* book.png in Resources */,
 				75A3721D18DCC74F0081B494 /* enchanted_water_eng.png in Resources */,
@@ -515,10 +595,12 @@
 				75A3721E18DCC74F0081B494 /* giant_cake_eng.png in Resources */,
 				75A3725618DCF1E80081B494 /* background_main_640_960.png in Resources */,
 				75A3723918DCC74F0081B494 /* performance_eng.mp3 in Resources */,
+				75A184C018DDF424007A4A22 /* MKStoreKitConfigs.plist in Resources */,
 				75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */,
 				75A3723218DCC74F0081B494 /* page2_demo.jpg in Resources */,
 				75A3723B18DCC74F0081B494 /* sea_carnival_eng.mp3 in Resources */,
 				75A3724718DCD4520081B494 /* AudioBookViewController~ipad.xib in Resources */,
+				75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */,
 				75A3722618DCC74F0081B494 /* sea_carnival_rus.png in Resources */,
 				75A3722318DCC74F0081B494 /* enchanted_water_rus.png in Resources */,
 				75A3722F18DCC74F0081B494 /* language_eng.png in Resources */,
@@ -541,13 +623,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A184C218DDF424007A4A22 /* MKStoreObserver.m in Sources */,
 				75A371BF18DCC4BD0081B494 /* ViewController.m in Sources */,
+				75A184C918DE02BC007A4A22 /* SVProgressHUD.m in Sources */,
 				75A371B618DCC4BD0081B494 /* AppDelegate.m in Sources */,
 				75A184A918DD8759007A4A22 /* AudioPlayer.m in Sources */,
 				75A3724418DCD43C0081B494 /* AudioBookViewController.m in Sources */,
 				75A371B218DCC4BD0081B494 /* main.m in Sources */,
 				75A3724F18DCE2CC0081B494 /* ContributorsViewController.m in Sources */,
+				75A184BC18DDF424007A4A22 /* JSONKit.m in Sources */,
+				75A184C118DDF424007A4A22 /* MKStoreManager.m in Sources */,
 				75A371E118DCC5C10081B494 /* Utils.m in Sources */,
+				75A184C318DDF424007A4A22 /* SFHFKeychainUtils.m in Sources */,
+				75A184BD18DDF424007A4A22 /* NSData+Base64.m in Sources */,
+				75A184BE18DDF424007A4A22 /* MKSKProduct.m in Sources */,
+				75A184BF18DDF424007A4A22 /* MKSKSubscriptionProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,9 +756,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audiobooks/audiobooks-Prefix.pch";
 				INFOPLIST_FILE = "audiobooks/audiobooks-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -679,9 +775,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audiobooks/audiobooks-Prefix.pch";
 				INFOPLIST_FILE = "audiobooks/audiobooks-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
