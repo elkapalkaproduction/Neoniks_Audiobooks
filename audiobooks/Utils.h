@@ -57,4 +57,5 @@
 +(NSString *)getTitle:(int)tag;
 +(NSString *)getPurchased:(int)tag;
 +(BOOL)isPurcahed:(int)tag;
++(NSString *)getStringFromPlist:(NSString *)key;
 @end

@@ -74,6 +74,9 @@
 
 }
 - (IBAction)goToRateOnStore:(id)sender {
+    NSURL *url = [NSURL URLWithString:[Utils getStringFromPlist:@"urlStore"]];
+    [[UIApplication sharedApplication] openURL:url];
+
     
 }
 - (IBAction)goToListenBook:(id)sender {

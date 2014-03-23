@@ -36,7 +36,7 @@
     [_audioPlayer prepareToPlay];
 
         if ([[[NSUserDefaults standardUserDefaults] objectForKey:key] doubleValue] > 0) {
-            [[[UIAlertView alloc] initWithTitle:@"" message:@"Continue playing" delegate:self cancelButtonTitle:@"From begin" otherButtonTitles:@"Continue", nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"" message:[Utils getStringFromPlist:@"Continue playing"] delegate:self cancelButtonTitle:[Utils getStringFromPlist:@"From beginning"] otherButtonTitles:[Utils getStringFromPlist:@"Continue"], nil] show];
             
         } else {
             [_audioPlayer play];

@@ -24,6 +24,9 @@
     int seconds = round(time - minutes * 60);
     return [NSString stringWithFormat:@"%02d:%02d",minutes,seconds];
 }
++(NSString *)getStringFromPlist:(NSString *)key{
+    return [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:key];
+}
 +(NSString *)getTitle:(int)tag{
     switch (tag) {
         case 1:

@@ -41,5 +41,19 @@ produced by Pavel Mamaev
 	<string>Either you cancelled the request or Apple reported a transaction error. Please try again later, or contact the app&apos;s customer support for assistance.</string>
 	<key>message2</key>
 	<string>Please try again later, or contact the app&apos;s customer support for assistance.</string>
+	<key>buyThisBook</key>
+	<string>Buy this book</string>
+	<key>restore</key>
+	<string>Restore</string>
+	<key>Continue playing</key>
+	<string>Continue playing</string>
+	<key>From beginning</key>
+	<string>From beginning</string>
+	<key>Continue</key>
+	<string>Continue</string>
+	<key>urlNeoniki</key>
+	<string>http://www.neoniks.com/</string>
+	<key>urlStore</key>
+	<string>https://itunes.apple.com/us/app/free-fairy-tales-in-audio/id844911068?ls=1&amp;mt=8</string>
 </dict>
 </plist>

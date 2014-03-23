@@ -79,7 +79,7 @@
 
 -(void)updateLanguage{
     
-     _playButton.hidden = _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = ![Utils isPurcahed:_numberOfTale];
+     _playButton.hidden = ![Utils isPurcahed:_numberOfTale];
     
     _buyThisBook.hidden = [Utils isPurcahed:_numberOfTale];
     _restoreThisBook.hidden = [Utils isPurcahed:_numberOfTale];
@@ -87,7 +87,9 @@
     
     
     
-    _descriptionTextView.text = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:[NSString stringWithFormat:@"%d",_numberOfTale]];
+    _descriptionTextView.text = [Utils getStringFromPlist:[NSString stringWithFormat:@"%d",_numberOfTale]];
+    [_buyThisBook setTitle:[Utils getStringFromPlist:@"buyThisBook"] forState:UIControlStateNormal];
+    [_restoreThisBook setTitle:[Utils getStringFromPlist:@"restore"] forState:UIControlStateNormal];
     [_mainTitleImage setImage:[Utils imageWithName:@"magic_fairy_tales"]];
     [_coverImage setImage:[Utils imageWithName:[Utils getTitle:_numberOfTale]]];
     [_buyAllBook setBackgroundImage:[Utils imageWithName:@"sale"] forState:UIControlStateNormal];
@@ -95,6 +97,7 @@
     _volumeSlider.value = [[AudioPlayer sharedManager] audioPlayer].volume;
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
         [_playButton setBackgroundImage:[UIImage imageNamed:@"player_pause"] forState:UIControlStateNormal];
+        _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = NO;
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
     } else {
         if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack]){
@@ -103,6 +106,8 @@
             _timeSlider.value = 0.f;
         }
         [_timer invalidate];
+        _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = YES;
+
         [_playButton setBackgroundImage:[UIImage imageNamed:@"player_play"] forState:UIControlStateNormal];
 
     }
@@ -123,7 +128,12 @@
     [self.navigationController pushViewController:audioBook animated:YES];
     
 }
-
+- (IBAction)goToRateOnStore:(id)sender {
+    NSURL *url = [NSURL URLWithString:[Utils getStringFromPlist:@"urlStore"]];
+    [[UIApplication sharedApplication] openURL:url];
+    
+    
+}
 - (IBAction)changeLanguage:(id)sender {
     [[AudioPlayer sharedManager] stop];
     if (kRussian) {
@@ -134,6 +144,9 @@
     [self updateLanguage];
 }
 - (IBAction)changeBook:(id)sender {
+    NSRange range = NSMakeRange(1, 1);
+    [_descriptionTextView scrollRangeToVisible:range];
+    
     _numberOfTale += [sender tag];
     if (_numberOfTale == 0) {
         _numberOfTale = 6;
@@ -179,7 +192,7 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
 
-         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Purchase Stopped"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[Utils getStringFromPlist:@"Purchase Stopped"] message:[Utils getStringFromPlist:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
          
@@ -194,7 +207,7 @@
     } onError:^(NSError *error) {
         [SVProgressHUD dismiss];
         [self updateLanguage];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Error"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message2"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[Utils getStringFromPlist:@"Error"] message:[Utils getStringFromPlist:@"message2"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         
         [alert show];
         
@@ -214,7 +227,7 @@
          [SVProgressHUD dismiss];
          [self updateLanguage];
          
-         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"Purchase Stopped"] message:[[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:AVLocalizedSystem(@"texts") ofType:@"plist"]] objectForKey:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[Utils getStringFromPlist:@"Purchase Stopped"] message:[Utils getStringFromPlist:@"message1"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          
          [alert show];
          

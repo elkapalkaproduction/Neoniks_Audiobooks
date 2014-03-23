@@ -61,7 +61,15 @@
     [_mainTitleImage setImage:[Utils imageWithName:@"magic_fairy_tales"]];
     [_languageButton setImage:[Utils imageWithName:@"language"] forState:UIControlStateNormal];
 }
+- (IBAction)goToRateOnStore:(id)sender {
+    NSURL *url = [NSURL URLWithString:[Utils getStringFromPlist:@"urlStore"]];
+    [[UIApplication sharedApplication] openURL:url];
+    
+    
+}
 - (IBAction)goToNeoniki:(id)sender {
+    NSURL *url = [NSURL URLWithString:[Utils getStringFromPlist:@"urlNeoniki"]];
+    [[UIApplication sharedApplication] openURL:url];
 }
 - (IBAction)changeLanguage:(id)sender {
     [[AudioPlayer sharedManager] stop];
