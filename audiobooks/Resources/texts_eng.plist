@@ -55,5 +55,11 @@ produced by Pavel Mamaev
 	<string>http://www.neoniks.com/</string>
 	<key>urlStore</key>
 	<string>https://itunes.apple.com/us/app/free-fairy-tales-in-audio/id844911068?ls=1&amp;mt=8</string>
+	<key>freeGameOffer</key>
+	<string>How about a Free Game then?</string>
+	<key>Yes</key>
+	<string>Yes</string>
+	<key>No</key>
+	<string>No</string>
 </dict>
 </plist>

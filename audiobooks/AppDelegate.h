@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "LogoViewController.h"
 #import "MKStoreManager.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) LogoViewController *viewController;
 @property (strong, nonatomic) UINavigationController *navController;
 
 @property (strong, nonatomic) UIWindow *window;

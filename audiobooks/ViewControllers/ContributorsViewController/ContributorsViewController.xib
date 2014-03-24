@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContributorsViewController">
+            <connections>
+                <outlet property="authorsTextView" destination="O1K-z9-NcF" id="dSI-zx-q4e"/>
+                <outlet property="descriptionTextView" destination="PMF-Un-E7M" id="ISJ-w6-q9P"/>
+                <outlet property="giftButton" destination="PXF-AL-fhR" id="U4C-ZI-8wl"/>
+                <outlet property="languageButton" destination="8wX-H5-D7r" id="7wX-WA-2wP"/>
+                <outlet property="mainTitleImage" destination="lxa-B0-P1T" id="ISu-2d-bbV"/>
+                <outlet property="view" destination="qZi-O3-lt0" id="yYU-WP-DVh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qZi-O3-lt0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_main 640_1136.png" id="2JO-Mu-wAe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" id="O1K-z9-NcF">
+                    <rect key="frame" x="10" y="394" width="300" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Текст – Эльвира Барякина
+Читают – Владимир Солдатов и Ольга Салем
+Программист – Андрей Видрашко
+Художники – Дмитрий Гаврилов и Тамара Герасун
+Продюсер – Павел Мамаев
+</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="10.5"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PXF-AL-fhR">
+                    <rect key="frame" x="115" y="286" width="90" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="gift_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToNeoniki:" destination="-1" eventType="touchUpInside" id="pJy-pg-YHK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8wX-H5-D7r">
+                    <rect key="frame" x="208" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="language_eng.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeLanguage:" destination="-1" eventType="touchUpInside" id="YsG-OB-hKA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic_fairy_tales_eng.png" id="lxa-B0-P1T">
+                    <rect key="frame" x="57" y="47" width="207" height="74"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" id="PMF-Un-E7M">
+                    <rect key="frame" x="10" y="166" width="300" height="115"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Посреди Сверкающего моря есть удивительный Радужный остров, который действительно похож на радугу. Там живет волшебный народец, который называют «эльфишками». Некоторые из них умеют летать как бабочки, а некоторые плавают как русалки. А еще на Радужном острове водятся говорящие звери и молчаливые, но очень умные деревья. Одним словом, там всегда происходят чудеса.
+</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="10.5"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Q1-Mz-len">
+                    <rect key="frame" x="165" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="heart.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToRateOnStore:" destination="-1" eventType="touchUpInside" id="6lk-lY-8ju"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EEg-ES-CwD">
+                    <rect key="frame" x="122" y="4" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="book.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToContentList:" destination="-1" eventType="touchUpInside" id="09i-VA-brr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_main 640_1136.png" width="640" height="1136"/>
+        <image name="book.png" width="87" height="91"/>
+        <image name="gift_eng.png" width="362" height="337"/>
+        <image name="heart.png" width="87" height="88"/>
+        <image name="language_eng.png" width="87" height="88"/>
+        <image name="magic_fairy_tales_eng.png" width="927" height="295"/>
+    </resources>
+</document>

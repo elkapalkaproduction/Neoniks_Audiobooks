@@ -7,10 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "Flurry.h"
+#import "Apsalar.h"
+#import <RevMobAds/RevMobAds.h>
+#import "Chartboost.h"
+#import "ChartboostDelegates.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     if (![userDefaults stringForKey:kLanguage]){
 		NSString* preferredLanguage = [NSLocale preferredLanguages][0];
@@ -19,12 +25,23 @@
 	}
     if (IS_PHONE)
         [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [[LogoViewController alloc] initWithNibName:@"LogoViewController" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     [self.navController setNavigationBarHidden:YES];
     self.window.rootViewController = self.navController;
+    
+    ////Reclama
+    [Flurry startSession:FlurryKey];
+    [Apsalar startSession:AppSalarKey withKey:AppSalarSecret];
+    [RevMobAds startSessionWithAppID:RevMobKey];
+    Chartboost *cb = [Chartboost sharedChartboost];
+    cb.appId = ChartboostAppID;
+    cb.appSignature = ChartboostAppSignature;
+    cb.delegate = [ChartboostDelegates sharedManager];
+    [cb startSession];
+    ////Stop reclama
+    
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
