@@ -158,11 +158,15 @@
 - (IBAction)play:(id)sender {
     [[AudioPlayer sharedManager] playBook:_numberOfTale];
     if (_numberOfTale == [[AudioPlayer sharedManager] currentTrack] && [[[AudioPlayer sharedManager] audioPlayer] isPlaying]) {
+        _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = NO;
+
         [_playButton setBackgroundImage:[UIImage imageNamed:@"player_pause"] forState:UIControlStateNormal];
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateSlider) userInfo:nil repeats:YES];
 
     } else {
         [_timer invalidate];
+        _timeSlider.hidden = _currentTimeLabel.hidden = _endTimeLabel.hidden = _soundMinus.hidden = _soundPlus.hidden = _volumeSlider.hidden = YES;
+
         [_playButton setBackgroundImage:[UIImage imageNamed:@"player_play"] forState:UIControlStateNormal];
         
     }
