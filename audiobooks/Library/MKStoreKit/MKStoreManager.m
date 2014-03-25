@@ -460,7 +460,7 @@ static MKStoreManager* _sharedStoreManager;
     NSArray *allIds = [self.purchasableObjects valueForKey:@"productIdentifier"];
     int index = [allIds indexOfObject:productId];
     
-    if(index == NSNotFound) return;
+    if(index<0) return;
     
     SKProduct *thisProduct = [self.purchasableObjects objectAtIndex:index];
 		SKPayment *payment = [SKPayment paymentWithProduct:thisProduct];
