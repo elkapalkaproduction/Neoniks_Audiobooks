@@ -28,7 +28,8 @@
 }
 - (IBAction)goToContentList:(id)sender {
      [VFAdsSingleton saveAnalytics:@"Home button is clicked"];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:1] animated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 -(void)viewWillAppear:(BOOL)animated{
     if (IS_PHONE4) {
