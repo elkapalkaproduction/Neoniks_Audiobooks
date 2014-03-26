@@ -12,6 +12,8 @@
 #import <RevMobAds/RevMobAds.h>
 #import "Chartboost.h"
 #import "ChartboostDelegates.h"
+#import <AskingPoint/AskingPoint.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -40,6 +42,7 @@
     cb.appSignature = ChartboostAppSignature;
     cb.delegate = [ChartboostDelegates sharedManager];
     [cb startSession];
+    [ASKPManager startup:@"RABuADIBU5CuN0kHNHcmZSlQI-ykmfeHqjmjJaBH3Ws="];
     ////Stop reclama
     
     [self.window makeKeyAndVisible];

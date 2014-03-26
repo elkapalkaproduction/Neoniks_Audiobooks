@@ -16,6 +16,7 @@
 		4566020918E1F40C0080136E /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020718E1F40B0080136E /* icon80.png */; };
 		4566020A18E1F40C0080136E /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020818E1F40C0080136E /* icon152.png */; };
 		4566020C18E1F5010080136E /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020B18E1F5010080136E /* icon120.png */; };
+		45CE7F9318E2A64C0039EBBC /* AskingPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */; };
 		75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CA18DE05A7007A4A22 /* sale_eng.png */; };
 		75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CB18DE05A7007A4A22 /* sale_rus.png */; };
 		75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */; };
@@ -149,6 +150,7 @@
 		4566020718E1F40B0080136E /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		4566020818E1F40C0080136E /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
 		4566020B18E1F5010080136E /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AskingPoint.framework; sourceTree = "<group>"; };
 		75A184CA18DE05A7007A4A22 /* sale_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_eng.png; sourceTree = "<group>"; };
 		75A184CB18DE05A7007A4A22 /* sale_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_rus.png; sourceTree = "<group>"; };
 		75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_speaker_minus.png; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				75BBA3AF18E0BAE100AC33D0 /* AVFoundation.framework in Frameworks */,
 				75BBA3C718E0D8A500AC33D0 /* libApsalar.a in Frameworks */,
 				75BBA3B018E0BAE100AC33D0 /* CoreTelephony.framework in Frameworks */,
+				45CE7F9318E2A64C0039EBBC /* AskingPoint.framework in Frameworks */,
 				75BBA3CD18E0DD0E00AC33D0 /* RevMobAds.framework in Frameworks */,
 				75BBA3B118E0BAE100AC33D0 /* MessageUI.framework in Frameworks */,
 				75BBA3B218E0BAE100AC33D0 /* StoreKit.framework in Frameworks */,
@@ -358,6 +361,7 @@
 		75A371A418DCC4BD0081B494 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */,
 				75BBA3DB18E0E3BC00AC33D0 /* QuartzCore.framework */,
 				75BBA3D918E0E30100AC33D0 /* Security.framework */,
 				75BBA3CA18E0DB1400AC33D0 /* libz.dylib */,
@@ -1050,10 +1054,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/audiobooks/Library",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audiobooks/audiobooks-Prefix.pch";
@@ -1073,7 +1079,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8725FC8D-B26D-43D1-967B-06E879A7C9A6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1085,10 +1091,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/audiobooks/Library",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audiobooks/audiobooks-Prefix.pch";
@@ -1108,7 +1116,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8725FC8D-B26D-43D1-967B-06E879A7C9A6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
