@@ -457,10 +457,18 @@ static MKStoreManager* _sharedStoreManager;
 {
   if ([SKPaymentQueue canMakePayments])
 	{
+        int index = -1;
     NSArray *allIds = [self.purchasableObjects valueForKey:@"productIdentifier"];
-    int index = [allIds indexOfObject:productId];
-    
-    if(index<0) return;
+        for (int  i = 0; i<allIds.count; i++) {
+            if ([allIds[i] isEqual:productId]) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) return;
+//    NSUInteger index = [allIds indexOfObject:productId];
+//    
+//    if(index> allIds.count-1) return;
     
     SKProduct *thisProduct = [self.purchasableObjects objectAtIndex:index];
 		SKPayment *payment = [SKPayment paymentWithProduct:thisProduct];
