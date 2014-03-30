@@ -43,7 +43,7 @@
 	<key>message2</key>
 	<string>Попробуйте совершить покупку позднее или обратитесь в службу поддержки приложения.</string>
 	<key>buyThisBook</key>
-	<string>Купить эту книжку</string>
+	<string>Купить эту сказку</string>
 	<key>restore</key>
 	<string>Восстановить покупку</string>
 	<key>Continue playing</key>
@@ -57,7 +57,7 @@
 	<key>urlStore</key>
 	<string>https://itunes.apple.com/ru/app/free-fairy-tales-in-audio/id844911068?ls=1&amp;mt=8</string>
 	<key>freeGameOffer</key>
-	<string>Хоть бесплатную игру загрузите тогда?</string>
+	<string>Не нужна сказка? Тогда держи бесплатную игру.</string>
 	<key>Yes</key>
 	<string>Да</string>
 	<key>No</key>

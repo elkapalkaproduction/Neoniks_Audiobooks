@@ -42,7 +42,7 @@ produced by Pavel Mamaev
 	<key>message2</key>
 	<string>Please try again later, or contact the app&apos;s customer support for assistance.</string>
 	<key>buyThisBook</key>
-	<string>Buy this book</string>
+	<string>Get this fairy tale</string>
 	<key>restore</key>
 	<string>Restore</string>
 	<key>Continue playing</key>
@@ -56,7 +56,7 @@ produced by Pavel Mamaev
 	<key>urlStore</key>
 	<string>https://itunes.apple.com/us/app/free-fairy-tales-in-audio/id844911068?ls=1&amp;mt=8</string>
 	<key>freeGameOffer</key>
-	<string>How about a Free Game then?</string>
+	<string>You think you deserve a free game?</string>
 	<key>Yes</key>
 	<string>Yes</string>
 	<key>No</key>
