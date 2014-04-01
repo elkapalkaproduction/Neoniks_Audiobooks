@@ -32,7 +32,7 @@
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     [self.navController setNavigationBarHidden:YES];
     self.window.rootViewController = self.navController;
-    
+    NSLog(@"%@",[[MKStoreManager sharedManager]purchasableObjectsDescription]);
     ////Reclama
     [Flurry startSession:FlurryKey];
     [Apsalar startSession:AppSalarKey withKey:AppSalarSecret];
