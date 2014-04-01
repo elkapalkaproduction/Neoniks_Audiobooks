@@ -17,6 +17,8 @@
 		4566020A18E1F40C0080136E /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020818E1F40C0080136E /* icon152.png */; };
 		4566020C18E1F5010080136E /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020B18E1F5010080136E /* icon120.png */; };
 		45CE7F9318E2A64C0039EBBC /* AskingPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */; };
+		45CE7F9618E2C9FB0039EBBC /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9418E2C9FA0039EBBC /* icon57.png */; };
+		45CE7F9718E2C9FB0039EBBC /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9518E2C9FB0039EBBC /* icon72.png */; };
 		75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CA18DE05A7007A4A22 /* sale_eng.png */; };
 		75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CB18DE05A7007A4A22 /* sale_rus.png */; };
 		75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */; };
@@ -151,6 +153,8 @@
 		4566020818E1F40C0080136E /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
 		4566020B18E1F5010080136E /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AskingPoint.framework; sourceTree = "<group>"; };
+		45CE7F9418E2C9FA0039EBBC /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		45CE7F9518E2C9FB0039EBBC /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
 		75A184CA18DE05A7007A4A22 /* sale_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_eng.png; sourceTree = "<group>"; };
 		75A184CB18DE05A7007A4A22 /* sale_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_rus.png; sourceTree = "<group>"; };
 		75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_speaker_minus.png; sourceTree = "<group>"; };
@@ -534,6 +538,8 @@
 		75A3720518DCC74F0081B494 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				45CE7F9418E2C9FA0039EBBC /* icon57.png */,
+				45CE7F9518E2C9FB0039EBBC /* icon72.png */,
 				4566020B18E1F5010080136E /* icon120.png */,
 				4566020718E1F40B0080136E /* icon80.png */,
 				4566020818E1F40C0080136E /* icon152.png */,
@@ -853,7 +859,9 @@
 				75A3722C18DCC74F0081B494 /* gift_eng.png in Resources */,
 				75A3721C18DCC74F0081B494 /* magic_fairy_tales_rus.png in Resources */,
 				75BBA39E18E0B98400AC33D0 /* SVProgressHUD.bundle in Resources */,
+				45CE7F9718E2C9FB0039EBBC /* icon72.png in Resources */,
 				75BBA3E918E0E72800AC33D0 /* logo_eng.png in Resources */,
+				45CE7F9618E2C9FB0039EBBC /* icon57.png in Resources */,
 				75BBA28D18E0B92800AC33D0 /* ContributorsViewController.xib in Resources */,
 				75A3723C18DCC74F0081B494 /* sea_carnival_rus.mp3 in Resources */,
 				75BBA3EA18E0E72800AC33D0 /* logo_rus.png in Resources */,
@@ -1054,8 +1062,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/audiobooks/Library",
@@ -1091,8 +1099,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/audiobooks/Library",
