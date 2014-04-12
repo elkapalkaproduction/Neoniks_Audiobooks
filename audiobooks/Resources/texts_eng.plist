@@ -46,9 +46,9 @@ produced by Pavel Mamaev
 	<key>restore</key>
 	<string>Restore</string>
 	<key>Continue playing</key>
-	<string>Continue playing</string>
+	<string>Continue or Start Over?</string>
 	<key>From beginning</key>
-	<string>From beginning</string>
+	<string>Start Over</string>
 	<key>Continue</key>
 	<string>Continue</string>
 	<key>urlNeoniki</key>
@@ -56,10 +56,10 @@ produced by Pavel Mamaev
 	<key>urlStore</key>
 	<string>https://itunes.apple.com/us/app/free-fairy-tales-in-audio/id844911068?ls=1&amp;mt=8</string>
 	<key>freeGameOffer</key>
-	<string>You think you deserve a free game?</string>
+	<string>As a special &quot;Thank you&quot;, we secure a free game for you. </string>
 	<key>Yes</key>
-	<string>Yes</string>
+	<string>Get it Now</string>
 	<key>No</key>
-	<string>No</string>
+	<string>Get it Later Later</string>
 </dict>
 </plist>
