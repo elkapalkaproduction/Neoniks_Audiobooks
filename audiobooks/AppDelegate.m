@@ -13,6 +13,9 @@
 #import "Chartboost.h"
 #import "ChartboostDelegates.h"
 #import <AskingPoint/AskingPoint.h>
+#import "ALSdk.h"
+#import "ALInterstitialAd.h"
+
 
 @implementation AppDelegate
 
@@ -43,6 +46,40 @@
     cb.delegate = [ChartboostDelegates sharedManager];
     [cb startSession];
     [ASKPManager startup:@"RABuADIBU5CuN0kHNHcmZSlQI-ykmfeHqjmjJaBH3Ws="];
+    // AppLovin
+    [ALSdk initializeSdk];
+    [ALInterstitialAd showOver:[[UIApplication sharedApplication] keyWindow]];
+
+    
+    
+    [ASKPManager sharedManager].commandHandler = ^BOOL (ASKPCommand *command) {
+        if(command.type == ASKPCommandAlert) {
+            if(command.alertType == ASKPAlertRating) {
+                command.message = NSLocalizedStringWithDefaultValue(
+                                                                    @"Neoniks love getting Reviews...:)",
+                                                                    nil,
+                                                                    [NSBundle mainBundle],
+                                                                    command.message,
+                                                                    @"Replacing prompt text for some languages."
+                                                                    );
+                for(ASKPAlertButton *button in command.buttons) {
+                    if(button.ratingType == ASKPAlertRatingYes)
+                        button.text = NSLocalizedStringWithDefaultValue(
+                                                                        @"Rate us 5 stars",
+                                                                        nil,
+                                                                        [NSBundle mainBundle],
+                                                                        button.text,
+                                                                        @"Example of replacing button text."
+                                                                        );
+                }
+            }
+        }
+        // Return NO because you're just changing Message & Button strings
+        // in the Command object. By returning NO the default Rating Booster
+        // widget uses the Command Object with your text strings.
+        return NO;
+    };
+
     ////Stop reclama
     
     [self.window makeKeyAndVisible];

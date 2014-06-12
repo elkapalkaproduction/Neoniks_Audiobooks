@@ -16,6 +16,7 @@
 		4566020918E1F40C0080136E /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020718E1F40B0080136E /* icon80.png */; };
 		4566020A18E1F40C0080136E /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020818E1F40C0080136E /* icon152.png */; };
 		4566020C18E1F5010080136E /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020B18E1F5010080136E /* icon120.png */; };
+		458DA3B9192D66D6003E08E1 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458DA3B8192D66D6003E08E1 /* libAppLovinSdk.a */; };
 		45CE7F9318E2A64C0039EBBC /* AskingPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */; };
 		45CE7F9618E2C9FB0039EBBC /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9418E2C9FA0039EBBC /* icon57.png */; };
 		45CE7F9718E2C9FB0039EBBC /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9518E2C9FB0039EBBC /* icon72.png */; };
@@ -181,6 +182,23 @@
 		4566020718E1F40B0080136E /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		4566020818E1F40C0080136E /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
 		4566020B18E1F5010080136E /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		458DA3A8192D66CD003E08E1 /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
+		458DA3A9192D66CD003E08E1 /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
+		458DA3AA192D66CD003E08E1 /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
+		458DA3AB192D66CD003E08E1 /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
+		458DA3AC192D66CD003E08E1 /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
+		458DA3AD192D66CD003E08E1 /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
+		458DA3AE192D66CD003E08E1 /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
+		458DA3AF192D66CD003E08E1 /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
+		458DA3B0192D66CD003E08E1 /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
+		458DA3B1192D66CD003E08E1 /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
+		458DA3B2192D66CD003E08E1 /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
+		458DA3B3192D66CD003E08E1 /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
+		458DA3B4192D66CD003E08E1 /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
+		458DA3B5192D66CD003E08E1 /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
+		458DA3B6192D66CD003E08E1 /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
+		458DA3B7192D66CD003E08E1 /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
+		458DA3B8192D66D6003E08E1 /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
 		45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AskingPoint.framework; sourceTree = "<group>"; };
 		45CE7F9418E2C9FA0039EBBC /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		45CE7F9518E2C9FB0039EBBC /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
@@ -365,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75BBA3DD18E0E61C00AC33D0 /* Security.framework in Frameworks */,
+				458DA3B9192D66D6003E08E1 /* libAppLovinSdk.a in Frameworks */,
 				75BBA3DC18E0E3BC00AC33D0 /* QuartzCore.framework in Frameworks */,
 				75BBA3CB18E0DB1400AC33D0 /* libz.dylib in Frameworks */,
 				75BBA3C918E0D92500AC33D0 /* libsqlite3.dylib in Frameworks */,
@@ -401,6 +420,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		458DA3A7192D66CD003E08E1 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				458DA3A8192D66CD003E08E1 /* ALAd.h */,
+				458DA3A9192D66CD003E08E1 /* ALAdDisplayDelegate.h */,
+				458DA3AA192D66CD003E08E1 /* ALAdLoadDelegate.h */,
+				458DA3AB192D66CD003E08E1 /* ALAdRewardDelegate.h */,
+				458DA3AC192D66CD003E08E1 /* ALAdService.h */,
+				458DA3AD192D66CD003E08E1 /* ALAdSize.h */,
+				458DA3AE192D66CD003E08E1 /* ALAdType.h */,
+				458DA3AF192D66CD003E08E1 /* ALAdUpdateDelegate.h */,
+				458DA3B0192D66CD003E08E1 /* ALAdVideoPlaybackDelegate.h */,
+				458DA3B1192D66CD003E08E1 /* ALAdView.h */,
+				458DA3B2192D66CD003E08E1 /* ALErrorCodes.h */,
+				458DA3B3192D66CD003E08E1 /* ALIncentivizedInterstitialAd.h */,
+				458DA3B4192D66CD003E08E1 /* ALInterstitialAd.h */,
+				458DA3B5192D66CD003E08E1 /* ALSdk.h */,
+				458DA3B6192D66CD003E08E1 /* ALSdkSettings.h */,
+				458DA3B7192D66CD003E08E1 /* ALTargetingData.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		750B644F18F9499000026F74 /* elfishki_audiobook@2x */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +525,8 @@
 		75A3719918DCC4BD0081B494 = {
 			isa = PBXGroup;
 			children = (
+				458DA3B8192D66D6003E08E1 /* libAppLovinSdk.a */,
+				458DA3A7192D66CD003E08E1 /* headers */,
 				75A371AB18DCC4BD0081B494 /* audiobooks */,
 				75A371CD18DCC4BD0081B494 /* audiobooksTests */,
 				75A371A418DCC4BD0081B494 /* Frameworks */,
@@ -675,13 +719,9 @@
 		75A3720518DCC74F0081B494 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				45E8253018EDDF1C00DD4F92 /* icon144.png */,
-				45E8252E18EDDEF100DD4F92 /* icon114.png */,
 				45CE7F9418E2C9FA0039EBBC /* icon57.png */,
 				45CE7F9518E2C9FB0039EBBC /* icon72.png */,
 				4566020B18E1F5010080136E /* icon120.png */,
-				45E8253418EDE00800DD4F92 /* icon100.png */,
-				45E8253518EDE00800DD4F92 /* icon50.png */,
 				4566020718E1F40B0080136E /* icon80.png */,
 				4566020818E1F40C0080136E /* icon152.png */,
 				4566020518E1F3700080136E /* icon58.png */,
@@ -959,7 +999,6 @@
 			files = (
 				75A3722B18DCC74F0081B494 /* language_rus.png in Resources */,
 				75A3722E18DCC74F0081B494 /* heart.png in Resources */,
-				45E8253618EDE00800DD4F92 /* icon100.png in Resources */,
 				75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */,
 				75BBA29118E0B92800AC33D0 /* ViewController~ipad.xib in Resources */,
 				750B647B18F9499000026F74 /* background_main_640_960@2x.png in Resources */,
@@ -1025,7 +1064,6 @@
 				750B648218F9499000026F74 /* strange_parcel_eng@2x.png in Resources */,
 				75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */,
 				75A3724018DCC74F0081B494 /* unwelcome_guest_rus.mp3 in Resources */,
-				45E8253118EDDF1C00DD4F92 /* icon144.png in Resources */,
 				75A3723D18DCC74F0081B494 /* strange_parcel_eng.mp3 in Resources */,
 				75BBA39518E0B98400AC33D0 /* README.txt in Resources */,
 				75A3722218DCC74F0081B494 /* unwelcome_guest_eng.png in Resources */,
@@ -1146,7 +1184,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				75A371AF18DCC4BD0081B494 /* en */,
-				45E8253218EDDF3400DD4F92 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1155,7 +1192,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				75A371D118DCC4BD0081B494 /* en */,
-				45E8253318EDDF3400DD4F92 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1263,6 +1299,7 @@
 					"$(PROJECT_DIR)/audiobooks/Library/Flurry",
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/audiobooks/Library/AppsalarSDK",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1299,6 +1336,7 @@
 					"$(PROJECT_DIR)/audiobooks/Library/Flurry",
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/audiobooks/Library/AppsalarSDK",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
