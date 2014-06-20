@@ -8,6 +8,8 @@
 
 #import "ContributorsViewController.h"
 #import "AudioPlayer.h"
+#import "AboutUsViewController.h"
+
 @interface ContributorsViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTextView;
@@ -70,8 +72,8 @@
 }
 - (IBAction)goToNeoniki:(id)sender {
     [VFAdsSingleton saveAnalytics:@"Middle button in Contributors is clicked"];
-    NSURL *url = [NSURL URLWithString:[VFUtils getStringFromPlist:@"urlNeoniki"]];
-    [[UIApplication sharedApplication] openURL:url];
+    AboutUsViewController *aboutUs = [[AboutUsViewController alloc] initWithNibName:NSStringFromClass([AboutUsViewController class]) bundle:nil];
+    [self presentViewController:aboutUs animated:YES completion:NULL];
 }
 - (IBAction)changeLanguage:(id)sender {
     [[AudioPlayer sharedManager] stop];

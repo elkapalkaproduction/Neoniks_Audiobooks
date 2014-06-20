@@ -52,6 +52,20 @@
 		750B649218F9499000026F74 /* player_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 750B647218F9499000026F74 /* player_play@2x.png */; };
 		750B649318F9499000026F74 /* sale_eng@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 750B647318F9499000026F74 /* sale_eng@2x.png */; };
 		750B649418F9499000026F74 /* sale_rus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 750B647418F9499000026F74 /* sale_rus@2x.png */; };
+		755F87F01954DDD700CCD96F /* 640_tex_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87EE1954DDD700CCD96F /* 640_tex_eng.png */; };
+		755F87F11954DDD700CCD96F /* 640_tex_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87EF1954DDD700CCD96F /* 640_tex_rus.png */; };
+		755F87F41954DFE500CCD96F /* page2_site_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87F21954DFE500CCD96F /* page2_site_eng.png */; };
+		755F87F51954DFE500CCD96F /* page2_site_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87F31954DFE500CCD96F /* page2_site_rus.png */; };
+		755F87F71954E1BB00CCD96F /* AboutUsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755F87F61954E1BB00CCD96F /* AboutUsViewController~ipad.xib */; };
+		755F87FA1954E1CF00CCD96F /* 1536_tex_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87F81954E1CF00CCD96F /* 1536_tex_eng.png */; };
+		755F87FB1954E1CF00CCD96F /* 1536_tex_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87F91954E1CF00CCD96F /* 1536_tex_rus.png */; };
+		755F87FD1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87FC1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png */; };
+		755F87FF1954E1EA00CCD96F /* page2_text_0000_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F87FE1954E1EA00CCD96F /* page2_text_0000_banner.png */; };
+		755F88021954E21000CCD96F /* site_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F88001954E21000CCD96F /* site_eng.png */; };
+		755F88031954E21000CCD96F /* site_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F88011954E21000CCD96F /* site_rus.png */; };
+		755F88061954E21C00CCD96F /* page2_text_0001_Слой-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F88041954E21C00CCD96F /* page2_text_0001_Слой-34.png */; };
+		755F88071954E21C00CCD96F /* page2_text_0003_Слой-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F88051954E21C00CCD96F /* page2_text_0003_Слой-35.png */; };
+		755F88091954E22400CCD96F /* page2_text_0002_Крестик.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F88081954E22400CCD96F /* page2_text_0002_Крестик.png */; };
 		75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CA18DE05A7007A4A22 /* sale_eng.png */; };
 		75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CB18DE05A7007A4A22 /* sale_rus.png */; };
 		75A184D218DE299F007A4A22 /* 1_speaker_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */; };
@@ -110,6 +124,9 @@
 		75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A3724918DCDE060081B494 /* texts_rus.plist */; };
 		75A3725518DCF1E80081B494 /* background_main 640_1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3725318DCF1E80081B494 /* background_main 640_1136.png */; };
 		75A3725618DCF1E80081B494 /* background_main_640_960.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A3725418DCF1E80081B494 /* background_main_640_960.png */; };
+		75AC9E33195203E900BC4E3C /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AC9E31195203E900BC4E3C /* AboutUsViewController.m */; };
+		75AC9E34195203E900BC4E3C /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75AC9E32195203E900BC4E3C /* AboutUsViewController.xib */; };
+		75AC9E37195204BB00BC4E3C /* page2_text_0002_Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AC9E36195204BB00BC4E3C /* page2_text_0002_Cross.png */; };
 		75BBA28918E0B92800AC33D0 /* AudioBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BBA27C18E0B92800AC33D0 /* AudioBookViewController.m */; };
 		75BBA28A18E0B92800AC33D0 /* AudioBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BBA27D18E0B92800AC33D0 /* AudioBookViewController.xib */; };
 		75BBA28B18E0B92800AC33D0 /* AudioBookViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BBA27E18E0B92800AC33D0 /* AudioBookViewController~ipad.xib */; };
@@ -234,6 +251,20 @@
 		750B647218F9499000026F74 /* player_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_play@2x.png"; sourceTree = "<group>"; };
 		750B647318F9499000026F74 /* sale_eng@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sale_eng@2x.png"; sourceTree = "<group>"; };
 		750B647418F9499000026F74 /* sale_rus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sale_rus@2x.png"; sourceTree = "<group>"; };
+		755F87EE1954DDD700CCD96F /* 640_tex_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640_tex_eng.png; sourceTree = "<group>"; };
+		755F87EF1954DDD700CCD96F /* 640_tex_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640_tex_rus.png; sourceTree = "<group>"; };
+		755F87F21954DFE500CCD96F /* page2_site_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2_site_eng.png; sourceTree = "<group>"; };
+		755F87F31954DFE500CCD96F /* page2_site_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2_site_rus.png; sourceTree = "<group>"; };
+		755F87F61954E1BB00CCD96F /* AboutUsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "AboutUsViewController~ipad.xib"; path = "AbousUsViewController/AboutUsViewController~ipad.xib"; sourceTree = "<group>"; };
+		755F87F81954E1CF00CCD96F /* 1536_tex_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1536_tex_eng.png; sourceTree = "<group>"; };
+		755F87F91954E1CF00CCD96F /* 1536_tex_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1536_tex_rus.png; sourceTree = "<group>"; };
+		755F87FC1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Audiobooks_О-нас_page2-RUS.png"; sourceTree = "<group>"; };
+		755F87FE1954E1EA00CCD96F /* page2_text_0000_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2_text_0000_banner.png; sourceTree = "<group>"; };
+		755F88001954E21000CCD96F /* site_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site_eng.png; sourceTree = "<group>"; };
+		755F88011954E21000CCD96F /* site_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site_rus.png; sourceTree = "<group>"; };
+		755F88041954E21C00CCD96F /* page2_text_0001_Слой-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2_text_0001_Слой-34.png"; sourceTree = "<group>"; };
+		755F88051954E21C00CCD96F /* page2_text_0003_Слой-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2_text_0003_Слой-35.png"; sourceTree = "<group>"; };
+		755F88081954E22400CCD96F /* page2_text_0002_Крестик.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2_text_0002_Крестик.png"; sourceTree = "<group>"; };
 		75A184CA18DE05A7007A4A22 /* sale_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_eng.png; sourceTree = "<group>"; };
 		75A184CB18DE05A7007A4A22 /* sale_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale_rus.png; sourceTree = "<group>"; };
 		75A184CE18DE299F007A4A22 /* 1_speaker_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_speaker_minus.png; sourceTree = "<group>"; };
@@ -296,6 +327,10 @@
 		75A3724918DCDE060081B494 /* texts_rus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = texts_rus.plist; sourceTree = "<group>"; };
 		75A3725318DCF1E80081B494 /* background_main 640_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_main 640_1136.png"; sourceTree = "<group>"; };
 		75A3725418DCF1E80081B494 /* background_main_640_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_main_640_960.png; sourceTree = "<group>"; };
+		75AC9E30195203E900BC4E3C /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = audiobooks/ViewControllers/AbousUsViewController/AboutUsViewController.h; sourceTree = SOURCE_ROOT; };
+		75AC9E31195203E900BC4E3C /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUsViewController.m; path = audiobooks/ViewControllers/AbousUsViewController/AboutUsViewController.m; sourceTree = SOURCE_ROOT; };
+		75AC9E32195203E900BC4E3C /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutUsViewController.xib; path = audiobooks/ViewControllers/AbousUsViewController/AboutUsViewController.xib; sourceTree = SOURCE_ROOT; };
+		75AC9E36195204BB00BC4E3C /* page2_text_0002_Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2_text_0002_Cross.png; sourceTree = "<group>"; };
 		75BBA27B18E0B92800AC33D0 /* AudioBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioBookViewController.h; sourceTree = "<group>"; };
 		75BBA27C18E0B92800AC33D0 /* AudioBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioBookViewController.m; sourceTree = "<group>"; };
 		75BBA27D18E0B92800AC33D0 /* AudioBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioBookViewController.xib; sourceTree = "<group>"; };
@@ -615,6 +650,7 @@
 		75A371E618DCC74F0081B494 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				75AC9E38195204BF00BC4E3C /* AboutUs */,
 				75BBA3E618E0E72800AC33D0 /* LogoViewController */,
 				75A3724818DCDE060081B494 /* texts_eng.plist */,
 				75A3724918DCDE060081B494 /* texts_rus.plist */,
@@ -734,6 +770,38 @@
 			path = icon;
 			sourceTree = "<group>";
 		};
+		75AC9E35195203F400BC4E3C /* AboutUsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75AC9E30195203E900BC4E3C /* AboutUsViewController.h */,
+				75AC9E31195203E900BC4E3C /* AboutUsViewController.m */,
+				75AC9E32195203E900BC4E3C /* AboutUsViewController.xib */,
+				755F87F61954E1BB00CCD96F /* AboutUsViewController~ipad.xib */,
+				755F87FC1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png */,
+			);
+			name = AboutUsViewController;
+			sourceTree = "<group>";
+		};
+		75AC9E38195204BF00BC4E3C /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				755F88081954E22400CCD96F /* page2_text_0002_Крестик.png */,
+				755F88041954E21C00CCD96F /* page2_text_0001_Слой-34.png */,
+				755F88051954E21C00CCD96F /* page2_text_0003_Слой-35.png */,
+				755F88001954E21000CCD96F /* site_eng.png */,
+				755F88011954E21000CCD96F /* site_rus.png */,
+				755F87F21954DFE500CCD96F /* page2_site_eng.png */,
+				755F87F31954DFE500CCD96F /* page2_site_rus.png */,
+				75AC9E36195204BB00BC4E3C /* page2_text_0002_Cross.png */,
+				755F87FE1954E1EA00CCD96F /* page2_text_0000_banner.png */,
+				755F87F81954E1CF00CCD96F /* 1536_tex_eng.png */,
+				755F87F91954E1CF00CCD96F /* 1536_tex_rus.png */,
+				755F87EE1954DDD700CCD96F /* 640_tex_eng.png */,
+				755F87EF1954DDD700CCD96F /* 640_tex_rus.png */,
+			);
+			name = AboutUs;
+			sourceTree = "<group>";
+		};
 		75BBA27918E0B92800AC33D0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +809,7 @@
 				75BBA28418E0B92800AC33D0 /* MainViewController */,
 				75BBA27A18E0B92800AC33D0 /* AudioBookViewController */,
 				75BBA27F18E0B92800AC33D0 /* ContributorsViewController */,
+				75AC9E35195203F400BC4E3C /* AboutUsViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -926,7 +995,6 @@
 				75A3719E18DCC4BD0081B494 /* Sources */,
 				75A3719F18DCC4BD0081B494 /* Frameworks */,
 				75A371A018DCC4BD0081B494 /* Resources */,
-				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
 			);
 			buildRules = (
 			);
@@ -1000,6 +1068,7 @@
 				75A3722B18DCC74F0081B494 /* language_rus.png in Resources */,
 				75A3722E18DCC74F0081B494 /* heart.png in Resources */,
 				75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */,
+				75AC9E37195204BB00BC4E3C /* page2_text_0002_Cross.png in Resources */,
 				75BBA29118E0B92800AC33D0 /* ViewController~ipad.xib in Resources */,
 				750B647B18F9499000026F74 /* background_main_640_960@2x.png in Resources */,
 				75A3721818DCC74F0081B494 /* arrow_left.png in Resources */,
@@ -1008,6 +1077,7 @@
 				75A3723618DCC74F0081B494 /* enchanted_water_rus.mp3 in Resources */,
 				4566020A18E1F40C0080136E /* icon152.png in Resources */,
 				750B649118F9499000026F74 /* player_pause@2x.png in Resources */,
+				755F87F01954DDD700CCD96F /* 640_tex_eng.png in Resources */,
 				750B648318F9499000026F74 /* unwelcome_guest_eng@2x.png in Resources */,
 				75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */,
 				750B647818F9499000026F74 /* arrow_right@2x.png in Resources */,
@@ -1015,24 +1085,29 @@
 				75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */,
 				75A3721918DCC74F0081B494 /* arrow_right.png in Resources */,
 				750B649418F9499000026F74 /* sale_rus@2x.png in Resources */,
+				755F88071954E21C00CCD96F /* page2_text_0003_Слой-35.png in Resources */,
 				75BBA29018E0B92800AC33D0 /* ViewController.xib in Resources */,
 				750B647C18F9499000026F74 /* magic_fairy_tales_eng@2x.png in Resources */,
 				4566020C18E1F5010080136E /* icon120.png in Resources */,
+				755F87FB1954E1CF00CCD96F /* 1536_tex_rus.png in Resources */,
 				75A3724A18DCDE060081B494 /* texts_eng.plist in Resources */,
 				75A3722518DCC74F0081B494 /* performance_rus.png in Resources */,
 				75A3722018DCC74F0081B494 /* sea_carnival_eng.png in Resources */,
 				750B648118F9499000026F74 /* sea_carnival_eng@2x.png in Resources */,
 				75A3723718DCC74F0081B494 /* giant_cake_eng.mp3 in Resources */,
 				75BBA3E418E0E67A00AC33D0 /* LogoViewController.xib in Resources */,
+				755F87F71954E1BB00CCD96F /* AboutUsViewController~ipad.xib in Resources */,
 				4566020218E1F0110080136E /* icon40.png in Resources */,
 				75A3723F18DCC74F0081B494 /* unwelcome_guest_eng.mp3 in Resources */,
 				75A3723E18DCC74F0081B494 /* strange_parcel_rus.mp3 in Resources */,
 				75A3722A18DCC74F0081B494 /* contributors.png in Resources */,
+				755F87FA1954E1CF00CCD96F /* 1536_tex_eng.png in Resources */,
 				75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */,
 				75A3722818DCC74F0081B494 /* unwelcome_guest_rus.png in Resources */,
 				750B648D18F9499000026F74 /* gift_rus@2x.png in Resources */,
 				750B647718F9499000026F74 /* arrow_left@2x.png in Resources */,
 				75A3722918DCC74F0081B494 /* book.png in Resources */,
+				75AC9E34195203E900BC4E3C /* AboutUsViewController.xib in Resources */,
 				75C40E5218F5CF1C005290EA /* StyleSettings.plist in Resources */,
 				75BBA3E518E0E67A00AC33D0 /* LogoViewController~ipad.xib in Resources */,
 				75A3721D18DCC74F0081B494 /* enchanted_water_eng.png in Resources */,
@@ -1044,6 +1119,7 @@
 				75A3722C18DCC74F0081B494 /* gift_eng.png in Resources */,
 				750B649018F9499000026F74 /* language_rus@2x.png in Resources */,
 				750B648F18F9499000026F74 /* language_eng@2x.png in Resources */,
+				755F87F51954DFE500CCD96F /* page2_site_rus.png in Resources */,
 				75A3721C18DCC74F0081B494 /* magic_fairy_tales_rus.png in Resources */,
 				750B648C18F9499000026F74 /* gift_eng@2x.png in Resources */,
 				750B647918F9499000026F74 /* background_main 640_1136@2x.png in Resources */,
@@ -1056,8 +1132,11 @@
 				750B647518F9499000026F74 /* 1_speaker_minus@2x.png in Resources */,
 				75BBA28D18E0B92800AC33D0 /* ContributorsViewController.xib in Resources */,
 				75A3723C18DCC74F0081B494 /* sea_carnival_rus.mp3 in Resources */,
+				755F87FF1954E1EA00CCD96F /* page2_text_0000_banner.png in Resources */,
 				75BBA3EA18E0E72800AC33D0 /* logo_rus.png in Resources */,
 				75BBA39A18E0B98400AC33D0 /* MKStoreKitConfigs.plist in Resources */,
+				755F88031954E21000CCD96F /* site_rus.png in Resources */,
+				755F87F41954DFE500CCD96F /* page2_site_eng.png in Resources */,
 				750B647A18F9499000026F74 /* background_main@2x.png in Resources */,
 				4566020318E1F0110080136E /* icon60.png in Resources */,
 				75A371B018DCC4BD0081B494 /* InfoPlist.strings in Resources */,
@@ -1078,12 +1157,14 @@
 				750B648918F9499000026F74 /* unwelcome_guest_rus@2x.png in Resources */,
 				75A3723818DCC74F0081B494 /* giant_cake_rus.mp3 in Resources */,
 				75A184D318DE299F007A4A22 /* 1_speaker_plus.png in Resources */,
+				755F87F11954DDD700CCD96F /* 640_tex_rus.png in Resources */,
 				4566020118E1F0110080136E /* icon29.png in Resources */,
 				75A3721F18DCC74F0081B494 /* performance_eng.png in Resources */,
 				75A3721A18DCC74F0081B494 /* background_main.png in Resources */,
 				75BBA28A18E0B92800AC33D0 /* AudioBookViewController.xib in Resources */,
 				75A3723518DCC74F0081B494 /* enchanted_water_eng.mp3 in Resources */,
 				75A3722D18DCC74F0081B494 /* gift_rus.png in Resources */,
+				755F88091954E22400CCD96F /* page2_text_0002_Крестик.png in Resources */,
 				750B649218F9499000026F74 /* player_play@2x.png in Resources */,
 				75A3721E18DCC74F0081B494 /* giant_cake_eng.png in Resources */,
 				750B648718F9499000026F74 /* sea_carnival_rus@2x.png in Resources */,
@@ -1092,11 +1173,14 @@
 				75A3723918DCC74F0081B494 /* performance_eng.mp3 in Resources */,
 				75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */,
 				750B648E18F9499000026F74 /* heart@2x.png in Resources */,
+				755F87FD1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png in Resources */,
 				75BBA3D518E0E19200AC33D0 /* README.md in Resources */,
+				755F88021954E21000CCD96F /* site_eng.png in Resources */,
 				4566020018E1F0110080136E /* icon.png in Resources */,
 				750B648B18F9499000026F74 /* contributors@2x.png in Resources */,
 				750B647F18F9499000026F74 /* giant_cake_eng@2x.png in Resources */,
 				75A184D518DE299F007A4A22 /* player_play.png in Resources */,
+				755F88061954E21C00CCD96F /* page2_text_0001_Слой-34.png in Resources */,
 				750B647D18F9499000026F74 /* magic_fairy_tales_rus@2x.png in Resources */,
 				75A3723B18DCC74F0081B494 /* sea_carnival_eng.mp3 in Resources */,
 				75A184CD18DE05A7007A4A22 /* sale_rus.png in Resources */,
@@ -1117,28 +1201,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Objective-Clean Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\" \nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\" \nfi\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		75A3719E18DCC4BD0081B494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AC9E33195203E900BC4E3C /* AboutUsViewController.m in Sources */,
 				75BBA39C18E0B98400AC33D0 /* MKStoreObserver.m in Sources */,
 				75BBA28918E0B92800AC33D0 /* AudioBookViewController.m in Sources */,
 				75BBA29818E0B96100AC33D0 /* VFUtils.m in Sources */,
