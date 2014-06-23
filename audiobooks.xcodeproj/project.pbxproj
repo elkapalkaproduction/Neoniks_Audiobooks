@@ -17,6 +17,31 @@
 		4566020A18E1F40C0080136E /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020818E1F40C0080136E /* icon152.png */; };
 		4566020C18E1F5010080136E /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4566020B18E1F5010080136E /* icon120.png */; };
 		458DA3B9192D66D6003E08E1 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458DA3B8192D66D6003E08E1 /* libAppLovinSdk.a */; };
+		4599AF5219562B52008EAF24 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF4E19562B52008EAF24 /* CHANGELOG.md */; };
+		4599AF5319562B52008EAF24 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5019562B52008EAF24 /* libChartboost.a */; };
+		4599AF5419562B52008EAF24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF5119562B52008EAF24 /* README.md */; };
+		4599AF5619562D23008EAF24 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5519562D23008EAF24 /* CoreData.framework */; };
+		4599AF5819562D33008EAF24 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5719562D33008EAF24 /* CoreMedia.framework */; };
+		4599AF5A19562F22008EAF24 /* ADCTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5919562F22008EAF24 /* ADCTracker.framework */; };
+		4599AF5C19564472008EAF24 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5B19564472008EAF24 /* AdColony.framework */; };
+		4599AF5E19564721008EAF24 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5D19564721008EAF24 /* libz.1.2.5.dylib */; };
+		4599AF6119564750008EAF24 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF5F19564750008EAF24 /* EventKit.framework */; };
+		4599AF6219564750008EAF24 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF6019564750008EAF24 /* EventKitUI.framework */; };
+		4599AF6419564770008EAF24 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4599AF6319564770008EAF24 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4599AF7419566BAD008EAF24 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6619566BAD008EAF24 /* icon.png */; };
+		4599AF7519566BAD008EAF24 /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6719566BAD008EAF24 /* icon29.png */; };
+		4599AF7619566BAD008EAF24 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6819566BAD008EAF24 /* icon40.png */; };
+		4599AF7719566BAD008EAF24 /* icon50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6919566BAD008EAF24 /* icon50.png */; };
+		4599AF7819566BAD008EAF24 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6A19566BAD008EAF24 /* icon57.png */; };
+		4599AF7919566BAD008EAF24 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6B19566BAD008EAF24 /* icon58.png */; };
+		4599AF7A19566BAD008EAF24 /* icon60.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6C19566BAD008EAF24 /* icon60.png */; };
+		4599AF7B19566BAD008EAF24 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6D19566BAD008EAF24 /* icon72.png */; };
+		4599AF7C19566BAD008EAF24 /* icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6E19566BAD008EAF24 /* icon76.png */; };
+		4599AF7D19566BAD008EAF24 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF6F19566BAD008EAF24 /* icon80.png */; };
+		4599AF7E19566BAD008EAF24 /* icon100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF7019566BAD008EAF24 /* icon100.png */; };
+		4599AF7F19566BAD008EAF24 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF7119566BAD008EAF24 /* icon114.png */; };
+		4599AF8019566BAD008EAF24 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF7219566BAD008EAF24 /* icon120.png */; };
+		4599AF8119566BAD008EAF24 /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 4599AF7319566BAD008EAF24 /* icon144.png */; };
 		45CE7F9318E2A64C0039EBBC /* AskingPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */; };
 		45CE7F9618E2C9FB0039EBBC /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9418E2C9FA0039EBBC /* icon57.png */; };
 		45CE7F9718E2C9FB0039EBBC /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CE7F9518E2C9FB0039EBBC /* icon72.png */; };
@@ -150,7 +175,7 @@
 		75BBA39D18E0B98400AC33D0 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BBA34218E0B98400AC33D0 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		75BBA39E18E0B98400AC33D0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75BBA34418E0B98400AC33D0 /* SVProgressHUD.bundle */; };
 		75BBA39F18E0B98400AC33D0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BBA34618E0B98400AC33D0 /* SVProgressHUD.m */; };
-		75BBA3AD18E0BAE100AC33D0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3A618E0BAE100AC33D0 /* AdSupport.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		75BBA3AD18E0BAE100AC33D0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3A618E0BAE100AC33D0 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		75BBA3AE18E0BAE100AC33D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3A718E0BAE100AC33D0 /* AudioToolbox.framework */; };
 		75BBA3AF18E0BAE100AC33D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3A818E0BAE100AC33D0 /* AVFoundation.framework */; };
 		75BBA3B018E0BAE100AC33D0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3A918E0BAE100AC33D0 /* CoreTelephony.framework */; };
@@ -165,9 +190,6 @@
 		75BBA3C918E0D92500AC33D0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3C818E0D92500AC33D0 /* libsqlite3.dylib */; };
 		75BBA3CB18E0DB1400AC33D0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3CA18E0DB1400AC33D0 /* libz.dylib */; };
 		75BBA3CD18E0DD0E00AC33D0 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3CC18E0DD0E00AC33D0 /* RevMobAds.framework */; };
-		75BBA3D318E0E19200AC33D0 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 75BBA3CF18E0E19200AC33D0 /* CHANGELOG.md */; };
-		75BBA3D418E0E19200AC33D0 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3D118E0E19200AC33D0 /* libChartboost.a */; };
-		75BBA3D518E0E19200AC33D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 75BBA3D218E0E19200AC33D0 /* README.md */; };
 		75BBA3D818E0E20F00AC33D0 /* ChartboostDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BBA3D718E0E20F00AC33D0 /* ChartboostDelegates.m */; };
 		75BBA3DC18E0E3BC00AC33D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3DB18E0E3BC00AC33D0 /* QuartzCore.framework */; };
 		75BBA3DD18E0E61C00AC33D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA3D918E0E30100AC33D0 /* Security.framework */; };
@@ -216,6 +238,37 @@
 		458DA3B6192D66CD003E08E1 /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
 		458DA3B7192D66CD003E08E1 /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
 		458DA3B8192D66D6003E08E1 /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
+		4599AF4919562B52008EAF24 /* CBMoreAppsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMoreAppsButton.h; sourceTree = "<group>"; };
+		4599AF4A19562B52008EAF24 /* CBNewsfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeed.h; sourceTree = "<group>"; };
+		4599AF4B19562B52008EAF24 /* CBNewsfeedUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeedUI.h; sourceTree = "<group>"; };
+		4599AF4C19562B52008EAF24 /* CBPostInstallAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPostInstallAnalyticsTracker.h; sourceTree = "<group>"; };
+		4599AF4D19562B52008EAF24 /* CBStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStory.h; sourceTree = "<group>"; };
+		4599AF4E19562B52008EAF24 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		4599AF4F19562B52008EAF24 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
+		4599AF5019562B52008EAF24 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
+		4599AF5119562B52008EAF24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4599AF5519562D23008EAF24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4599AF5719562D33008EAF24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4599AF5919562F22008EAF24 /* ADCTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADCTracker.framework; sourceTree = "<group>"; };
+		4599AF5B19564472008EAF24 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		4599AF5D19564721008EAF24 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		4599AF5F19564750008EAF24 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4599AF6019564750008EAF24 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		4599AF6319564770008EAF24 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4599AF6619566BAD008EAF24 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4599AF6719566BAD008EAF24 /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
+		4599AF6819566BAD008EAF24 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
+		4599AF6919566BAD008EAF24 /* icon50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon50.png; sourceTree = "<group>"; };
+		4599AF6A19566BAD008EAF24 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		4599AF6B19566BAD008EAF24 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		4599AF6C19566BAD008EAF24 /* icon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon60.png; sourceTree = "<group>"; };
+		4599AF6D19566BAD008EAF24 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
+		4599AF6E19566BAD008EAF24 /* icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76.png; sourceTree = "<group>"; };
+		4599AF6F19566BAD008EAF24 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		4599AF7019566BAD008EAF24 /* icon100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon100.png; sourceTree = "<group>"; };
+		4599AF7119566BAD008EAF24 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		4599AF7219566BAD008EAF24 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		4599AF7319566BAD008EAF24 /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
 		45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AskingPoint.framework; sourceTree = "<group>"; };
 		45CE7F9418E2C9FA0039EBBC /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		45CE7F9518E2C9FB0039EBBC /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
@@ -395,10 +448,6 @@
 		75BBA3C818E0D92500AC33D0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		75BBA3CA18E0DB1400AC33D0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		75BBA3CC18E0DD0E00AC33D0 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
-		75BBA3CF18E0E19200AC33D0 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		75BBA3D018E0E19200AC33D0 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
-		75BBA3D118E0E19200AC33D0 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
-		75BBA3D218E0E19200AC33D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		75BBA3D618E0E20F00AC33D0 /* ChartboostDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartboostDelegates.h; sourceTree = "<group>"; };
 		75BBA3D718E0E20F00AC33D0 /* ChartboostDelegates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartboostDelegates.m; sourceTree = "<group>"; };
 		75BBA3D918E0E30100AC33D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -417,6 +466,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4599AF6419564770008EAF24 /* Social.framework in Frameworks */,
+				4599AF6119564750008EAF24 /* EventKit.framework in Frameworks */,
+				4599AF6219564750008EAF24 /* EventKitUI.framework in Frameworks */,
+				4599AF5E19564721008EAF24 /* libz.1.2.5.dylib in Frameworks */,
+				4599AF5819562D33008EAF24 /* CoreMedia.framework in Frameworks */,
+				4599AF5619562D23008EAF24 /* CoreData.framework in Frameworks */,
 				75BBA3DD18E0E61C00AC33D0 /* Security.framework in Frameworks */,
 				458DA3B9192D66D6003E08E1 /* libAppLovinSdk.a in Frameworks */,
 				75BBA3DC18E0E3BC00AC33D0 /* QuartzCore.framework in Frameworks */,
@@ -433,11 +488,13 @@
 				75BBA3B118E0BAE100AC33D0 /* MessageUI.framework in Frameworks */,
 				75BBA3B218E0BAE100AC33D0 /* StoreKit.framework in Frameworks */,
 				75BBA3B318E0BAE100AC33D0 /* SystemConfiguration.framework in Frameworks */,
+				4599AF5319562B52008EAF24 /* libChartboost.a in Frameworks */,
 				75A371A818DCC4BD0081B494 /* CoreGraphics.framework in Frameworks */,
 				75A371AA18DCC4BD0081B494 /* UIKit.framework in Frameworks */,
 				75A371A618DCC4BD0081B494 /* Foundation.framework in Frameworks */,
+				4599AF5A19562F22008EAF24 /* ADCTracker.framework in Frameworks */,
+				4599AF5C19564472008EAF24 /* AdColony.framework in Frameworks */,
 				75BBA39418E0B98400AC33D0 /* libGoogleAdMobAds.a in Frameworks */,
-				75BBA3D418E0E19200AC33D0 /* libChartboost.a in Frameworks */,
 				75BBA3BF18E0C82000AC33D0 /* libFlurry_4.3.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +533,22 @@
 				458DA3B7192D66CD003E08E1 /* ALTargetingData.h */,
 			);
 			path = headers;
+			sourceTree = "<group>";
+		};
+		4599AF4819562B52008EAF24 /* Chartboost */ = {
+			isa = PBXGroup;
+			children = (
+				4599AF4919562B52008EAF24 /* CBMoreAppsButton.h */,
+				4599AF4A19562B52008EAF24 /* CBNewsfeed.h */,
+				4599AF4B19562B52008EAF24 /* CBNewsfeedUI.h */,
+				4599AF4C19562B52008EAF24 /* CBPostInstallAnalyticsTracker.h */,
+				4599AF4D19562B52008EAF24 /* CBStory.h */,
+				4599AF4E19562B52008EAF24 /* CHANGELOG.md */,
+				4599AF4F19562B52008EAF24 /* Chartboost.h */,
+				4599AF5019562B52008EAF24 /* libChartboost.a */,
+				4599AF5119562B52008EAF24 /* README.md */,
+			);
+			path = Chartboost;
 			sourceTree = "<group>";
 		};
 		750B644F18F9499000026F74 /* elfishki_audiobook@2x */ = {
@@ -581,6 +654,14 @@
 		75A371A418DCC4BD0081B494 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4599AF6319564770008EAF24 /* Social.framework */,
+				4599AF5F19564750008EAF24 /* EventKit.framework */,
+				4599AF6019564750008EAF24 /* EventKitUI.framework */,
+				4599AF5D19564721008EAF24 /* libz.1.2.5.dylib */,
+				4599AF5B19564472008EAF24 /* AdColony.framework */,
+				4599AF5919562F22008EAF24 /* ADCTracker.framework */,
+				4599AF5719562D33008EAF24 /* CoreMedia.framework */,
+				4599AF5519562D23008EAF24 /* CoreData.framework */,
 				45CE7F9218E2A64C0039EBBC /* AskingPoint.framework */,
 				75BBA3DB18E0E3BC00AC33D0 /* QuartzCore.framework */,
 				75BBA3D918E0E30100AC33D0 /* Security.framework */,
@@ -755,6 +836,20 @@
 		75A3720518DCC74F0081B494 /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				4599AF6619566BAD008EAF24 /* icon.png */,
+				4599AF6719566BAD008EAF24 /* icon29.png */,
+				4599AF6819566BAD008EAF24 /* icon40.png */,
+				4599AF6919566BAD008EAF24 /* icon50.png */,
+				4599AF6A19566BAD008EAF24 /* icon57.png */,
+				4599AF6B19566BAD008EAF24 /* icon58.png */,
+				4599AF6C19566BAD008EAF24 /* icon60.png */,
+				4599AF6D19566BAD008EAF24 /* icon72.png */,
+				4599AF6E19566BAD008EAF24 /* icon76.png */,
+				4599AF6F19566BAD008EAF24 /* icon80.png */,
+				4599AF7019566BAD008EAF24 /* icon100.png */,
+				4599AF7119566BAD008EAF24 /* icon114.png */,
+				4599AF7219566BAD008EAF24 /* icon120.png */,
+				4599AF7319566BAD008EAF24 /* icon144.png */,
 				45CE7F9418E2C9FA0039EBBC /* icon57.png */,
 				45CE7F9518E2C9FB0039EBBC /* icon72.png */,
 				4566020B18E1F5010080136E /* icon120.png */,
@@ -865,7 +960,7 @@
 		75BBA29918E0B98400AC33D0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				75BBA3CE18E0E19200AC33D0 /* Chartboost */,
+				4599AF4819562B52008EAF24 /* Chartboost */,
 				75BBA3CC18E0DD0E00AC33D0 /* RevMobAds.framework */,
 				75BBA3C218E0D8A500AC33D0 /* AppsalarSDK */,
 				75BBA3BC18E0C82000AC33D0 /* Flurry */,
@@ -952,17 +1047,6 @@
 				75BBA3C518E0D8A500AC33D0 /* libApsalar.a */,
 			);
 			path = AppsalarSDK;
-			sourceTree = "<group>";
-		};
-		75BBA3CE18E0E19200AC33D0 /* Chartboost */ = {
-			isa = PBXGroup;
-			children = (
-				75BBA3CF18E0E19200AC33D0 /* CHANGELOG.md */,
-				75BBA3D018E0E19200AC33D0 /* Chartboost.h */,
-				75BBA3D118E0E19200AC33D0 /* libChartboost.a */,
-				75BBA3D218E0E19200AC33D0 /* README.md */,
-			);
-			path = Chartboost;
 			sourceTree = "<group>";
 		};
 		75BBA3DE18E0E67A00AC33D0 /* LogoViewController */ = {
@@ -1066,12 +1150,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A3722B18DCC74F0081B494 /* language_rus.png in Resources */,
+				4599AF5219562B52008EAF24 /* CHANGELOG.md in Resources */,
 				75A3722E18DCC74F0081B494 /* heart.png in Resources */,
 				75A3721B18DCC74F0081B494 /* magic_fairy_tales_eng.png in Resources */,
 				75AC9E37195204BB00BC4E3C /* page2_text_0002_Cross.png in Resources */,
 				75BBA29118E0B92800AC33D0 /* ViewController~ipad.xib in Resources */,
 				750B647B18F9499000026F74 /* background_main_640_960@2x.png in Resources */,
 				75A3721818DCC74F0081B494 /* arrow_left.png in Resources */,
+				4599AF7419566BAD008EAF24 /* icon.png in Resources */,
 				75A184D418DE299F007A4A22 /* player_pause.png in Resources */,
 				750B647E18F9499000026F74 /* enchanted_water_eng@2x.png in Resources */,
 				75A3723618DCC74F0081B494 /* enchanted_water_rus.mp3 in Resources */,
@@ -1081,14 +1167,19 @@
 				750B648318F9499000026F74 /* unwelcome_guest_eng@2x.png in Resources */,
 				75A3724B18DCDE060081B494 /* texts_rus.plist in Resources */,
 				750B647818F9499000026F74 /* arrow_right@2x.png in Resources */,
+				4599AF8019566BAD008EAF24 /* icon120.png in Resources */,
+				4599AF7B19566BAD008EAF24 /* icon72.png in Resources */,
+				4599AF7819566BAD008EAF24 /* icon57.png in Resources */,
 				4566020618E1F3700080136E /* icon58.png in Resources */,
 				75A371C118DCC4BD0081B494 /* Images.xcassets in Resources */,
 				75A3721918DCC74F0081B494 /* arrow_right.png in Resources */,
 				750B649418F9499000026F74 /* sale_rus@2x.png in Resources */,
 				755F88071954E21C00CCD96F /* page2_text_0003_Слой-35.png in Resources */,
 				75BBA29018E0B92800AC33D0 /* ViewController.xib in Resources */,
+				4599AF7E19566BAD008EAF24 /* icon100.png in Resources */,
 				750B647C18F9499000026F74 /* magic_fairy_tales_eng@2x.png in Resources */,
 				4566020C18E1F5010080136E /* icon120.png in Resources */,
+				4599AF7F19566BAD008EAF24 /* icon114.png in Resources */,
 				755F87FB1954E1CF00CCD96F /* 1536_tex_rus.png in Resources */,
 				75A3724A18DCDE060081B494 /* texts_eng.plist in Resources */,
 				75A3722518DCC74F0081B494 /* performance_rus.png in Resources */,
@@ -1103,18 +1194,22 @@
 				75A3722A18DCC74F0081B494 /* contributors.png in Resources */,
 				755F87FA1954E1CF00CCD96F /* 1536_tex_eng.png in Resources */,
 				75A184CC18DE05A7007A4A22 /* sale_eng.png in Resources */,
+				4599AF5419562B52008EAF24 /* README.md in Resources */,
 				75A3722818DCC74F0081B494 /* unwelcome_guest_rus.png in Resources */,
 				750B648D18F9499000026F74 /* gift_rus@2x.png in Resources */,
 				750B647718F9499000026F74 /* arrow_left@2x.png in Resources */,
 				75A3722918DCC74F0081B494 /* book.png in Resources */,
 				75AC9E34195203E900BC4E3C /* AboutUsViewController.xib in Resources */,
 				75C40E5218F5CF1C005290EA /* StyleSettings.plist in Resources */,
+				4599AF8119566BAD008EAF24 /* icon144.png in Resources */,
 				75BBA3E518E0E67A00AC33D0 /* LogoViewController~ipad.xib in Resources */,
+				4599AF7719566BAD008EAF24 /* icon50.png in Resources */,
 				75A3721D18DCC74F0081B494 /* enchanted_water_eng.png in Resources */,
 				750B648618F9499000026F74 /* performance_rus@2x.png in Resources */,
 				750B648A18F9499000026F74 /* book@2x.png in Resources */,
 				4566020918E1F40C0080136E /* icon80.png in Resources */,
 				75A3725518DCF1E80081B494 /* background_main 640_1136.png in Resources */,
+				4599AF7D19566BAD008EAF24 /* icon80.png in Resources */,
 				750B647618F9499000026F74 /* 1_speaker_plus@2x.png in Resources */,
 				75A3722C18DCC74F0081B494 /* gift_eng.png in Resources */,
 				750B649018F9499000026F74 /* language_rus@2x.png in Resources */,
@@ -1126,6 +1221,7 @@
 				750B648418F9499000026F74 /* enchanted_water_rus@2x.png in Resources */,
 				750B649318F9499000026F74 /* sale_eng@2x.png in Resources */,
 				75BBA39E18E0B98400AC33D0 /* SVProgressHUD.bundle in Resources */,
+				4599AF7C19566BAD008EAF24 /* icon76.png in Resources */,
 				45CE7F9718E2C9FB0039EBBC /* icon72.png in Resources */,
 				75BBA3E918E0E72800AC33D0 /* logo_eng.png in Resources */,
 				45CE7F9618E2C9FB0039EBBC /* icon57.png in Resources */,
@@ -1135,9 +1231,11 @@
 				755F87FF1954E1EA00CCD96F /* page2_text_0000_banner.png in Resources */,
 				75BBA3EA18E0E72800AC33D0 /* logo_rus.png in Resources */,
 				75BBA39A18E0B98400AC33D0 /* MKStoreKitConfigs.plist in Resources */,
+				4599AF7919566BAD008EAF24 /* icon58.png in Resources */,
 				755F88031954E21000CCD96F /* site_rus.png in Resources */,
 				755F87F41954DFE500CCD96F /* page2_site_eng.png in Resources */,
 				750B647A18F9499000026F74 /* background_main@2x.png in Resources */,
+				4599AF7619566BAD008EAF24 /* icon40.png in Resources */,
 				4566020318E1F0110080136E /* icon60.png in Resources */,
 				75A371B018DCC4BD0081B494 /* InfoPlist.strings in Resources */,
 				750B648218F9499000026F74 /* strange_parcel_eng@2x.png in Resources */,
@@ -1152,6 +1250,7 @@
 				4566020418E1F0110080136E /* icon76.png in Resources */,
 				750B648518F9499000026F74 /* giant_cake_rus@2x.png in Resources */,
 				750B648018F9499000026F74 /* performance_eng@2x.png in Resources */,
+				4599AF7A19566BAD008EAF24 /* icon60.png in Resources */,
 				75A3722118DCC74F0081B494 /* strange_parcel_eng.png in Resources */,
 				75BBA28E18E0B92800AC33D0 /* ContributorsViewController~ipad.xib in Resources */,
 				750B648918F9499000026F74 /* unwelcome_guest_rus@2x.png in Resources */,
@@ -1161,6 +1260,7 @@
 				4566020118E1F0110080136E /* icon29.png in Resources */,
 				75A3721F18DCC74F0081B494 /* performance_eng.png in Resources */,
 				75A3721A18DCC74F0081B494 /* background_main.png in Resources */,
+				4599AF7519566BAD008EAF24 /* icon29.png in Resources */,
 				75BBA28A18E0B92800AC33D0 /* AudioBookViewController.xib in Resources */,
 				75A3723518DCC74F0081B494 /* enchanted_water_eng.mp3 in Resources */,
 				75A3722D18DCC74F0081B494 /* gift_rus.png in Resources */,
@@ -1174,7 +1274,6 @@
 				75A3723A18DCC74F0081B494 /* performance_rus.mp3 in Resources */,
 				750B648E18F9499000026F74 /* heart@2x.png in Resources */,
 				755F87FD1954E1D700CCD96F /* Audiobooks_О-нас_page2-RUS.png in Resources */,
-				75BBA3D518E0E19200AC33D0 /* README.md in Resources */,
 				755F88021954E21000CCD96F /* site_eng.png in Resources */,
 				4566020018E1F0110080136E /* icon.png in Resources */,
 				750B648B18F9499000026F74 /* contributors@2x.png in Resources */,
@@ -1187,7 +1286,6 @@
 				75A3722618DCC74F0081B494 /* sea_carnival_rus.png in Resources */,
 				75A3722318DCC74F0081B494 /* enchanted_water_rus.png in Resources */,
 				75A3722F18DCC74F0081B494 /* language_eng.png in Resources */,
-				75BBA3D318E0E19200AC33D0 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,7 +1446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Pavel Mamaev (695J4A4W4Z)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1368,13 +1466,14 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/audiobooks/Library/AppsalarSDK",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/audiobooks/Library/Chartboost",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2D41DA4F-A8C6-44FB-ACEE-9BDA1F8C8008";
+				PROVISIONING_PROFILE = "1B434DD0-B4B9-4B62-AC48-F87CF8E9341A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1385,8 +1484,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Pavel Mamaev (695J4A4W4Z)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavel Mamaev (695J4A4W4Z)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pavel Mamaev (94G97SK366)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/audiobooks/Library",
@@ -1405,13 +1504,14 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/audiobooks/Library/AppsalarSDK",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/audiobooks/Library/Chartboost",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2D41DA4F-A8C6-44FB-ACEE-9BDA1F8C8008";
+				PROVISIONING_PROFILE = "1B434DD0-B4B9-4B62-AC48-F87CF8E9341A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

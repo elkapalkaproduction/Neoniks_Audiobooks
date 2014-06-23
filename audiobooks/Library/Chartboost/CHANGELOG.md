@@ -1,7 +1,35 @@
 ###Changelog
 
-##### Upcoming
+##### v4.5
 
+- Newsfeed publicly available.
+- Post Install Analytics publicly available.
+
+##### v4.4.1
+
+- Chartboost now supports x86_64 architectures (64 bit simulator)
+
+##### v4.4
+
+- New MoreApps: Location support, new look and feel, custom headers
+- Updates to video beta, optimizations, portrait support
+- New Chartboost initialization method: startWithAppId:appSignature:delegate:
+- Automatic caching enabled after show calls.
+- Deprecated default location API calls.
+- Beta Products support: inPlay and News Feed.
+- New delegate method (didFailToRecordClick:withError:). Called when a click is registered, but the user is not fowrwarded to the App Store
+- Orientation improvements: an ad will now be displayed at any orientation it
+  claims supporting, when the current orientation is not.
+
+##### v4.2
+
+- New library (CBPostInstallAnalyticsTracker) made available to track IAP.
+- Apple non-default frameworks (Quartzcore, System Configuration, Store Kit and
+  Ad Support) don't have to be linked manually anymore.
+- Carrier information added to default request parameters
+- Changed Locations for caching interstitials and more apps to an defined list.
+  Locations are now a list of enum values that can be found in the Chartboost.h file.
+- App Sheet support for More Apps.
 
 ##### v4.1
 
@@ -14,6 +42,7 @@
 - Interstitial background is now blurred if the device & OS support it.
 - Fixed break statement missing in the example project.
 - Fixed issue with the vendor id.
+- Fixed massive memory leak, thorough refactor.
 
 ##### v4.0
 

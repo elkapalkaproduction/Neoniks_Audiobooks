@@ -11,6 +11,9 @@
 #import "ContributorsViewController.h"
 #import "AudioPlayer.h"
 #import "ChartboostDelegates.h"
+#import "Chartboost.h"
+#import <AdColony/AdColony.h>
+#import "VFAdsSingleton.h"
 @interface ViewController ()
 @property (strong, nonatomic) GADBannerView *bannerView;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
@@ -34,7 +37,14 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [[Chartboost sharedChartboost] showInterstitial];
+    [Chartboost startWithAppId:ChartboostAppID
+                  appSignature:ChartboostAppSignature
+                      delegate:self];
+    [[Chartboost sharedChartboost] showInterstitial:CBLocationMainMenu];
+    
+    [AdColony playVideoAdForZone:AdColonyOnStartZone withDelegate:nil];
+
+
     
 }
 -(void)viewWillAppear:(BOOL)animated{

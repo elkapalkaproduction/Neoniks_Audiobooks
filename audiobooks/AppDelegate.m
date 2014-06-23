@@ -15,6 +15,9 @@
 #import <AskingPoint/AskingPoint.h>
 #import "ALSdk.h"
 #import "ALInterstitialAd.h"
+#import <ADCTracker/ADCTracker.h>
+#import <AdColony/AdColony.h>
+#import "VFAdsSingleton.h"
 
 
 @implementation AppDelegate
@@ -40,11 +43,8 @@
     [Flurry startSession:FlurryKey];
     [Apsalar startSession:AppSalarKey withKey:AppSalarSecret];
     [RevMobAds startSessionWithAppID:RevMobKey];
-    Chartboost *cb = [Chartboost sharedChartboost];
-    cb.appId = ChartboostAppID;
-    cb.appSignature = ChartboostAppSignature;
-    cb.delegate = [ChartboostDelegates sharedManager];
-    [cb startSession];
+    
+    
     [ASKPManager startup:@"RABuADIBU5CuN0kHNHcmZSlQI-ykmfeHqjmjJaBH3Ws="];
     // AppLovin
     [ALSdk initializeSdk];
@@ -84,6 +84,18 @@
     
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
+    
+    // AdColony Tracker SDK
+    [ADCTracker startWithAppID:AdColonyAppID
+                        userID:@""
+                       logging:YES
+                       options:nil];
+    
+    [AdColony configureWithAppID:AdColonyAppID
+                         zoneIDs:@[AdColonyOnStartZone]
+                        delegate:nil
+                         logging:YES];
+
     return YES;
 }
 							
