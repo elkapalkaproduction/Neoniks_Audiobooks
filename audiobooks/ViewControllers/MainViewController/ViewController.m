@@ -40,16 +40,21 @@
     self.interstitial = [[GADInterstitial alloc] init];
     self.interstitial.adUnitID = AdMobOnStart;
     [self.interstitial loadRequest:[GADRequest request]];
-
+    [NSTimer scheduledTimerWithTimeInterval:60*10 target:self selector:@selector(showChartboost) userInfo:nil repeats:YES];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)showChartboost {
+    [[Chartboost sharedChartboost] showInterstitial:CBLocationMainMenu];
+
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [Chartboost startWithAppId:ChartboostAppID
                   appSignature:ChartboostAppSignature
                       delegate:nil];
-    [[Chartboost sharedChartboost] showInterstitial:CBLocationMainMenu];
-    
+    [self showChartboost];
     if ([AdColony zoneStatusForZone:AdColonyOnStartZone] == ADCOLONY_ZONE_STATUS_ACTIVE) {
         [AdColony playVideoAdForZone:AdColonyOnStartZone withDelegate:nil];
     } else {
