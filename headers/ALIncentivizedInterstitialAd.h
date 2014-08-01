@@ -26,12 +26,12 @@
 /**
  *  An object conforming to the ALAdDisplayDelegate protocol, which, if set, will be notified of ad show/hide events.
  */
-@property (strong, nonatomic) id<ALAdDisplayDelegate> adDisplayDelegate;
+@property (strong, nonatomic) id <ALAdDisplayDelegate> adDisplayDelegate;
 
 /**
  *  An object conforming to the ALAdVideoPlaybackDelegate protocol, which, if set, will be notified of video start/stop events.
  */
-@property (strong, nonatomic) id<ALAdVideoPlaybackDelegate> adVideoPlaybackDelegate;
+@property (strong, nonatomic) id <ALAdVideoPlaybackDelegate> adVideoPlaybackDelegate;
 
 /**
  * @name Integration, Class Methods
@@ -42,7 +42,7 @@
  *
  * This wraps the [ALSdk shared] call, and will only work if you hve set your SDK key in Info.plist.
 */
-+(ALIncentivizedInterstitialAd*) shared;
++ (ALIncentivizedInterstitialAd *)shared;
 
 /**
  * Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.
@@ -51,7 +51,7 @@
  *
  * @param adLoadDelegate The delegate to notify that preloading was completed.
  */
-+(void) preloadAndNotify: (id<ALAdLoadDelegate>) adLoadDelegate;
++ (void)preloadAndNotify:(id <ALAdLoadDelegate> )adLoadDelegate;
 
 /**
  * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
@@ -66,7 +66,7 @@
  * @param adRewardDelegate The reward delegate to notify upon validating reward authenticity with AppLovin.
  *
  */
-+(void) showAndNotify: (id<ALAdRewardDelegate>) adRewardDelegate;
++ (void)showAndNotify:(id <ALAdRewardDelegate> )adRewardDelegate;
 
 /**
  * Show an incentivized interstitial, using the most recently pre-loaded ad.
@@ -82,7 +82,7 @@
  * @param window The UIWindow over which the rewarded video should be displayed.
  *
  */
-+(void) showOver: (UIWindow*) window andNotify: (id<ALAdRewardDelegate>) adRewardDelegate;
++ (void)showOver:(UIWindow *)window andNotify:(id <ALAdRewardDelegate> )adRewardDelegate;
 
 /**
  * @name Integration, Instance Methods
@@ -95,14 +95,14 @@
  *
  * @param anSdk An SDK instance to use.
  */
--(instancetype) initIncentivizedInterstitialWithSdk: (ALSdk*) anSdk;
+- (instancetype)initIncentivizedInterstitialWithSdk:(ALSdk *)anSdk;
 
 /**
  * Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.
  *
  * @param adLoadDelegate The delegate to notify that preloading was completed.
  */
--(void) preloadAndNotify: (id<ALAdLoadDelegate>) adLoadDelegate;
+- (void)preloadAndNotify:(id <ALAdLoadDelegate> )adLoadDelegate;
 
 /**
  * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
@@ -117,7 +117,7 @@
  * @param adRewardDelegate The reward delegate to notify upon validating reward authenticity with AppLovin.
  *
  */
--(void) showAndNotify: (id<ALAdRewardDelegate>) adRewardDelegate;
+- (void)showAndNotify:(id <ALAdRewardDelegate> )adRewardDelegate;
 
 /**
  * Show an incentivized interstitial, using the most recently pre-loaded ad.
@@ -133,14 +133,14 @@
  * @param window The UIWindow over which the rewarded video should be displayed.
  *
  */
--(void) showOver: (UIWindow*) window andNotify: (id<ALAdRewardDelegate>) adRewardDelegate;
+- (void)showOver:(UIWindow *)window andNotify:(id <ALAdRewardDelegate> )adRewardDelegate;
 
 /**
  * Dismiss an incentivized interstitial prematurely, before video playback has completed.
  *
  * In most circumstances, this is not recommended, as it may confuse users by denying them a reward.
  */
--(void) dismiss;
+- (void)dismiss;
 
 /**
  * @name Custom User Identifiers
@@ -155,14 +155,15 @@
  *
  * @param userIdentifier Some descriptive string identifying the user, usually a username.
  */
-+(void) setUserIdentifier: (NSString*) userIdentifier;
++ (void)setUserIdentifier:(NSString *)userIdentifier;
 
 /**
  *  Get the currently set user identification string.
  *
  *  @return The last value supplied via setUserIdentifier:
  */
-+(NSString*) userIdentifier;
++ (NSString *)userIdentifier;
 
-- (id) init __attribute__((unavailable("Use [ALIncentivizedInterstitialAd shared] or initWithSdk: instead.")));
+- (id)init __attribute__((unavailable("Use [ALIncentivizedInterstitialAd shared] or initWithSdk: instead.")));
+
 @end

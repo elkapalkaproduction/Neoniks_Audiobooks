@@ -14,14 +14,14 @@
 #define GAD_SIMULATOR_ID @"Simulator"
 
 // Genders to help deliver more relevant ads.
-typedef NS_ENUM(NSInteger, GADGender) {
-  kGADGenderUnknown,  ///< Unknown gender.
-  kGADGenderMale,     ///< Male gender.
-  kGADGenderFemale    ///< Female gender.
+typedef NS_ENUM (NSInteger, GADGender) {
+    kGADGenderUnknown, ///< Unknown gender.
+    kGADGenderMale,   ///< Male gender.
+    kGADGenderFemale  ///< Female gender.
 };
 
 // Specifies optional parameters for ad requests.
-@interface GADRequest : NSObject<NSCopying>
+@interface GADRequest : NSObject <NSCopying>
 
 // Creates an autoreleased GADRequest.
 + (GADRequest *)request;
@@ -36,17 +36,17 @@ typedef NS_ENUM(NSInteger, GADGender) {
 // (gender, birthday, testing mode, etc.). If you register an extras object
 // that is the same class as one you have registered before, the previous
 // extras will be overwritten.
-- (void)registerAdNetworkExtras:(id<GADAdNetworkExtras>)extras;
+- (void)registerAdNetworkExtras:(id <GADAdNetworkExtras> )extras;
 
 // Get the network extras defined for an ad network.
-- (id<GADAdNetworkExtras>)adNetworkExtrasFor:(Class<GADAdNetworkExtras>)clazz;
+- (id <GADAdNetworkExtras> )adNetworkExtrasFor:(Class <GADAdNetworkExtras> )clazz;
 
 // Unsets the extras for an ad network. |clazz| is the class which represents
 // that network's extras type.
-- (void)removeAdNetworkExtrasFor:(Class<GADAdNetworkExtras>)clazz;
+- (void)removeAdNetworkExtrasFor:(Class <GADAdNetworkExtras> )clazz;
 
 // Extras sent to the mediation server (if using Mediation). For future use.
-@property(nonatomic, copy) NSDictionary *mediationExtras;
+@property (nonatomic, copy) NSDictionary *mediationExtras;
 
 #pragma mark Collecting SDK Information
 
@@ -56,15 +56,15 @@ typedef NS_ENUM(NSInteger, GADGender) {
 #pragma mark Testing
 
 // Add the device's identifier into this array for testing purposes.
-@property(nonatomic, copy) NSArray *testDevices;
+@property (nonatomic, copy) NSArray *testDevices;
 
 #pragma mark User Information
 
 // The user's gender may be used to deliver more relevant ads.
-@property(nonatomic, assign) GADGender gender;
+@property (nonatomic, assign) GADGender gender;
 
 // The user's birthday may be used to deliver more relevant ads.
-@property(nonatomic, retain) NSDate *birthday;
+@property (nonatomic, retain) NSDate *birthday;
 - (void)setBirthdayWithMonth:(NSInteger)m day:(NSInteger)d year:(NSInteger)y;
 
 // The user's current location may be used to deliver more relevant ads.
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSInteger, GADGender) {
 // A keyword is a word or phrase describing the current activity of the user
 // such as @"Sports Scores".  Each keyword is an NSString in the NSArray.  To
 // clear the keywords set this to nil.
-@property(nonatomic, retain) NSMutableArray *keywords;
+@property (nonatomic, retain) NSMutableArray *keywords;
 
 // Convenience method for adding keywords one at a time such as @"Sports Scores"
 // and then @"Football".
@@ -121,10 +121,10 @@ typedef NS_ENUM(NSInteger, GADGender) {
 // Accesses the additionalParameters for the "GoogleAdmob" ad network. Please
 // use -registerAdNetworkExtras: method above and pass an instance of
 // GADAdMobExtras instead.
-@property(nonatomic, copy) NSDictionary *additionalParameters;
+@property (nonatomic, copy) NSDictionary *additionalParameters;
 
 // This property has been deprecated with the latest SDK releases. Please use
 // testDevices.
-@property(nonatomic, assign, getter=isTesting) BOOL testing;
+@property (nonatomic, assign, getter = isTesting) BOOL testing;
 
 @end

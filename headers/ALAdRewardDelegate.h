@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ALAd.h"
 
-
 /**
  *  This protocol defines a listener for rewarded video events.
  */
@@ -30,7 +29,7 @@
  *  @param ad       Ad which was viewed.
  *  @param response Dictionary containing response data, including "currency" and "amount".
  */
--(void) rewardValidationRequestForAd: (ALAd*) ad didSucceedWithResponse: (NSDictionary*) response;
+- (void)rewardValidationRequestForAd:(ALAd *)ad didSucceedWithResponse:(NSDictionary *)response;
 
 /**
  * This method will be invoked if we were able to contact AppLovin, but the user has already received
@@ -39,7 +38,7 @@
  *  @param ad       Ad which was viewed.
  *  @param response Dictionary containing response data from the server.
  */
--(void) rewardValidationRequestForAd: (ALAd*) ad didExceedQuotaWithResponse: (NSDictionary*) response;
+- (void)rewardValidationRequestForAd:(ALAd *)ad didExceedQuotaWithResponse:(NSDictionary *)response;
 
 /**
  * This method will be invoked if the AppLovin server rejected the reward request.
@@ -48,7 +47,7 @@
  *  @param ad       Ad which was viewed.
  *  @param response Dictionary containing response data from the server.
  */
--(void) rewardValidationRequestForAd: (ALAd *) ad wasRejectedWithResponse: (NSDictionary*) response;
+- (void)rewardValidationRequestForAd:(ALAd *)ad wasRejectedWithResponse:(NSDictionary *)response;
 
 /**
  * This method will be invoked if were unable to contact AppLovin, so no ping will be heading to your server.
@@ -56,7 +55,7 @@
  *  @param ad           Ad which was viewed.
  *  @param responseCode A failure code corresponding to a constant defined in <code>ALErrorCodes.h</code>.
  */
--(void) rewardValidationRequestForAd: (ALAd*) ad didFailWithError: (NSInteger) responseCode;
+- (void)rewardValidationRequestForAd:(ALAd *)ad didFailWithError:(NSInteger)responseCode;
 
 @optional
 
@@ -67,6 +66,6 @@
  *
  * @param ad       Ad which was offered to the user, but declined.
  */
--(void) userDeclinedToViewAd: (ALAd*) ad;
+- (void)userDeclinedToViewAd:(ALAd *)ad;
 
 @end

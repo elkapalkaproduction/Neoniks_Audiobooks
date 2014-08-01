@@ -23,16 +23,15 @@
 //  3. This notice may not be removed or altered from any source distribution.
 
 //  As a side note on using this code, you might consider giving some credit to me by
-//	1) linking my website from your app's website 
-//	2) or crediting me inside the app's credits page 
+//	1) linking my website from your app's website
+//	2) or crediting me inside the app's credits page
 //	3) or a tweet mentioning @mugunthkumar
 //	4) A paypal donation to mugunth.kumar@gmail.com
-
 
 #import <Foundation/Foundation.h>
 #import "MKStoreKitConfigs.h"
 
-@interface MKSKProduct : NSObject 
+@interface MKSKProduct : NSObject
 
 @property (nonatomic, copy) void (^onReceiptVerificationSucceeded)();
 @property (nonatomic, copy) void (^onReceiptVerificationFailed)();
@@ -43,12 +42,12 @@
 @property (nonatomic, strong) NSURLConnection *theConnection;
 @property (nonatomic, strong) NSMutableData *dataFromConnection;
 
-- (void) verifyReceiptOnComplete:(void (^)(void)) completionBlock
-                         onError:(void (^)(NSError*)) errorBlock;
+- (void)verifyReceiptOnComplete:(void (^)(void))completionBlock
+                        onError:(void (^)(NSError *))errorBlock;
 
--(id) initWithProductId:(NSString*) aProductId receiptData:(NSData*) aReceipt;
+- (id)initWithProductId:(NSString *)aProductId receiptData:(NSData *)aReceipt;
 
-+(void) verifyProductForReviewAccess:(NSString*) productId
-                          onComplete:(void (^)(NSNumber*)) completionBlock
-                             onError:(void (^)(NSError*)) errorBlock;
++ (void)verifyProductForReviewAccess:(NSString *)productId
+                          onComplete:(void (^)(NSNumber *))completionBlock
+                             onError:(void (^)(NSError *))errorBlock;
 @end

@@ -27,14 +27,13 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 @protocol ChartboostDelegate;
 @class CBAnalytics, CBStore;
 
-
 @interface Chartboost : NSObject
 
 @property (retain) NSString *appId;
 @property (retain) NSString *appSignature;
 @property (retain) NSString *appPublicKey;
 
-@property (retain) UIView   *rootView;
+@property (retain) UIView *rootView;
 
 @property (assign) id <ChartboostDelegate> delegate;
 
@@ -90,14 +89,11 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 
 @end
 
-
 @protocol ChartboostDelegate <NSObject>
 @optional
 
 // All of the delegate methods below are optional.
 // Implement them only when you need to more finely control Chartboost's behavior.
-
-
 
 /// Called before requesting an interestitial from the back-end
 - (BOOL)shouldRequestInterstitial:(NSString *)location;
@@ -110,7 +106,7 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 - (void)didCacheInterstitial:(NSString *)location;
 
 /// Called when an interstitial has failed to come back from the server
-- (void)didFailToLoadInterstitial:(NSString *)location  withError:(CBLoadError)error;
+- (void)didFailToLoadInterstitial:(NSString *)location withError:(CBLoadError)error;
 
 /// Called when the user dismisses the interstitial
 /// If you are displaying the add yourself, dismiss it now.
@@ -124,7 +120,6 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 
 /// Called when the App Store sheet is dismissed, when displaying the embedded app sheet.
 - (void)didCompleteAppStoreSheetFlow;
-
 
 /// Called before requesting the more apps view from the back-end
 /// Return NO if when showing the loading view is not the desired user experience.
@@ -150,7 +145,6 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 /// Same as above, but only called when dismissed for a click
 - (void)didClickMoreApps;
 
-
 /// Whether Chartboost should show ads in the first session
 /// Defaults to YES
 - (BOOL)shouldRequestInterstitialsInFirstSession;
@@ -160,5 +154,4 @@ typedef void (^CBAgeGateConfirmation)(BOOL confirm);
 - (BOOL)shouldPauseClickForConfirmation:(CBAgeGateConfirmation)callback;
 
 @end
-
 

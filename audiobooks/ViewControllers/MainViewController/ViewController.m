@@ -26,23 +26,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [[VFAdsSingleton sharedManager] setAdMobTo:self];
+- (void)viewDidLoad {
+    [[VFAds sharedManager] setAdMobTo:self];
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
--(void)viewDidAppear:(BOOL)animated{
+
+
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [[Chartboost sharedChartboost] showInterstitial];
-    
 }
--(void)viewWillAppear:(BOOL)animated{
+
+
+- (void)viewWillAppear:(BOOL)animated {
     if (IS_PHONE4) {
         [VFUtils changeYPos:158 forItem:_guestCoverButton];
         [VFUtils changeYPos:158 forItem:_cakeCoverButton];
         [VFUtils changeYPos:158 forItem:_waterCoverButton];
-        
+
         [VFUtils changeYPos:296 forItem:_carnivalCoverButton];
         [VFUtils changeYPos:296 forItem:_parcelCoverButton];
         [VFUtils changeYPos:296 forItem:_fountainCoverButton];
@@ -51,12 +53,15 @@
     [super viewWillAppear:animated];
     [self updateLanguage];
 }
-- (void)didReceiveMemoryWarning
-{
+
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)updateLanguage{
+
+
+- (void)updateLanguage {
     [_mainTitleImage setImage:[VFUtils imageWithName:@"magic_fairy_tales"]];
     [_languageButton setBackgroundImage:[VFUtils imageWithName:@"language"] forState:UIControlStateNormal];
     [_guestCoverButton setBackgroundImage:[VFUtils imageWithName:guestTitle] forState:UIControlStateNormal];
@@ -66,34 +71,39 @@
     [_parcelCoverButton setBackgroundImage:[VFUtils imageWithName:parcelTitle] forState:UIControlStateNormal];
     [_fountainCoverButton setBackgroundImage:[VFUtils imageWithName:fountainTitle] forState:UIControlStateNormal];
 }
+
+
 - (IBAction)changeLanguage:(id)sender {
     [[AudioPlayer sharedManager] stop];
-        if (kRussian) {
-            kSetEnglish;
-        } else {
-            kSetRussian;
-        }
-    [VFAdsSingleton saveAnalytics:@"Language is switched"];
+    if (kRussian) {
+        kSetEnglish;
+    } else {
+        kSetRussian;
+    }
+    [VFAds saveAnalytics:@"Language is switched"];
 
-        [self updateLanguage];
+    [self updateLanguage];
 }
+
+
 - (IBAction)goToContributors:(id)sender {
-    [VFAdsSingleton saveAnalytics:@"Contributors button is clicked"];
+    [VFAds saveAnalytics:@"Contributors button is clicked"];
     ContributorsViewController *audioBook = [[ContributorsViewController alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:audioBook animated:YES];
-
 }
+
+
 - (IBAction)goToRateOnStore:(id)sender {
     NSURL *url = [NSURL URLWithString:[VFUtils getStringFromPlist:@"urlStore"]];
     [[UIApplication sharedApplication] openURL:url];
-
-    
 }
+
+
 - (IBAction)goToListenBook:(id)sender {
     int tag = (int)[sender tag];
     AudioBookViewController *audioBook = [[AudioBookViewController alloc] initWithNibName:@"AudioBookViewController" bundle:nil tag:tag];
     [self.navigationController pushViewController:audioBook animated:YES];
-    
 }
+
 
 @end

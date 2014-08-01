@@ -26,11 +26,10 @@
 //  3. This notice may not be removed or altered from any source distribution.
 
 //  As a side note on using this code, you might consider giving some credit to me by
-//	1) linking my website from your app's website 
-//	2) or crediting me inside the app's credits page 
+//	1) linking my website from your app's website
+//	2) or crediting me inside the app's credits page
 //	3) or a tweet mentioning @mugunthkumar
 //	4) A paypal donation to mugunth.kumar@gmail.com
-
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
@@ -50,36 +49,36 @@
 #define kSubscriptionsPurchasedNotification @"MKStoreKitSubscriptionsPurchased"
 #define kSubscriptionsInvalidNotification @"MKStoreKitSubscriptionsInvalid"
 
-@interface MKStoreManager : NSObject<SKProductsRequestDelegate>
+@interface MKStoreManager : NSObject <SKProductsRequestDelegate>
 
 // These are the methods you will be using in your app
-+ (MKStoreManager*)sharedManager;
++ (MKStoreManager *)sharedManager;
 
 // this is a static method, since it doesn't require the store manager to be initialized prior to calling
-+ (BOOL) isFeaturePurchased:(NSString*) featureId; 
++ (BOOL)isFeaturePurchased:(NSString *)featureId;
 //returns a dictionary with all prices for identifiers
 - (NSMutableDictionary *)pricesDictionary;
-- (NSMutableArray*) purchasableObjectsDescription;
+- (NSMutableArray *)purchasableObjectsDescription;
 
 // use this method to invoke a purchase
-- (void) buyFeature:(NSString*) featureId
-         onComplete:(void (^)(NSString* purchasedFeature, NSData*purchasedReceipt)) completionBlock         
-        onCancelled:(void (^)(void)) cancelBlock;
+- (void)buyFeature:(NSString *)featureId
+        onComplete:(void (^)(NSString *purchasedFeature, NSData *purchasedReceipt))completionBlock
+       onCancelled:(void (^)(void))cancelBlock;
 
 // use this method to restore a purchase
-- (void) restorePreviousTransactionsOnComplete:(void (^)(void)) completionBlock
-                                       onError:(void (^)(NSError* error)) errorBlock;
+- (void)restorePreviousTransactionsOnComplete:(void (^)(void))completionBlock
+                                      onError:(void (^)(NSError *error))errorBlock;
 
-- (BOOL) canConsumeProduct:(NSString*) productName quantity:(int) quantity;
-- (BOOL) consumeProduct:(NSString*) productName quantity:(int) quantity;
-- (BOOL) isSubscriptionActive:(NSString*) featureId;
+- (BOOL)canConsumeProduct:(NSString *)productName quantity:(int)quantity;
+- (BOOL)consumeProduct:(NSString *)productName quantity:(int)quantity;
+- (BOOL)isSubscriptionActive:(NSString *)featureId;
 //for testing proposes you can use this method to remove all the saved keychain data (saved purchases, etc.)
-- (BOOL) removeAllKeychainData;
+- (BOOL)removeAllKeychainData;
 
-+(id) receiptForKey:(NSString*) key;
-+(void) setObject:(id) object forKey:(NSString*) key;
-+(NSNumber*) numberForKey:(NSString*) key;
++ (id)receiptForKey:(NSString *)key;
++ (void)setObject:(id)object forKey:(NSString *)key;
++ (NSNumber *)numberForKey:(NSString *)key;
 
--(void) restoreCompleted;
--(void) restoreFailedWithError:(NSError*) error;
+- (void)restoreCompleted;
+- (void)restoreFailedWithError:(NSError *)error;
 @end

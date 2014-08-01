@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Chartboost.h"
-@interface ChartboostDelegates : NSObject<ChartboostDelegate>
-+(id)sharedManager;
+@interface ChartboostDelegates : NSObject <ChartboostDelegate>
++ (id)sharedManager;
 @end

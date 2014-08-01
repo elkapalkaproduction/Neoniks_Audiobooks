@@ -4,7 +4,6 @@
 //
 //  Copyright (c) 2013, AppLovin Corporation. All rights reserved.
 
-
 #import <Foundation/Foundation.h>
 #import "ALAdSize.h"
 #import "ALAdType.h"
@@ -22,17 +21,17 @@
 /**
  *  The size of this ad.
  */
-@property (strong, nonatomic) ALAdSize* size;
+@property (strong, nonatomic) ALAdSize *size;
 
 /**
  *  The type of this ad.
  */
-@property (strong, nonatomic) ALAdType* type;
+@property (strong, nonatomic) ALAdType *type;
 
 /**
  *  Whether or not the current ad is a video advertisement.
  */
-@property (assign, readonly, getter=isVideoAd) BOOL videoAd;
+@property (assign, readonly, getter = isVideoAd) BOOL videoAd;
 
 /**
  * @name Ad Identification
@@ -40,15 +39,15 @@
 
 /**
  *  A unique ID which identifies this advertisement.
- *  
+ *
  *  Should you need to report a broken ad to AppLovin support, please include this number's longValue.
  */
-@property (strong, nonatomic) NSNumber * adIdNumber;
+@property (strong, nonatomic) NSNumber *adIdNumber;
 
 // These property aliases are left for backwards compatibility only, and should no longer be used.
-@property (strong, readonly, getter=createEmptyString) NSString * html __deprecated;
-@property (strong, readonly, getter=createEmptyArray)  NSArray * destinationUrls __deprecated;
-@property (strong, readonly, getter=size) ALAdSize* adSize __deprecated;
-@property (strong, readonly, getter=type) ALAdType* adType __deprecated;
+@property (strong, readonly, getter = createEmptyString) NSString *html __deprecated;
+@property (strong, readonly, getter = createEmptyArray)  NSArray *destinationUrls __deprecated;
+@property (strong, readonly, getter = size) ALAdSize *adSize __deprecated;
+@property (strong, readonly, getter = type) ALAdType *adType __deprecated;
 
 @end

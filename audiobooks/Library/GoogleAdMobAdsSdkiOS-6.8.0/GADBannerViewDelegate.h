@@ -12,7 +12,7 @@
 
 // Delegate for receiving state change messages from a GADBannerView such as ad
 // requests succeeding/failing or when an ad has been clicked.
-@protocol GADBannerViewDelegate<NSObject>
+@protocol GADBannerViewDelegate <NSObject>
 
 @optional
 

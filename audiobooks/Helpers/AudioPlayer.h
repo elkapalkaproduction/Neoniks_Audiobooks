@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-@interface AudioPlayer : NSObject<UIAlertViewDelegate>
+@interface AudioPlayer : NSObject <UIAlertViewDelegate>
 + (id)sharedManager;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (assign, nonatomic) int currentTrack;
 @property (assign, nonatomic) BOOL languageRussian;
--(void)playBook:(int)currentTrack;
--(void)stop;
+- (void)playBook:(int)currentTrack;
+- (void)stop;
 @end

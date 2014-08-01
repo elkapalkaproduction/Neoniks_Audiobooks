@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Andrei Vidrasco. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "VFAdsSingleton.h"
+#import "VFAds.h"
 
 ///AudioBooks
-#define guestTitle  @"unwelcome_guest"//tag1
+#define guestTitle  @"unwelcome_guest" //tag1
 #define cakeTitle  @"giant_cake" //tag2
-#define waterTitle @"enchanted_water"//tag3
-#define carnivalTitle @"sea_carnival"//tag4
-#define parcelTitle @"strange_parcel"//tag5
-#define fountainTitle @"performance"//tag6
+#define waterTitle @"enchanted_water" //tag3
+#define carnivalTitle @"sea_carnival" //tag4
+#define parcelTitle @"strange_parcel" //tag5
+#define fountainTitle @"performance" //tag6
 
 ////------////
 
@@ -28,7 +28,6 @@
 #define fountainInApp @"com.neoniks.audiobooks.fountain.unlock"
 #define allInApp @"com.neoniks.audiobooks.all.unlock"
 ////------////
-
 
 #define kLanguage @"PreferedLanguage"
 #define kRussianLanguageTag @"ru"
@@ -46,18 +45,18 @@
 
 #define IS_PHONE4 [UIScreen mainScreen].bounds.size.height != 568 && IS_PHONE
 
-#define AVLocalizedSystem(string) [NSString stringWithFormat:@"%@_%@",string,kRussian? @"rus":@"eng"]
+#define AVLocalizedSystem(string) [NSString stringWithFormat : @"%@_%@", string, kRussian ? @"rus" : @"eng"]
 
 #define kAnimationDuration 1
-#define kAnimationHide kAnimationDuration/1.9
+#define kAnimationHide kAnimationDuration / 1.9
 
 @interface VFUtils : NSObject
-+(UIImage *)imageWithName:(NSString *)name;
-+(UIButton *)buttonWithFrame:(CGRect)rect tag:(int)tag image:(UIImage *)image target:(id)target selector:(SEL)selector;
-+(NSString *)getTimeForSeconds:(double)time;
-+(void)changeYPos:(int)y forItem:(id)item;
-+(NSString *)getTitle:(int)tag;
-+(NSString *)getPurchased:(int)tag;
-+(BOOL)isPurcahed:(int)tag;
-+(NSString *)getStringFromPlist:(NSString *)key;
++ (UIImage *)imageWithName:(NSString *)name;
++ (UIButton *)buttonWithFrame:(CGRect)rect tag:(int)tag image:(UIImage *)image target:(id)target selector:(SEL)selector;
++ (NSString *)getTimeForSeconds:(double)time;
++ (void)changeYPos:(int)y forItem:(id)item;
++ (NSString *)getTitle:(int)tag;
++ (NSString *)getPurchased:(int)tag;
++ (BOOL)isPurcahed:(int)tag;
++ (NSString *)getStringFromPlist:(NSString *)key;
 @end

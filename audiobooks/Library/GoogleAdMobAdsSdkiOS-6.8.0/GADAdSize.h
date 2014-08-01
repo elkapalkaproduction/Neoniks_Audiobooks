@@ -15,8 +15,8 @@
 // Treat GADAdSize as an opaque type. Do not access any fields directly. To
 // obtain a concrete CGSize, use the function CGSizeFromGADAdSize().
 typedef struct GADAdSize {
-  CGSize size;
-  NSUInteger flags;
+    CGSize size;
+    NSUInteger flags;
 } GADAdSize;
 
 #pragma mark Standard Sizes

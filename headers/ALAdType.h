@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 /**
  *  This class represents the behavior of an ad.
  */
@@ -22,7 +21,7 @@
 /**
  *  String representing the name of this ad type.
  */
-@property (readonly) NSString* label;
+@property (readonly) NSString *label;
 
 /**
  *  @name Supported Ad Type Singletons
@@ -33,7 +32,7 @@
  *
  *  @return ALAdType representing a standard advertisement.
  */
-+(ALAdType*) typeRegular;
++ (ALAdType *)typeRegular;
 
 /**
  *  Represents a rewarded video.
@@ -42,18 +41,17 @@
  *
  *  @return ALAdType representing a rewarded video.
  */
-+(ALAdType*) typeIncentivized;
++ (ALAdType *)typeIncentivized;
 
 /**
  *  Retrieve an <code>NSArray</code> of all available ad size singleton instances.
  *
  *  @return <code>[NSArray arrayWithObjects: [ALAdType typeRegular], [ALAdType typeIncentivized], nil];</code>
  */
-+(NSArray*) allTypes;
-
++ (NSArray *)allTypes;
 
 // Avoid these methods unless specifically necessary.
--(instancetype) initWithLabel: (NSString *) label;
-+(ALAdType *) adTypeFromString: (NSString*) adType;
+- (instancetype)initWithLabel:(NSString *)label;
++ (ALAdType *)adTypeFromString:(NSString *)adType;
 
 @end

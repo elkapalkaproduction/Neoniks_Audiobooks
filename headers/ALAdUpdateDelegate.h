@@ -10,7 +10,7 @@
 
 @protocol ALAdUpdateObserver <NSObject>
 
--(void)adService:(ALAdService *)adService didUpdateAd:(ALAd *)ad;
--(BOOL)canAcceptUpdate;
+- (void)adService:(ALAdService *)adService didUpdateAd:(ALAd *)ad;
+- (BOOL)canAcceptUpdate;
 
 @end

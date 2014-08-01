@@ -13,16 +13,17 @@
     static ChartboostDelegates *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
-    });
+                      sharedMyManager = [[self alloc] init];
+                  });
+
     return sharedMyManager;
 }
+
 
 /*
  * Chartboost Delegate Methods
  *
  */
-
 
 /*
  * shouldDisplayInterstitial
@@ -39,10 +40,10 @@
 
 - (BOOL)shouldDisplayInterstitial:(NSString *)location {
     NSLog(@"about to display interstitial at location %@", location);
-    
+
     // For example:
     // if the user has left the main menu and is currently playing your game, return NO;
-    
+
     // Otherwise return YES to display the interstitial
     return YES;
 }
@@ -56,36 +57,45 @@
  */
 
 - (void)didFailToLoadInterstitial:(NSString *)location withError:(CBLoadError)error {
-    switch(error){
+    switch (error) {
         case CBLoadErrorInternetUnavailable: {
             NSLog(@"Failed to load Interstitial, no Internet connection !");
         } break;
+
         case CBLoadErrorInternal: {
             NSLog(@"Failed to load Interstitial, internal error !");
         } break;
+
         case CBLoadErrorNetworkFailure: {
             NSLog(@"Failed to load Interstitial, network error !");
         } break;
+
         case CBLoadErrorWrongOrientation: {
             NSLog(@"Failed to load Interstitial, wrong orientation !");
         } break;
+
         case CBLoadErrorTooManyConnections: {
             NSLog(@"Failed to load Interstitial, too many connections !");
         } break;
+
         case CBLoadErrorFirstSessionInterstitialsDisabled: {
             NSLog(@"Failed to load Interstitial, first session !");
         } break;
-        case CBLoadErrorNoAdFound : {
+
+        case CBLoadErrorNoAdFound: {
             NSLog(@"Failed to load Interstitial, no ad found !");
         } break;
-        case CBLoadErrorSessionNotStarted : {
+
+        case CBLoadErrorSessionNotStarted: {
             NSLog(@"Failed to load Interstitial, session not started !");
         } break;
+
         default: {
             NSLog(@"Failed to load Interstitial, unknown error !");
         }
     }
 }
+
 
 /*
  * didCacheInterstitial
@@ -105,6 +115,7 @@
     NSLog(@"interstitial cached at location %@", location);
 }
 
+
 /*
  * didFailToLoadMoreApps
  *
@@ -118,36 +129,45 @@
  */
 
 - (void)didFailToLoadMoreApps:(CBLoadError)error {
-    switch(error){
+    switch (error) {
         case CBLoadErrorInternetUnavailable: {
             NSLog(@"Failed to load More Apps, no Internet connection !");
         } break;
+
         case CBLoadErrorInternal: {
             NSLog(@"Failed to load More Apps, internal error !");
         } break;
+
         case CBLoadErrorNetworkFailure: {
             NSLog(@"Failed to load More Apps, network error !");
         } break;
+
         case CBLoadErrorWrongOrientation: {
             NSLog(@"Failed to load More Apps, wrong orientation !");
         } break;
+
         case CBLoadErrorTooManyConnections: {
             NSLog(@"Failed to load More Apps, too many connections !");
         } break;
+
         case CBLoadErrorFirstSessionInterstitialsDisabled: {
             NSLog(@"Failed to load More Apps, first session !");
         } break;
+
         case CBLoadErrorNoAdFound: {
             NSLog(@"Failed to load More Apps, Apps not found !");
         } break;
-        case CBLoadErrorSessionNotStarted : {
+
+        case CBLoadErrorSessionNotStarted: {
             NSLog(@"Failed to load Interstitial, session not started !");
         } break;
+
         default: {
             NSLog(@"Failed to load More Apps, unknown error !");
         }
     }
 }
+
 
 /*
  * didDismissInterstitial
@@ -166,6 +186,7 @@
     [[Chartboost sharedChartboost] cacheInterstitial:location];
 }
 
+
 /*
  * didDismissMoreApps
  *
@@ -183,6 +204,7 @@
     [[Chartboost sharedChartboost] cacheMoreApps];
 }
 
+
 /*
  * shouldRequestInterstitialsInFirstSession
  *
@@ -195,5 +217,6 @@
 - (BOOL)shouldRequestInterstitialsInFirstSession {
     return YES;
 }
+
 
 @end

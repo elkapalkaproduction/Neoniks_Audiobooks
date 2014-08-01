@@ -23,23 +23,20 @@
 //  3. This notice may not be removed or altered from any source distribution.
 
 //  As a side note on using this code, you might consider giving some credit to me by
-//	1) linking my website from your app's website 
-//	2) or crediting me inside the app's credits page 
+//	1) linking my website from your app's website
+//	2) or crediting me inside the app's credits page
 //	3) or a tweet mentioning @mugunthkumar
 //	4) A paypal donation to mugunth.kumar@gmail.com
-
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
-@interface MKStoreObserver : NSObject<SKPaymentTransactionObserver> {
-  
-	
+@interface MKStoreObserver : NSObject <SKPaymentTransactionObserver> {
 }
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions;
-- (void) failedTransaction: (SKPaymentTransaction *)transaction;
-- (void) completeTransaction: (SKPaymentTransaction *)transaction;
-- (void) restoreTransaction: (SKPaymentTransaction *)transaction;
+- (void)failedTransaction:(SKPaymentTransaction *)transaction;
+- (void)completeTransaction:(SKPaymentTransaction *)transaction;
+- (void)restoreTransaction:(SKPaymentTransaction *)transaction;
 
 @end

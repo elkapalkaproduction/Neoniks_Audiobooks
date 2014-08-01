@@ -27,12 +27,12 @@
 /**
  * This SDK's key.
  */
-@property (strong, readonly) NSString* sdkKey;
+@property (strong, readonly) NSString *sdkKey;
 
 /**
  * This SDK's settings.
  */
-@property (strong, readonly) ALSdkSettings* settings;
+@property (strong, readonly) ALSdkSettings *settings;
 
 /**
  * Set Plugin version.
@@ -42,7 +42,7 @@
  *
  * @param version Some descriptive string which identifies the plugin.
  */
--(void) setPluginVersion: (NSString *) version;
+- (void)setPluginVersion:(NSString *)version;
 
 /**
  * @name SDK Information
@@ -53,7 +53,7 @@
  *
  *  @return The current SDK version.
  */
-+(NSString *) version;
++ (NSString *)version;
 
 /**
  * @name SDK Services
@@ -65,7 +65,7 @@
  *
  * @return Ad service. Guaranteed not to be null.
  */
--(ALAdService *) adService;
+- (ALAdService *)adService;
 
 /**
  * @name Custom User Targeting
@@ -78,7 +78,7 @@
  *
  * @return Current targeting data. Guaranteed not to be null.
  */
--(ALTargetingData *) targetingData;
+- (ALTargetingData *)targetingData;
 
 /**
  * @name SDK Initialization
@@ -88,7 +88,7 @@
  * Initialize current version of the SDK.
  *
  */
--(void) initializeSdk;
+- (void)initializeSdk;
 
 /**
  * Initialize the default instance of AppLovin SDK.
@@ -98,7 +98,7 @@
  *
  * @return An instance of AppLovinSDK
  */
-+(void) initializeSdk;
++ (void)initializeSdk;
 
 /**
  * @name Getting SDK Instances
@@ -112,7 +112,7 @@
  *
  * @return An instance of AppLovinSDK
  */
-+(ALSdk *) shared;
++ (ALSdk *)shared;
 
 /**
  * Get an instance of AppLovin SDK using default SDK settings.
@@ -121,20 +121,20 @@
  *
  * @return An instance of AppLovinSDK
  */
-+(ALSdk *) sharedWithKey: (NSString *) sdkKey;
++ (ALSdk *)sharedWithKey:(NSString *)sdkKey;
 
 /**
  * Get an instance of AppLovin SDK.
- * 
+ *
  * @param sdkKey         SDK key to use. Must not be nil.
  * @param settings       User-provided settings. Must not be nil, but can be an empty <code>[[ALSdkSettings alloc] init]</code> object.
- * 
+ *
  * @return An instance of AppLovinSDK
  */
-+(ALSdk *) sharedWithKey: (NSString *)sdkKey settings: (ALSdkSettings *)settings;
++ (ALSdk *)sharedWithKey:(NSString *)sdkKey settings:(ALSdkSettings *)settings;
 
 - (id)init __attribute__((unavailable("Use [ALSdk shared] instead of alloc-init pattern.")));
 
 // Please start using [ALSdk version] instead.
-extern NSString * const ALSdkVersion __deprecated;
+extern NSString *const ALSdkVersion __deprecated;
 @end

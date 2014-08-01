@@ -9,20 +9,19 @@
 /**
  * This class contains settings for the AppLovin SDK.
  */
-@interface ALSdkSettings : NSObject 
+@interface ALSdkSettings : NSObject
 
 /**
- * Toggle verbose logging of AppLovin SDK. 
- * 
- * If enabled AppLovin messages will appear in standard application log accessible via logcat. 
+ * Toggle verbose logging of AppLovin SDK.
+ *
+ * If enabled AppLovin messages will appear in standard application log accessible via logcat.
  * All log messages will have "AppLovinSdk" tag.
- * 
+ *
  * Verbose logging is <i>disabled</i> by default.
- * 
+ *
  * @param isVerboseLoggingEnabled YES if log messages should be output. NO if the SDK should be silent (recommended for App Store submissions).
  */
 @property (assign, atomic) BOOL isVerboseLogging;
-
 
 /**
  * Defines sizes of ads that should be automatically preloaded.
@@ -31,6 +30,6 @@
  *
  * @param autoPreloadAdSizes Comma-separated list of sizes to preload. For example: "BANNER,INTER"
  */
-@property (strong, atomic) NSString * autoPreloadAdSizes;
+@property (strong, atomic) NSString *autoPreloadAdSizes;
 
 @end
