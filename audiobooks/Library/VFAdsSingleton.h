@@ -22,9 +22,10 @@
 
 #define AdColonyAppID @"app51af74a4517d4511b2"
 #define AdColonyOnStartZone @"vzdf9f9b654d24424fa5"
+#define AdColonyOnPressNo @"vz6148ff5517d648239b"
 
-#define RevMobKey @"532fd204e7e5d4be2c067e88"
-
+#define AdMobOnStart @"ca-app-pub-1480731978958686/4126444995"
+#define AdMobOnPressNo @"ca-app-pub-1480731978958686/4126444995"
 
 @interface VFAdsSingleton : NSObject
 @property (strong, nonatomic) GADBannerView *bannerView;

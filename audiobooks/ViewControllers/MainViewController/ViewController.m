@@ -14,6 +14,8 @@
 #import "Chartboost.h"
 #import <AdColony/AdColony.h>
 #import "VFAdsSingleton.h"
+#import "GADInterstitial.h"
+
 @interface ViewController ()
 @property (strong, nonatomic) GADBannerView *bannerView;
 @property (strong, nonatomic) IBOutlet UIImageView *mainTitleImage;
@@ -24,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *carnivalCoverButton;
 @property (strong, nonatomic) IBOutlet UIButton *parcelCoverButton;
 @property (strong, nonatomic) IBOutlet UIButton *fountainCoverButton;
+@property (strong, nonatomic) GADInterstitial *interstitial;
 
 @end
 
@@ -31,18 +34,27 @@
 
 - (void)viewDidLoad
 {
-    [[VFAdsSingleton sharedManager] setAdMobTo:self];
     [super viewDidLoad];
+    [[VFAdsSingleton sharedManager] setAdMobTo:self];
+    
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = AdMobOnStart;
+    [self.interstitial loadRequest:[GADRequest request]];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [Chartboost startWithAppId:ChartboostAppID
                   appSignature:ChartboostAppSignature
-                      delegate:self];
+                      delegate:nil];
     [[Chartboost sharedChartboost] showInterstitial:CBLocationMainMenu];
     
-    [AdColony playVideoAdForZone:AdColonyOnStartZone withDelegate:nil];
+    if ([AdColony zoneStatusForZone:AdColonyOnStartZone] == ADCOLONY_ZONE_STATUS_ACTIVE) {
+        [AdColony playVideoAdForZone:AdColonyOnStartZone withDelegate:nil];
+    } else {
+        [self.interstitial presentFromRootViewController:self];
+    }
 
 
     

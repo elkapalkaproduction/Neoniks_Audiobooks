@@ -12,9 +12,10 @@
 #import "AudioPlayer.h"
 #import "MKStoreManager.h"
 #import "SVProgressHUD.h"
-#import <RevMobAds/RevMobAds.h>
-@interface AudioBookViewController ()<UIAlertViewDelegate,RevMobAdsDelegate>
-@property (strong, nonatomic) RevMobAdLink *link;
+#import <AdColony/AdColony.h>
+#import "GADInterstitial.h"
+
+@interface AudioBookViewController ()<UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSTimer *timer;
 @property (assign, nonatomic) int numberOfTale;
@@ -37,6 +38,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *buyAllBook;
 @property (strong, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *currentTimeLabel;
+@property (strong, nonatomic) GADInterstitial *interstitial;
 
 @end
 
@@ -80,6 +82,10 @@
     [[VFAdsSingleton sharedManager] setAdMobTo:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLanguage) name:@"alertClicked" object:nil];
     [super viewDidLoad];
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = AdMobOnPressNo;
+    [self.interstitial loadRequest:[GADRequest request]];
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -263,22 +269,25 @@
 }
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (alertView.tag == 1) {
-        UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"" message:[VFUtils getStringFromPlist:@"freeGameOffer"] delegate:self cancelButtonTitle:[VFUtils getStringFromPlist:@"No"] otherButtonTitles:[VFUtils getStringFromPlist:@"Yes"], nil];
-        alert.tag = 2;
-        self.link = [[RevMobAds session] adLink];
-        [self.link loadAd];
-        [alert show];
+        if ([AdColony zoneStatusForZone:AdColonyOnPressNo] == ADCOLONY_ZONE_STATUS_ACTIVE) {
+            [AdColony playVideoAdForZone:AdColonyOnPressNo withDelegate:nil];
+        } else {
+            [self.interstitial presentFromRootViewController:self];
+        }
+
+//        UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"" message:[VFUtils getStringFromPlist:@"freeGameOffer"] delegate:self cancelButtonTitle:[VFUtils getStringFromPlist:@"No"] otherButtonTitles:[VFUtils getStringFromPlist:@"Yes"], nil];
+//        alert.tag = 2;
+//        [alert show];
     }
     if (alertView.tag == 2) {
-        if (buttonIndex == 1) {
-            NSString *string =[NSString stringWithFormat:@"user_press_RevMobsYes_in_%@",[VFUtils getTitle:_numberOfTale]];
-            [VFAdsSingleton saveAnalytics:AVLocalizedSystem(string)];
-            if (self.link) [self.link openLink];
-        } else {
-            NSString *string =[NSString stringWithFormat:@"user_press_RevMobsYes_in_%@",[VFUtils getTitle:_numberOfTale]];
-            [VFAdsSingleton saveAnalytics:AVLocalizedSystem(string)];
-
-        }
+//        if (buttonIndex == 1) {
+//            NSString *string =[NSString stringWithFormat:@"user_press_RevMobsYes_in_%@",[VFUtils getTitle:_numberOfTale]];
+//            [VFAdsSingleton saveAnalytics:AVLocalizedSystem(string)];
+//        } else {
+//            NSString *string =[NSString stringWithFormat:@"user_press_RevMobsYes_in_%@",[VFUtils getTitle:_numberOfTale]];
+//            [VFAdsSingleton saveAnalytics:AVLocalizedSystem(string)];
+//
+//        }
     }
     
 }

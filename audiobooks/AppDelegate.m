@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "Flurry.h"
 #import "Apsalar.h"
-#import <RevMobAds/RevMobAds.h>
 #import "Chartboost.h"
 #import "ChartboostDelegates.h"
 #import <AskingPoint/AskingPoint.h>
@@ -42,7 +41,6 @@
     ////Reclama
     [Flurry startSession:FlurryKey];
     [Apsalar startSession:AppSalarKey withKey:AppSalarSecret];
-    [RevMobAds startSessionWithAppID:RevMobKey];
     
     
     [ASKPManager startup:@"RABuADIBU5CuN0kHNHcmZSlQI-ykmfeHqjmjJaBH3Ws="];
