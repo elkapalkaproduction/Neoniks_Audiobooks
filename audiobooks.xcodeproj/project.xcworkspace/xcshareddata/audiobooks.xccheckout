@@ -12,22 +12,34 @@
 	<dict>
 		<key>481DC3A0-04BF-4236-AF1D-A2702B95169E</key>
 		<string>https://github.com/elkapalkaproduction/Neoniks_Audiobooks.git</string>
+		<key>D5C21100A47D69DA7C26D1EBEE44CB45B5E3975B</key>
+		<string>github.com:elkapalkaproduction/Neoniks_Audiobooks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>audiobooks.xcodeproj/project.xcworkspace</string>
+	<string>audiobooks.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>481DC3A0-04BF-4236-AF1D-A2702B95169E</key>
+		<string>../../../Neoniks_Audiobooks</string>
+		<key>D5C21100A47D69DA7C26D1EBEE44CB45B5E3975B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/elkapalkaproduction/Neoniks_Audiobooks.git</string>
+	<string>github.com:elkapalkaproduction/Neoniks_Audiobooks.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>481DC3A0-04BF-4236-AF1D-A2702B95169E</string>
+	<string>D5C21100A47D69DA7C26D1EBEE44CB45B5E3975B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5C21100A47D69DA7C26D1EBEE44CB45B5E3975B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>audiobooks</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
